@@ -12,6 +12,8 @@ TODO
 conda create -n tf_project python=3.10.18 -y
 conda activate tf_project
 pip install -r requirements.txt
+pip install torch --index-url https://download.pytorch.org/whl/cu121
+pip install flash-attn --no-build-isolation
 ```
 
 ## Used Resources
