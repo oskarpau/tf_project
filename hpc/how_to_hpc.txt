@@ -1,0 +1,9 @@
+filezilla for ftp
+
+ssh [your username]@rocket.hpc.ut.ee
+sbatch qwen2_local_notebook.sbatch
+squeue -u [your username]
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          61110201       gpu llama_lo hendrika PD       0:00      1 (ReqNodeNotAvail, UnavailableNodes:falcon1,firefly1,pegasus2)
+
+now your batch is in the waiting list
