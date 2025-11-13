@@ -94,7 +94,8 @@ class Model:
             dataset_name: str, 
             categories: list, 
             subcategories: list,   
-            questions: list
+            questions: list,
+            right_answers: list
         ) -> pd.DataFrame:
 
         """
@@ -116,6 +117,7 @@ class Model:
             categorie (list[str]): 
             subcategorie (list[str]):    
             questions (list[str]):
+            right_answers (list[str]):
 
         Returns:
             pd.DataFrame: DataFrame with all the results file's columns,
@@ -124,7 +126,6 @@ class Model:
 
         # 1. Calculate token probabilities for first try
         
-
         # 2. Calculate verbalized probabilities for first try
 
         # 3. Calculate token probabilities of wrongly answered question
