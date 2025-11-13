@@ -23,7 +23,8 @@ def run_model_on_dataset():
                     dataset_name="", 
                     categories = [], 
                     subcategories = [],
-                    questions = []
+                    questions = [],
+                    right_answers = []
                     )
                 results_df.concat([results_df, dataframe_to_append])
     
