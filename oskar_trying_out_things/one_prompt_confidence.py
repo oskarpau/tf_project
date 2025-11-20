@@ -18,11 +18,13 @@ import os
 import time
 import psutil
 import math
+import numpy as np
 
 # Set this according to current environment
 RUNNING_IN_COLAB = False
 
 USE_VERBAL_CONFIDENCE = False
+MULTIPLE_RIGHT_ANSWERS = False
 
 
 def _bytes_to_mib(value: int) -> float:
@@ -46,8 +48,26 @@ def _print_memory_snapshot(label: str) -> None:
                 f"reserved {reserved:.2f} MiB | total {total:.2f} MiB"
             )
 
-def estimate_confidence_max_prob(output, generated_ids_trimmed, debug=False):
-    """Estimate confidence from token probabilities for each sample in the batch."""
+def estimate_confidence_max_prob(
+        output: torch.Tensor, 
+        generated_ids_trimmed, 
+        debug=False
+    ) -> list:
+    """Estimate confidence from token probabilities for each sample in the batch.
+
+    Args:
+        output: ``GenerateDecoderOnlyOutput`` (or similar) returned by
+            ``model.generate`` with ``output_logits=True``.  ``output.logits`` is
+            expected to be an iterable of tensors shaped ``(batch, vocab_size)``.
+        generated_ids_trimmed: Sequence of per-sample tensors containing only the
+            newly generated token IDs (prompt portion removed). The length of each
+            item determines how many timesteps to consider for that sample.
+        debug: When ``True``, prints per-step token and probability details.
+
+    Returns:
+        list[float]: Average maximum probability per generated token for each
+        batch element. Empty generations yield ``0.0``.
+    """
     batch_size = output.sequences.shape[0]
     probs_per_sample = [[] for _ in range(batch_size)]
 
@@ -75,18 +95,36 @@ def estimate_confidence_max_prob(output, generated_ids_trimmed, debug=False):
         if not sample_probs:
             avg_probs.append(0.0)
         else:
-            avg_probs.append(sum(sample_probs) / len(sample_probs))
+            avg_probs.append(sum(sample_probs) / len(sample_probs) * 100)
 
     return avg_probs
 
 def estimate_confidence_entropy(output, generated_ids_trimmed, debug=False):
-    """Compute the average entropy of the top tokens for each generated sample."""
+    """Compute the average entropy of the top tokens for each generated sample.
+
+    Args:
+        output: Same structure as in :func:`estimate_confidence_max_prob`; logits
+            for each generation step must be accessible via ``output.logits``.
+        generated_ids_trimmed: Sequence of generated token ID tensors per sample,
+            used to cap the number of timesteps processed for each batch item.
+        debug: Enables verbose logging of per-token probabilities and entropy
+            contributions when set to ``True``.
+
+    Returns:
+        list[float]: Average entropy (in bits i.e. using log2) measured over the top-5 token
+        probabilities for each batch element. Samples with no generated tokens
+        produce ``0.0``.
+    """
+    topk = 5
+    max_entropy = math.log(topk, 2)
     batch_size = output.sequences.shape[0]
     entropies_per_sample = [[] for _ in range(batch_size)]
 
     for step_idx, step_scores in enumerate(output.logits):
         probs_step = torch.nn.functional.softmax(step_scores, dim=-1)
-        topk_values, topk_indices = torch.topk(probs_step, 5, dim=-1)
+
+        # Calculate entropies for only 5 most probable tokens
+        topk_values, topk_indices = torch.topk(probs_step, topk, dim=-1)
 
         for sample_idx in range(batch_size):
             # Guard against variable-length continuations, as above.
@@ -98,7 +136,7 @@ def estimate_confidence_entropy(output, generated_ids_trimmed, debug=False):
                 zip(topk_indices[sample_idx].tolist(), topk_values[sample_idx].tolist()), 1
             ):
                 if prob > 0:
-                    contribution = -prob * math.log(prob + 1e-12)
+                    contribution = -prob * math.log(prob + 1e-12, 2)
                     entropy += contribution
                 else:
                     contribution = 0.0
@@ -117,12 +155,27 @@ def estimate_confidence_entropy(output, generated_ids_trimmed, debug=False):
         if not sample_entropies:
             avg_entropies.append(0.0)
         else:
-            avg_entropies.append(sum(sample_entropies) / len(sample_entropies))
-
+            # Normalize and append entropy, also clip for any floating precision related issues
+            avg_entropies.append(np.clip(1 - (sum(sample_entropies) / len(sample_entropies)) / max_entropy, 0, 1) * 100)
+            
     return avg_entropies
 
 def estimate_confidence_margin(output, generated_ids_trimmed, debug=False):
-    """Measure how far apart the top-2 probabilities are across generated tokens."""
+    """Measure how far apart the top-2 probabilities are across generated tokens.
+
+    Args:
+        output: Generation output bundle providing step-wise logits (see
+            :func:`estimate_confidence_max_prob`).
+        generated_ids_trimmed: Sequence of per-sample generated token tensors used
+            to determine how many logit steps belong to each sample.
+        debug: If ``True``, logs the top-2 tokens and their probabilities for each
+            processed step.
+
+    Returns:
+        list[float]: Average probability margin between the top-1 and top-2 tokens
+        for each sample. When a sample yields no new tokens, the margin defaults
+        to ``0.0``.
+    """
     batch_size = output.sequences.shape[0]
     margins_per_sample = [[] for _ in range(batch_size)]
 
@@ -196,8 +249,8 @@ else:
     model = Qwen3VLForConditionalGeneration.from_pretrained(
         model_name,
         quantization_config=bnb_config,
-        device_map="auto",
-        attn_implementation="flash_attention_2"
+        device_map="auto"
+        # attn_implementation="flash_attention_2"
     )
 
 
@@ -215,17 +268,80 @@ start_time = time.perf_counter()
 
 # --- Prompt definition ----------------------------------------------------
 prompts = [
+    # (
+    #     "I need you to answer to a question with the right answers' letter."
+    #     "The question may have many right answers"
+    #     "The question is: What is equal to 2+1? (A) 2+2 (B) 4 (C) 3"
+    #     "The question is: What is equal to 2+2? (A) 2+2 (B) 4 (C) 3"
+    #     "Example correct answer:"
+    #     "Answer: A "
+    #     "Numerical confidence: 0.99"
+    # ),
+    # (
+    #     "Instruction : Given a question that has multiple answers,"
+    #     "answer the question, "
+    #     "following the instructions below:"
+    #     "1. Keep your response as brief as possible without"
+    #     "any explanation, and then provide your answer"
+    #     "2. When providing an answer, use the format ||ANSWERS||"
+    #     "where ANSWERS are the answers to the given question."
+    #     "3. Separate each answer of ANSWERS with a comma and"
+    #     "a space."
+    #     "Use the following format for the final answer:"
+    #     "||ANSWER1, ANSWER2, ANSWER3||"
+    #     "Now, please answer this question."
+    #     "Question: What is equal to 2+3? (A) 2 + 2 (B) 4 (C) 3"
+    # ),
+    # (
+    #     "Instruction : Given a question that has multiple answers,"
+    #     "answer the question and then provide the confidence in this"
+    #     "answer, which indicates how likely you think your answer"
+    #     "is true, following the instructions below:"
+    #     "1. Keep your response as brief as possible without"
+    #     "any explanation, and then provide your answer and"
+    #     "confidence."
+    #     "2. When providing an answer, use the format ||ANSWERS||"
+    #     "where ANSWERS are the answers to the given question."
+    #     "3. Separate each answer of ANSWERS with a comma and"
+    #     "a space."
+    #     "4. The confidence should be a numerical number in the"
+    #     "range of 0-100."
+    #     "Use the following format for the final answer and"
+    #     "confidence:"
+    #     "||ANSWER1, ANSWER2, ANSWER3||, CONFIDENCE"
+    #     "Now, please answer this question."
+    #     "Question: What is equal to 2+2? (A) 2 + 2 (B) 4 (C) 3"
+    # ),
     (
-        "Keep your answer very short. I need you to act like a humanoid robot. "
-        "There are 3 possible location for coffee beans. Next to the coffee machine, "
-        "in the living room or under the bed. Which place would you start looking at?"
+        "Instruction : Given a question that has only one correct answer as True or False,"
+        "answer the question and then provide the confidence in this"
+        "answer, which indicates how likely you think your answer"
+        "is true, following the instructions below:"
+        "1. Keep your response as brief as possible without"
+        "any explanation, and then provide your answer and"
+        "confidence."
+        "2. When providing an answer, use the format ||ANSWER||"
+        "where ANSWER is the answer to the given question."
+        "3. Answer only with ||True||, CONFIDENCE or ||False||, CONFIDENCE."
+        "4. The confidence should be a numerical number in the"
+        "range of 0-100."
+        "Use the following format for the final answer and"
+        "confidence:"
+        "||ANSWER||, CONFIDENCE"
+        "Now, please answer this question."
+        "Question: Is 2+2 equal to 4?"
     ),
-    (
-        "Keep your answer very short. I need you to act like a humanoid robot. "
-        "There are 3 possible location for coffee beans. Next to the coffee machine, "
-        "in the shop or under the bed. Which place would you start looking at?"
-    ),
+    # (
+    #     "I need you to answer to a question with the right answer's letter"
+    #     "The question is: What is equal to 2+2? (A) 1 (B) 4 (C) 3"
+    # ),
 ]
+
+# prompts = [prompts[0]]
+# for i in range(1):
+#     prompts.append(prompts[0])
+#     prompts.append(prompts[1])
+#     prompts.append(prompts[2])
 
 # Wrap each plain-text prompt in the chat schema that the processor expects.
 batched_messages = []
@@ -241,8 +357,13 @@ for prompt_text in prompts:
         }
     ]
 
+    if MULTIPLE_RIGHT_ANSWERS:
+        conversation[0]["content"].append({"type": "text", "text": "The question may have many right answers"})
+
     if USE_VERBAL_CONFIDENCE:
-        conversation[0]["content"].append({"type": "text", "text": "Numerical confidence: [to be filled by model]"})
+        conversation[0]["content"].append({"type": "text", "text": "Numerical confidence: [fill this field]"})
+
+
 
     batched_messages.append(conversation)
 
@@ -325,16 +446,17 @@ print(f"Confidence estimation based on margins took {elapsed_conf:.4f}")
 # Present outputs and metrics in a consistent per-sample format so downstream
 # parsing (or manual inspection) is straightforward.
 for idx, text in enumerate(output_text):
+    text = text.lstrip("\n")
     print(f"[Output][Sample {idx}] {text}")
 
 for idx, conf in enumerate(confidence_max_prob):
-    print(f"[Confidence][Sample {idx}] Avg max probability: {conf * 100:.2f}%")
+    print(f"[Confidence][Sample {idx}] Avg max probability: {conf:.2f}%")
 
 for idx, entropy in enumerate(confidence_entropy):
-    print(f"[Confidence][Sample {idx}] Avg entropy: {entropy * 100:.2f}")
+    print(f"[Confidence][Sample {idx}] Avg entropy based confidence: {entropy:.2f}%")
 
 for idx, margin in enumerate(confidence_margin):
-    print(f"[Confidence][Sample {idx}] Avg margin: {margin * 100:.2f}")
+    print(f"[Confidence][Sample {idx}] Avg margin: {margin:.2f}")
 
 print(f"[Timing] Batch took {elapsed:.2f} seconds")
 for idx, (num_tokens, tps) in enumerate(zip(tokens_generated, tokens_per_second)):

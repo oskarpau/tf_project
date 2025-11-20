@@ -20,4 +20,4 @@ pip install -U bitsandbytes
 TODO
 
 ## Columns
-Index dataset categorie subcategorie question right_answer  first_try_max_prob  first_try_entropy   first_try_margin    first_try_verbal    second_try_max_prob  second_try_entropy   second_try_margin    second_try_verbal    first_try_correct   second_try_correct
+Index dataset categorie subcategorie question right_answer  first_try_max_prob  first_try_entropy   first_try_margin    first_try_verbal    first_try_correct    second_try_max_prob  second_try_entropy   second_try_margin    second_try_verbal      second_try_correct

@@ -1,0 +1,2 @@
+dataset;categorie;subcategorie;question;question_type;right_answer;first_try_answer;first_try_correct;first_try_max_prob;first_try_entropy;first_try_margin;first_try_verbal;second_try_answer;second_try_correct;second_try_max_prob;second_try_entropy;second_try_margin;second_try_verbal
+dummy;dummy_categorie;dummy_subcategorie;What is equal to 2 + 2?;multi_str;['4'];['4'];True;100.0;100.0;1.0;100.0;;;;;;
