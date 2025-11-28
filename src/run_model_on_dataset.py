@@ -1,9 +1,21 @@
-from model import Model
+
 
 
 # !pip install -U bitsandbytes
 import os
-from google.colab import drive
+import subprocess
+import sys
+subprocess.check_call([sys.executable, "-m", "pip", "install", "pyarrow"])
+subprocess.check_call([sys.executable, "-m", "pip", "install", "fastparquet"])
+subprocess.check_call([sys.executable, "-m", "pip", "install", "transformers"])
+#subprocess.check_call([sys.executable, "-m", "pip", "install", "torch"])
+from model import Model
+# Get the directory where this script is located
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Print it
+print("Directory of this script:", script_dir)
+#from google.colab import drive
 import pandas as pd
 
 # todo
@@ -19,7 +31,7 @@ rightanswers list
 question type = "true/false", "multi string" list
 '''
 
-base_path ="../datasets/"
+base_path =script_dir+"\\..\\datasets\\"
 
 # 3. For strategyqa_dataset:
 strategyqa_dev_df = pd.read_json(os.path.join(base_path, 'strategyqa_dataset', 'dev.json'))
@@ -263,15 +275,14 @@ def run_model_on_dataset():
     This function loops over all datasets, their categories and subcategories
     """
 
-<<<<<<< HEAD
     # TODO: Somehow loop over dataset so the questions can be processed at least in
     #  batches in 8
 
     datasets = []
-=======
+
     # TODO: Somehow loop over the datasets
-    datasets = [[1]]
->>>>>>> 0509a723f1f2df1e2606f536dcdc408614129f41
+    #datasets = [[1]]
+
     results_df = pd.DataFrame()
 
     model = Model()
