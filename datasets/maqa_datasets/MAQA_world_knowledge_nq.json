@@ -1,0 +1,5809 @@
+[
+    {
+        "question": "Who were the original members of the Traveling Wilburys?",
+        "answer": [
+            "Bob Dylan",
+            "Tom Petty",
+            "George Harrison",
+            "Jeff Lynne",
+            "Roy Orbison"
+        ]
+    },
+    {
+        "question": "Who were the original members of the band The Monkees?",
+        "answer": [
+            "Micky Dolenz",
+            "Peter Tork",
+            [
+                "Michael Nesmith",
+                "Mike Nesmith"
+            ],
+            "Davy Jones"
+        ]
+    },
+    {
+        "question": "Who were the writers of the song 'Tell Your Heart to Beat Again'?",
+        "answer": [
+            "Bernie Herms",
+            "Matthew West",
+            "Randy Phillips"
+        ]
+    },
+    {
+        "question": "Who were the lyricists credited for the song 'You Make It Feel Like Christmas'?",
+        "answer": [
+            [
+                "Michael Busbee",
+                "busbee",
+                "Michael James Ryan Busbee"
+            ],
+            "Gwen Stefani",
+            "Blake Shelton",
+            "Justin Tranter"
+        ]
+    },
+    {
+        "question": "Who were the writers of the song 'Take Me to the River'?",
+        "answer": [
+            "Al Green",
+            "Mabon \"Teenie\" Hodges"
+        ]
+    },
+    {
+        "question": "Who were the original writers of the song 'Every Day is a Winding Road' by Sheryl Crow?",
+        "answer": [
+            "Sheryl Crow",
+            "Brian MacLeod",
+            "Jeff Trott"
+        ]
+    },
+    {
+        "question": "Who were the writers for the song 'Man in the Mirror' by Michael Jackson?",
+        "answer": [
+            "Glen Ballard",
+            "Siedah Garrett"
+        ]
+    },
+    {
+        "question": "Who were the writers and producers of the song 'You Made Me So Very Happy'?",
+        "answer": [
+            [
+                "Berry Gordy III",
+                "Berry Gordy Jr.",
+                "Berry Gordy"
+            ],
+            "Brenda Holloway",
+            "Patrice Holloway",
+            "Frank Wilson"
+        ]
+    },
+    {
+        "question": "Who are the specific writers of the song 'Long Ago and Far Away' written for the 1944 movie 'Cover Girl'?",
+        "answer": [
+            "Jerome Kern",
+            "Ira Gershwin"
+        ]
+    },
+    {
+        "question": "Who were the lyricists of the song 'Safe & Sound' by Taylor Swift?",
+        "answer": [
+            [
+                "T-Bone Burnett",
+                "T Bone Burnett"
+            ],
+            "Joy Williams",
+            "Taylor Swift",
+            "John Paul White"
+        ]
+    },
+    {
+        "question": "What are the full names of the individual writers of the song 'Let's Stay Together'?",
+        "answer": [
+            "Al Jackson Jr.",
+            "Al Green",
+            "Willie Mitchell"
+        ]
+    },
+    {
+        "question": "List the bones that form the proximal row of carpal bones in the human wrist.",
+        "answer": [
+            "scaphoid",
+            "lunate",
+            "triquetrum",
+            "pisiform"
+        ]
+    },
+    {
+        "question": "What are the seven layers of the OSI model?",
+        "answer": [
+            [
+                "Application",
+                "Application Layer"
+            ],
+            [
+                "Presentation",
+                "Presentation Layer"
+            ],
+            [
+                "Session",
+                "Session Layer"
+            ],
+            [
+                "Transport",
+                "Transport Layer"
+            ],
+            [
+                "Network",
+                "Network Layer"
+            ],
+            [
+                "Data link",
+                "Data link Layer"
+            ],
+            [
+                "Physical",
+                "Physical Layer"
+            ]
+        ]
+    },
+    {
+        "question": "What are the three essential components of the fire triangle?",
+        "answer": [
+            "Heat",
+            "Fuel",
+            "Oxygen"
+        ]
+    },
+    {
+        "question": "What are the different types of nitrogenous bases found in DNA?",
+        "answer": [
+            "adenine",
+            "thymine",
+            "guanine",
+            "cytosine"
+        ]
+    },
+    {
+        "question": "What are the three major types of joints in the human body, classified based on their structural characteristics?",
+        "answer": [
+            "Fibrous joints",
+            "Cartilaginous joints",
+            "Synovial joints"
+        ]
+    },
+    {
+        "question": "What are the names of the three layers that make up the meninges?",
+        "answer": [
+            "dura mater",
+            "arachnoid mater",
+            "pia mater"
+        ]
+    },
+    {
+        "question": "What are the two types of vascular tissue in plants?",
+        "answer": [
+            "xylem",
+            "phloem"
+        ]
+    },
+    {
+        "question": "What are the five distinct layers of Earth's atmosphere, listed from the one closest to Earth's surface to the farthest?",
+        "answer": [
+            "Troposphere",
+            "Stratosphere",
+            "Mesosphere",
+            "Thermosphere",
+            "Exosphere"
+        ]
+    },
+    {
+        "question": "What are the names of recognized dwarf planets in the solar system as of 2024?",
+        "answer": [
+            "Ceres",
+            "Eris",
+            "Pluto",
+            "Makemake",
+            "Haumea"
+        ]
+    },
+    {
+        "question": "What are the known elements that belong to the group of noble gases in the periodic table?",
+        "answer": [
+            [
+                "Helium",
+                "Helium (He)",
+                "He"
+            ],
+            [
+                "Neon",
+                "Neon (Ne)",
+                "Ne"
+            ],
+            [
+                "Argon",
+                "Argon (Ar)",
+                "Ar"
+            ],
+            [
+                "Krypton",
+                "Krypton (Kr)",
+                "Kr"
+            ],
+            [
+                "Xenon",
+                "Xenon (Xe)",
+                "Xe"
+            ],
+            [
+                "Radon",
+                "Radon (Rn)",
+                "Rn"
+            ],
+            [
+                "Oganesson",
+                "Oganesson (Og)",
+                "Og"
+            ]
+        ]
+    },
+    {
+        "question": "What are the two primary divisions of the human nervous system?",
+        "answer": [
+            "Central nervous system",
+            "Peripheral nervous system"
+        ]
+    },
+    {
+        "question": "List the seven layers of the OSI model starting from the highest layer to the lowest layer.",
+        "answer": [
+            "Application",
+            "Presentation",
+            "Session",
+            "Transport",
+            "Network",
+            "Data Link",
+            "Physical"
+        ]
+    },
+    {
+        "question": "List Pluto's moons by their names.",
+        "answer": [
+            "Styx",
+            "Kerberos",
+            "Charon",
+            "Nix",
+            "Hydra"
+        ]
+    },
+    {
+        "question": "What were the names of the two major geological supercontinents that resulted from the breakup of Pangaea?",
+        "answer": [
+            "Laurasia",
+            "Gondwana"
+        ]
+    },
+    {
+        "question": "What are the three major categories of plant tissues?",
+        "answer": [
+            "Ground tissue",
+            "Vascular tissue",
+            "Dermal tissue"
+        ]
+    },
+    {
+        "question": "What are two animal phyla known for having radial symmetry?",
+        "answer": [
+            "Cnidaria",
+            "Echinodermata"
+        ]
+    },
+    {
+        "question": "What are the specific monosaccharide products produced from the enzymatic breakdown of lactose?",
+        "answer": [
+            "galactose",
+            "glucose"
+        ]
+    },
+    {
+        "question": "What are the specific names of the four nucleobases found in DNA?",
+        "answer": [
+            "Adenine",
+            "Cytosine",
+            "Thymine",
+            "Guanine"
+        ]
+    },
+    {
+        "question": "What are the chemical symbols for the elements found in carbohydrates?",
+        "answer": [
+            "C",
+            "H",
+            "O"
+        ]
+    },
+    {
+        "question": "What are the three basic types of tectonic plate boundaries, referred to in geology?",
+        "answer": [
+            "Convergent boundaries",
+            [
+                "Transform boundaries",
+                "Transform plate boundaries"
+            ],
+            "Divergent boundaries"
+        ]
+    },
+    {
+        "question": "What are the three primary divisions or categories of electronic warfare, often abbreviated as EA, EP, and ES?",
+        "answer": [
+            "Electronic Attack (EA)",
+            "Electronic Protection (EP)",
+            [
+                "Electronic Support (ES)",
+                "Electronic Support (ES)/Electronic Warfare Support (EWS)"
+            ]
+        ]
+    },
+    {
+        "question": "What are the major components of Earth's atmosphere, listed as those making up at least 0.1% of its composition?",
+        "answer": [
+            [
+                "Nitrogen",
+                "Nitrogen (N2)"
+            ],
+            [
+                "Oxygen",
+                "Oxygen (O2)"
+            ],
+            [
+                "Argon",
+                "Argon (Ar)"
+            ]
+        ]
+    },
+    {
+        "question": "What are the two main life cycle stages of polymorphism in cnidarians?",
+        "answer": [
+            "polyp",
+            "medusa"
+        ]
+    },
+    {
+        "question": "What are the common species of hawks typically observed in Southern Ontario?",
+        "answer": [
+            "Red-tailed Hawk",
+            "Red-shoulder Hawk",
+            "Sharp-shinned Hawk",
+            "Cooper\u2019s Hawk",
+            "Broad-winged Hawk",
+            "Northern Goshawk",
+            "Rough-legged Hawk",
+            "Northern Harrier"
+        ]
+    },
+    {
+        "question": "List the specific types of electromagnetic waves categorized under the electromagnetic spectrum.",
+        "answer": [
+            "Radio waves",
+            "Microwaves",
+            [
+                "Infrared radiation",
+                "infrared",
+                "infrared waves"
+            ],
+            "Visible light",
+            [
+                "Ultraviolet radiation",
+                "ultraviolet",
+                "ultraviolet light"
+            ],
+            "X-rays",
+            "Gamma rays"
+        ]
+    },
+    {
+        "question": "What specific chemical additives are commonly used in Jet fuel?",
+        "answer": [
+            "Tetra-ethyl lead",
+            "Fuel system icing inhibitor",
+            "Metal deactivator",
+            [
+                "Antioxidants",
+                "Gum inhibitors"
+            ],
+            "Corrosion inhibitors",
+            "Static dissipater additives"
+        ]
+    },
+    {
+        "question": "What are the names of the different port roles defined in the Spanning Tree Protocol (STP)?",
+        "answer": [
+            "designated",
+            "blocked",
+            "root"
+        ]
+    },
+    {
+        "question": "What specific gases are commonly used as fuels in a Bunsen burner?",
+        "answer": [
+            "Propane",
+            [
+                "Natural gas",
+                "methane"
+            ],
+            "Butane"
+        ]
+    },
+    {
+        "question": "What are the names of the seven wonders of the ancient world?",
+        "answer": [
+            "Great Pyramid of Giza",
+            "Hanging Gardens of Babylon",
+            "Statue of Zeus at Olympia",
+            [
+                "Temple of Artemis at Ephesus",
+                "Temple of Artemis"
+            ],
+            "Mausoleum at Halicarnassus",
+            "Colossus of Rhodes",
+            "Lighthouse of Alexandria"
+        ]
+    },
+    {
+        "question": "What are the specific names of the tribes that comprised the Iroquois Confederacy?",
+        "answer": [
+            "Oneida",
+            "Cayuga",
+            "Onondaga",
+            "Seneca",
+            "Mohawk",
+            "Tuscarora"
+        ]
+    },
+    {
+        "question": "What are the names of the four Vedas?",
+        "answer": [
+            "Rigveda",
+            "Yajurveda",
+            "Samaveda",
+            "Atharvaveda"
+        ]
+    },
+    {
+        "question": "What are the names of the three branches of government in the state of Virginia?",
+        "answer": [
+            "Judicial",
+            "Legislative",
+            "Executive"
+        ]
+    },
+    {
+        "question": "What are the first five books of the Bible?",
+        "answer": [
+            "Genesis",
+            "Exodus",
+            "Leviticus",
+            "Numbers",
+            "Deuteronomy"
+        ]
+    },
+    {
+        "question": "What are the specific colors of the American flag?",
+        "answer": [
+            "Red",
+            "White",
+            "Blue"
+        ]
+    },
+    {
+        "question": "What are the names of the Five Pillars of Islam?",
+        "answer": [
+            "Shahada",
+            "Salat",
+            "Zakat",
+            "Sawm",
+            "Hajj"
+        ]
+    },
+    {
+        "question": "What were the names of the two main factions in the English Civil War?",
+        "answer": [
+            "Parliamentarians",
+            "Royalists"
+        ]
+    },
+    {
+        "question": "Which specific verses in the Bible use the term 'Christian'?",
+        "answer": [
+            "Acts 11:26",
+            "1 Peter 4:16",
+            "Acts 26:28"
+        ]
+    },
+    {
+        "question": "What are the three fundamental rights listed in the Declaration of Independence as 'unalienable'?",
+        "answer": [
+            "Life",
+            "Liberty",
+            "the pursuit of Happiness"
+        ]
+    },
+    {
+        "question": "What are the names of the principal organs of the United Nations?",
+        "answer": [
+            "General Assembly",
+            "Security Council",
+            "Economic and Social Council",
+            "International Court of Justice",
+            "Secretariat",
+            "Trusteeship Council"
+        ]
+    },
+    {
+        "question": "What are the four ancient Greek words for love, including their standard romanized spellings?",
+        "answer": [
+            "phil\u00eda",
+            "ag\u00e1pe",
+            "storg\u0113",
+            "\u00e9ros",
+            "philaut\u00eda",
+            "xen\u00eda"
+        ]
+    },
+    {
+        "question": "What languages were used by the drafting committee to write the Indian Constitution?",
+        "answer": [
+            "English",
+            "Hindi"
+        ]
+    },
+    {
+        "question": "List band names used by The Beatles during their formation period before they ultimately adopted the name 'The Beatles'.",
+        "answer": [
+            "Quarrymen",
+            "Johnny and the Moondogs",
+            "Beatals",
+            "Silver Beatles"
+        ]
+    },
+    {
+        "question": "What are the names of the original Big Eight accounting firms, precisely as they were branded during their existence in the Big Eight configuration?",
+        "answer": [
+            "Price Waterhouse",
+            "Coopers & Lybrand",
+            "Arthur Young",
+            "Arthur Andersen",
+            "Deloitte Haskins & Sells",
+            "Ernst & Whinney",
+            "Touche Ross",
+            "Peat Marwick Mitchell"
+        ]
+    },
+    {
+        "question": "What are the names of the U.S. Constitutional Amendments that relate specifically to the prohibition and subsequent re-authorization of alcohol?",
+        "answer": [
+            "The Eighteenth Amendment",
+            "The Twenty-first Amendment"
+        ]
+    },
+    {
+        "question": "What are the names of the six sovereign states whose flags flew over Texas?",
+        "answer": [
+            "Spain",
+            "France",
+            "Mexico",
+            "Republic of Texas",
+            "Confederate States of America",
+            "United States of America"
+        ]
+    },
+    {
+        "question": "What are the names of rivers mentioned in the Garden of Eden as per the King James Version of the Bible?",
+        "answer": [
+            "Gihon",
+            [
+                "Euphrates",
+                "Phirat"
+            ],
+            "Pishon",
+            [
+                "Tigris",
+                "tigris"
+            ]
+        ]
+    },
+    {
+        "question": "What were the official names of the city currently known as St. Petersburg, Russia, at different times during the 20th century, excluding the name 'St. Petersburg'?",
+        "answer": [
+            "Petrograd",
+            "Leningrad"
+        ]
+    },
+    {
+        "question": "What are the names of the philosophical schools that originated in China during the period from 500 B.C. to 200 B.C.?",
+        "answer": [
+            "Legalism",
+            "Mohism",
+            [
+                "Taoism",
+                "Daoism"
+            ],
+            "Confucianism"
+        ]
+    },
+    {
+        "question": "Which specific towns in North Carolina were used as filming locations for the movie 'Three Billboards Outside Ebbing, Missouri'?",
+        "answer": [
+            "Sylva",
+            "Dillsboro",
+            "Black Mountain",
+            "Asheville",
+            "Maggie Valley"
+        ]
+    },
+    {
+        "question": "Which countries were used as filming locations for the movie 'Palm Trees in the Snow'?",
+        "answer": [
+            "Columbia",
+            "Spain"
+        ]
+    },
+    {
+        "question": "What stats were used as filming locations for 'Ferris Bueller's Day Off'?",
+        "answer": [
+            "Illinois",
+            "California"
+        ]
+    },
+    {
+        "question": "What specific cities were used as filming locations for the movie 'The Mist'?",
+        "answer": [
+            "Shreveport, Louisiana",
+            "Vivian, Louisiana",
+            "Mindenm, Louisiana",
+            "Atlanta, Texas"
+        ]
+    },
+    {
+        "question": "Who were the individuals elected as President and Vice President of the United States in the year 1952?",
+        "answer": [
+            "Dwight D. Eisenhower",
+            "Richard M. Nixon"
+        ]
+    },
+    {
+        "question": "Who were the co-founders of YouTube?",
+        "answer": [
+            "Chad Hurley",
+            "Jawed Karim",
+            "Steve Chen"
+        ]
+    },
+    {
+        "question": "Which three goddesses did Paris have to choose from to determine the fairest to give the golden apple to?",
+        "answer": [
+            "Aphrodite",
+            "Hera",
+            "Athena"
+        ]
+    },
+    {
+        "question": "What are the names of the individuals who were victims in the 16th Street Baptist Church bombing of 1963?",
+        "answer": [
+            "Carol Denise McNair",
+            "Addie Mae Collins",
+            "Carole Robertson",
+            "Cynthia Wesley"
+        ]
+    },
+    {
+        "question": "List people who served as Prime Minister of India in 1991.",
+        "answer": [
+            "Chandra Shekhar",
+            "P. V. Narasimha Rao"
+        ]
+    },
+    {
+        "question": "Who are the founders responsible for establishing Theosophy, directly contributing to the foundation of many magical societies?",
+        "answer": [
+            "Henry Steel Olcott",
+            "Helena Blavatsky",
+            "William Quan Judge"
+        ]
+    },
+    {
+        "question": "Identify the individuals who founded Chicago's Hull House.",
+        "answer": [
+            "Ellen Gates Starr",
+            "Jane Addams"
+        ]
+    },
+    {
+        "question": "Who were the candidates in the 1912 U.S. presidential election ballot?",
+        "answer": [
+            "William Howard Taft",
+            "Theodore Roosevelt",
+            "Robert M. La Follette",
+            "Albert B. Cummins",
+            "Charles Evans Hughes"
+        ]
+    },
+    {
+        "question": "Who are considered the Founding Fathers of the United States?",
+        "answer": [
+            "Benjamin Franklin",
+            "John Jay",
+            "James Madison",
+            "John Adams",
+            "George Washington",
+            "Alexander Hamilton",
+            "Thomas Jefferson"
+        ]
+    },
+    {
+        "question": "Who were the emperors of the Qin Dynasty?",
+        "answer": [
+            [
+                "Qin Shi Huang",
+                "Shi Huangdi"
+            ],
+            [
+                "Er Shi Huangdi",
+                "Qin Er Shi",
+                "Ying Huhai"
+            ],
+            [
+                "Qin San Shi",
+                "Ying Ziying"
+            ]
+        ]
+    },
+    {
+        "question": "Who were the British Prime Ministers who served during the entirety of World War II (1939-1945)?",
+        "answer": [
+            "Neville Chamberlain",
+            "Winston Churchill",
+            "Clement Attlee"
+        ]
+    },
+    {
+        "question": "Who were the specific individuals appointed to the Committee of Five responsible for drafting the U.S. Declaration of Independence in 1776?",
+        "answer": [
+            "Thomas Jefferson",
+            "Benjamin Franklin",
+            "John Adams",
+            [
+                "Robert R. Livingston",
+                "Robert Livingston"
+            ],
+            "Roger Sherman"
+        ]
+    },
+    {
+        "question": "Who are the individuals who have achieved the EGOT status by winning at least one each of the Grammy, Emmy, Oscar, and Tony Awards?",
+        "answer": [
+            "Richard Rodgers",
+            "Helen Hayes",
+            "Rita Moreno",
+            "John Gielgud",
+            "Audrey Hepburn",
+            "Marvin Hamlisch",
+            "Jonathan Tunick",
+            "Mel Brooks",
+            "Mike Nichols",
+            "Whoopi Goldberg",
+            "Scott Rudin",
+            "Robert Lopez",
+            "Andrew Lloyd Webber",
+            "Tim Rice",
+            "John Legend",
+            "Alan Menken",
+            "Jennifer Hudson",
+            "Viola Davis",
+            "Elton John"
+        ]
+    },
+    {
+        "question": "Who were the Presidents of the United States from 1941 to 1945, the period of U.S. involvement in World War II?",
+        "answer": [
+            "Franklin Delano Roosevelt",
+            "Harry S. Truman"
+        ]
+    },
+    {
+        "question": "Who were the Emperors of Germany between 1871 and 1900?",
+        "answer": [
+            "Wilhelm I",
+            "Frederick III",
+            "Wilhelm II"
+        ]
+    },
+    {
+        "question": "What are the names of the U.S. Presidents who have been assassinated during their presidential terms?",
+        "answer": [
+            "Abraham Lincoln",
+            "James A. Garfield",
+            "William McKinley",
+            "John F. Kennedy"
+        ]
+    },
+    {
+        "question": "Who were the key executive leaders of the Montgomery Improvement Association during the bus boycott of 1955-1956?",
+        "answer": [
+            "Edgar Nixon",
+            "Ralph Abernathy",
+            "Martin Luther King, Jr."
+        ]
+    },
+    {
+        "question": "Who were the first climbers confirmed to reach the summit of Mount Everest during the 1953 British Mount Everest Expedition?",
+        "answer": [
+            "Edmund Hillary",
+            "Tenzing Norgay"
+        ]
+    },
+    {
+        "question": "Who were the original founding members of the International Red Cross and Red Crescent Movement?",
+        "answer": [
+            "Henry Dunant",
+            "Guillaume-Henri Dufour",
+            "Th\u00e9odore Maunoir",
+            "Louis Appia",
+            "Gustave Moynier"
+        ]
+    },
+    {
+        "question": "What are the commonly accepted names of the three wise men or Magi in Christian tradition?",
+        "answer": [
+            [
+                "Melchior",
+                "Melichior"
+            ],
+            [
+                "Caspar",
+                "Gaspar",
+                "Jaspar",
+                "Jaspas",
+                "Gathaspa"
+            ],
+            [
+                "Balthazar",
+                "Balthasar",
+                "Balthassar",
+                "Bithisarea"
+            ]
+        ]
+    },
+    {
+        "question": "Who were the candidates in the 1928 U.S. presidential election ballot?",
+        "answer": [
+            "Herbert Hoover",
+            "Frank Orren Lowden",
+            "Charles Curtis",
+            "James Eli Watson",
+            "George W. Norris",
+            "Guy D. Goff",
+            "Calvin Coolidge",
+            "Charles G. Dawes",
+            "Charles Evans Hughes"
+        ]
+    },
+    {
+        "question": "List individuals who held the position of caretaker Prime Minister in Pakistan up to the year 2018.",
+        "answer": [
+            "Malik Meraj Khalid",
+            "Nasirul Mulk",
+            "Balakh Sher Mazari",
+            "Moeenuddin Ahmad Qureshi",
+            "Ghulam Mustafa Jatoi",
+            "Mir Hazar Khan Khoso",
+            "Muhammad Mian Soomro"
+        ]
+    },
+    {
+        "question": "Who were the five men killed during the Boston Massacre?",
+        "answer": [
+            "Samuel Maverick",
+            "James Caldwell",
+            "Samuel Gray",
+            "Crispus Attucks",
+            "Patrick Carr"
+        ]
+    },
+    {
+        "question": "Who were the recipients of the Bharat Ratna award when it was first awarded?",
+        "answer": [
+            "C. Rajagopalachari",
+            "Sarvepalli Radhakrishnan",
+            "C. V. Raman"
+        ]
+    },
+    {
+        "question": "Who were the two main candidates in the 1876 Presidential election in the United States?",
+        "answer": [
+            "Samuel J. Tilden",
+            "Rutherford B. Hayes"
+        ]
+    },
+    {
+        "question": "As of 2023, who have served as the previous UN Secretary-General?",
+        "answer": [
+            "Ban Ki-moon",
+            "Kofi Annan",
+            "Boutros Boutros-Ghali",
+            "Javier Perez de Cuellar",
+            "Kurt Waldheim",
+            "U Thant",
+            "Dag Hammarskj\u00f6ld",
+            "Trygve Lie"
+        ]
+    },
+    {
+        "question": "Who were the full-name Justices of the U.S. Supreme Court in the year 2008?",
+        "answer": [
+            "John Paul Stevens",
+            "Antonin Scalia",
+            "Anthony Kennedy",
+            "David Souter",
+            "Clarence Thomas",
+            "Ruth Bader Ginsburg",
+            "Stephen Breyer",
+            "John Roberts",
+            "Samuel Alito"
+        ]
+    },
+    {
+        "question": "Who ascended to the throne of England as a result of the Glorious Revolution in 1688?",
+        "answer": [
+            "William III of England",
+            "Mary II of England"
+        ]
+    },
+    {
+        "question": "List boroughs of New York City.",
+        "answer": [
+            "Brooklyn",
+            "Queens",
+            "The Bronx",
+            "Staten Island",
+            "Manhattan"
+        ]
+    },
+    {
+        "question": "List the names of the five towns comprising Cinque Terre.",
+        "answer": [
+            "Manarola",
+            "Corniglia",
+            "Vernazza",
+            "Riomaggiore",
+            "Monterosso al Mare"
+        ]
+    },
+    {
+        "question": "What are the provinces and territories in Canada, as recognized officially?",
+        "answer": [
+            "Alberta",
+            "British Columbia",
+            "Manitoba",
+            "New Brunswick",
+            "Newfoundland and Labrador",
+            "Nova Scotia",
+            "Ontario",
+            "Prince Edward Island",
+            "Quebec",
+            "Saskatchewan",
+            "Northwest Territories",
+            "Nunavut",
+            "Yukon"
+        ]
+    },
+    {
+        "question": "What are the countries that border the Caspian Sea?",
+        "answer": [
+            "Azerbaijan",
+            "Kazakhstan",
+            "Russia",
+            "Iran",
+            "Turkmenistan"
+        ]
+    },
+    {
+        "question": "List the states that comprise the New England region.",
+        "answer": [
+            "Connecticut",
+            "Massachusetts",
+            "Vermont",
+            "Maine",
+            "Rhode Island",
+            "New Hampshire"
+        ]
+    },
+    {
+        "question": "List the top 10 largest countries in Africa based on their total land area.",
+        "answer": [
+            "Algeria",
+            "Democratic Republic of the Congo",
+            "Sudan",
+            "Libya",
+            "Chad",
+            "Niger",
+            "Angola",
+            "Mali",
+            "South Africa",
+            "Ethiopia"
+        ]
+    },
+    {
+        "question": "Which countries have Russian as one of their official languages?",
+        "answer": [
+            "Russia",
+            "Belarus",
+            "Kazakhstan",
+            "Kyrgyzstan"
+        ]
+    },
+    {
+        "question": "What are the names of the U.S. states that are not physically connected to the contiguous United States?",
+        "answer": [
+            "Alaska",
+            "Hawaii"
+        ]
+    },
+    {
+        "question": "List the states in the United States where rubies have been found.",
+        "answer": [
+            "Wyoming",
+            "South Carolina",
+            "North Carolina",
+            "Montana"
+        ]
+    },
+    {
+        "question": "What are the names of the dams located on the Missouri River within the state of South Dakota?",
+        "answer": [
+            "Oahe Dam",
+            "Gavins Point Dam",
+            "Fort Randall Dam",
+            "Big Bend Dam"
+        ]
+    },
+    {
+        "question": "What are the names of the three rivers that converge at Pittsburgh, Pennsylvania?",
+        "answer": [
+            "Monongahela",
+            "Allegheny",
+            "Ohio"
+        ]
+    },
+    {
+        "question": "What are the official full names of towns in New Jersey that begin with the prefix 'South'?",
+        "answer": [
+            "South Orange Village",
+            "South Hackensack",
+            "South Bound Brook",
+            "South Amboy",
+            "South Brunswick",
+            "South Toms River",
+            "South River",
+            "Southampton Township",
+            "South Plainfield",
+            "South Harrison Township",
+            "South Belmar"
+        ]
+    },
+    {
+        "question": "List the landlocked countries in South America.",
+        "answer": [
+            "Bolivia",
+            "Paraguay"
+        ]
+    },
+    {
+        "question": "Which South American countries have portions of the Andes Mountains within their borders?",
+        "answer": [
+            "Venezuela",
+            "Argentina",
+            "Ecuador",
+            "Peru",
+            "Colombia",
+            "Chile",
+            "Bolivia"
+        ]
+    },
+    {
+        "question": "As of 2024, what are the five largest cities in Washington state by population?",
+        "answer": [
+            "Seattle",
+            "Spokane",
+            "Tacoma",
+            "Vancouver",
+            "Bellevue"
+        ]
+    },
+    {
+        "question": "What are the specific area codes assigned to Los Angeles, CA?",
+        "answer": [
+            "213",
+            "310",
+            "323",
+            "562",
+            "661",
+            "747",
+            "818",
+            "840",
+            "909"
+        ]
+    },
+    {
+        "question": "What are the names of the two countries that share a land border with Costa Rica?",
+        "answer": [
+            "Panama",
+            "Nicaragua"
+        ]
+    },
+    {
+        "question": "Which countries, recognized as part of South America according to the United Nations geoscheme, qualified for the 2018 FIFA World Cup?",
+        "answer": [
+            "Brazil",
+            "Uruguay",
+            "Argentina",
+            "Colombia",
+            "Peru"
+        ]
+    },
+    {
+        "question": "What are the full official names of the national parks located in Alberta, Canada?",
+        "answer": [
+            "Banff National Park",
+            "Jasper National Park",
+            "Waterton Lakes National Park",
+            "Elk Island National Park",
+            "Wood Buffalo National Park"
+        ]
+    },
+    {
+        "question": "What are the five largest cities in South Carolina by population by 2024?",
+        "answer": [
+            "Charleston",
+            "Columbia",
+            "North Charleston",
+            "Mount Pleasant",
+            "Rock Hill"
+        ]
+    },
+    {
+        "question": "List the countries in South America where the Amazon Rainforest is located.",
+        "answer": [
+            "Peru",
+            "Colombia",
+            "Brazil",
+            "Venezuela",
+            "Ecuador",
+            "Bolivia",
+            "Guyana",
+            "Suriname",
+            "French Guiana"
+        ]
+    },
+    {
+        "question": "Which specific cities in the USA have hosted the Winter Olympic Games?",
+        "answer": [
+            "Lake Placid",
+            "Squaw Valley",
+            "Salt Lake City"
+        ]
+    },
+    {
+        "question": "What are the standard zip codes for Myrtle Beach, South Carolina?",
+        "answer": [
+            "29572",
+            "29575",
+            "20577",
+            "29578",
+            "29579"
+        ]
+    },
+    {
+        "question": "What are the names of the European countries with which mainland France shares its land border?",
+        "answer": [
+            "Spain",
+            "Belgium",
+            "Monaco",
+            "Andorra",
+            "Switzerland",
+            "Germany",
+            "Italy",
+            "Luxembourg"
+        ]
+    },
+    {
+        "question": "As of the latest parliamentary data, which specific states and union territories in India have exactly one seat in the Lok Sabha?",
+        "answer": [
+            "Chandigarh",
+            "Daman and Diu",
+            "Puducherry",
+            "Mizoram",
+            "Sikkim",
+            "Andaman and Nicobar Islands",
+            "Nagaland",
+            "Dadra and Nagar Haveli",
+            "Lakshadweep"
+        ]
+    },
+    {
+        "question": "List the specific names of land reservations in Florida where the Seminole Tribe is based.",
+        "answer": [
+            "Big Cypress Reservation",
+            "Brighton Reservation",
+            "Hollywood Reservation",
+            "Immokalee Reservation",
+            "Tampa Reservation",
+            "Fort Pierce Reservation"
+        ]
+    },
+    {
+        "question": "Which U.S. states currently have the Eastern Oyster as their official state seashell?",
+        "answer": [
+            "Mississippi",
+            "Virginia"
+        ]
+    },
+    {
+        "question": "Which countries does the Euphrates River significantly flow through?",
+        "answer": [
+            "Turkey",
+            "Syria",
+            "Iraq"
+        ]
+    },
+    {
+        "question": "List countries known as of 2024 where holders of a Lebanese passport can enter without requiring a visa in any conditions.",
+        "answer": [
+            "Barbados",
+            "Dominica",
+            "Ecuador",
+            "Georgia",
+            "Haiti",
+            "Iran",
+            "Jordan",
+            "Malaysia",
+            "Micronesia",
+            "Oman",
+            "Qatar",
+            "Rwanda",
+            "Suriname",
+            "Turkey",
+            "Samoa"
+        ]
+    },
+    {
+        "question": "Which two oceans are connected by the Panama Canal?",
+        "answer": [
+            "Pacific Ocean",
+            "Atlantic Ocean"
+        ]
+    },
+    {
+        "question": "List the countries that are traditionally considered part of the Indian subcontinent.",
+        "answer": [
+            "India",
+            "Pakistan",
+            "Nepal",
+            "Bangladesh",
+            "Bhutan",
+            "Sri Lanka",
+            "Maldives"
+        ]
+    },
+    {
+        "question": "List countries in Europe where driving on the left is the rule.",
+        "answer": [
+            "United Kingdom",
+            "Ireland",
+            " Cyprus",
+            "Malta"
+        ]
+    },
+    {
+        "question": "List the cities that fall within the boundaries of San Luis Obispo County, California.",
+        "answer": [
+            "San Luis Obispo",
+            "Grover Beach",
+            "Arroyo Grande",
+            "Atascadero",
+            "Morro Bay",
+            "Paso Robles",
+            "Pismo Beach"
+        ]
+    },
+    {
+        "question": "List the NFL teams Michael Oher played for during his professional career.",
+        "answer": [
+            "Baltimore Ravens",
+            "Tennessee Titans",
+            "Carolina Panthers"
+        ]
+    },
+    {
+        "question": "Which NBA teams did Shaquille O'Neal play for during his professional basketball playing career?",
+        "answer": [
+            "Miami Heat",
+            "Cleveland Cavaliers",
+            "Boston Celtics",
+            "Orlando Magic",
+            "Los Angeles Lakers",
+            "Phoenix Suns"
+        ]
+    },
+    {
+        "question": "Which players did the Phillies acquire in exchange for Jimmy Rollins in December 2014?",
+        "answer": [
+            "Zach Eflin",
+            "Tom Windle"
+        ]
+    },
+    {
+        "question": "Who are the female athletes with the most Olympic ice hockey gold medals?",
+        "answer": [
+            "Jayna Hefford",
+            "Hayley Wickenheiser"
+        ]
+    },
+    {
+        "question": "What are the names of former or present NBA players who played significant roles in the movie Uncle Drew?",
+        "answer": [
+            "Reggie Miller",
+            "Shaquille O'Neal",
+            "Chris Webber",
+            "Nate Robinson",
+            "Kyrie Irving"
+        ]
+    },
+    {
+        "question": "Who are the current primary owners of the Kolkata Knight Riders IPL team as of 2023?",
+        "answer": [
+            "Shahrukh Khan",
+            "Juhi Chawla",
+            "Jay Mehta"
+        ]
+    },
+    {
+        "question": "Who were Vince Carter's teammates at North Carolina during the 1997-1998 basketball season?",
+        "answer": [
+            "Brendan Haywood",
+            "Shammond Williams",
+            "Makhtar N\\'Diaye",
+            "Ed Cota",
+            "Michael Booker",
+            "Ademola Okulaja",
+            "Terrence Newby",
+            "Scott Williams",
+            "Max Owens",
+            "Orlando Mel\u00e9ndez",
+            "Antawn Jamison",
+            "Brad Frederick",
+            "Brian Bersticker"
+        ]
+    },
+    {
+        "question": "Who were the original members of the Philadelphia Flyers' 'Legion of Doom' line in the 1990s?",
+        "answer": [
+            "Mikael Renberg",
+            "Eric Lindros",
+            "John LeClair"
+        ]
+    },
+    {
+        "question": "What are the current names of the specific cities in China that were designated as treaty ports in the agreements negotiated between 1842 and 1844?",
+        "answer": [
+            "Ningbo",
+            "Guangzhou",
+            "Shanghai",
+            "Xiamen",
+            "Fuzhou"
+        ]
+    },
+    {
+        "question": "What are the specific towns where the battle of Lexington and Concord occurred?",
+        "answer": [
+            "Concord",
+            "Lexington",
+            "Lincoln",
+            "Menotomy",
+            "Cambridge"
+        ]
+    },
+    {
+        "question": "List the cities that served as the capital of the United States before the establishment of the permanent capital in Washington D.C.",
+        "answer": [
+            "New York City",
+            "Philadelphia",
+            "York",
+            "Lancaster",
+            "Pennsylvania",
+            "Annapolis",
+            "Princeton",
+            "Trenton"
+        ]
+    },
+    {
+        "question": "Which cities did the US target with atomic bombs during World War II?",
+        "answer": [
+            "Hiroshima",
+            "Nagasaki"
+        ]
+    },
+    {
+        "question": "On which continents was the Roman Empire located during the noted peak expansion era of 117 AD?",
+        "answer": [
+            "Asia",
+            "Europe",
+            "Africa"
+        ]
+    },
+    {
+        "question": "Identify the three countries that have played the most significant military roles in the Kashmir conflict.",
+        "answer": [
+            "India",
+            "Pakistan",
+            "China"
+        ]
+    },
+    {
+        "question": "Identify the present-day U.S. states where permanent Spanish missions were established during the colonial era.",
+        "answer": [
+            "Texas",
+            "California",
+            "New Mexico",
+            "Arizona",
+            "Florida",
+            "Georgia"
+        ]
+    },
+    {
+        "question": "What are the specific names of the mining sites where copper was historically mined in Wales?",
+        "answer": [
+            "Great Orme",
+            "Parys Mountain"
+        ]
+    },
+    {
+        "question": "Which countries provided direct military support to the American colonists during the American Revolution?",
+        "answer": [
+            "France",
+            "Spain",
+            "Netherlands"
+        ]
+    },
+    {
+        "question": "Which current U.S. states were inhabited by the Chickasaw people before the Trail of Tears?",
+        "answer": [
+            "Mississippi",
+            "Alabama",
+            "Tennessee",
+            "Kentucky"
+        ]
+    },
+    {
+        "question": "Which countries are the historical geographical origins of the surname Haynes?",
+        "answer": [
+            "England",
+            "Wales",
+            "Scotland"
+        ]
+    },
+    {
+        "question": "List the countries that were politically dominated by the Soviet Union immediately following World War II.",
+        "answer": [
+            "Romania",
+            "Albania",
+            "Hungary",
+            "Bulgaria",
+            "East Germany",
+            "Czechoslovakia",
+            "Poland",
+            "Soviet Union"
+        ]
+    },
+    {
+        "question": "From which countries did the Magi originate, as described in the most recognized Christian traditions?",
+        "answer": [
+            "Arabia",
+            "Persia",
+            "India"
+        ]
+    },
+    {
+        "question": "What are the names of the five towns that were originally designated as the Cinque Ports?",
+        "answer": [
+            "Hastings",
+            "New Romney",
+            "Hythe",
+            "Dover",
+            "Sandwich"
+        ]
+    },
+    {
+        "question": "Which countries were the primary adversaries of the US in military conflict during World War II?",
+        "answer": [
+            "Japan",
+            "Italy",
+            "Germany"
+        ]
+    },
+    {
+        "question": "What are the present-day U.S. states that were originally part of the Dutch colony of New Netherland?",
+        "answer": [
+            "Connecticut",
+            "Delaware",
+            "New York",
+            "New Jersey",
+            "Maryland"
+        ]
+    },
+    {
+        "question": "What were the first, second, and third capital cities of the Kingdom of Italy, during its existence from 1861 to 1946?",
+        "answer": [
+            "Turin",
+            "Florence",
+            "Rome"
+        ]
+    },
+    {
+        "question": "Which cities did the Abbasids establish or designate as their capitals during their reign?",
+        "answer": [
+            "Baghdad",
+            "Raqqa",
+            "Samarra",
+            "Cairo"
+        ]
+    },
+    {
+        "question": "Which two African countries remained free from European imperial control during the Scramble for Africa period (1881-1914)?",
+        "answer": [
+            "Ethiopia",
+            "Liberia"
+        ]
+    },
+    {
+        "question": "What are the four major bowls in the College Football Playoff system?",
+        "answer": [
+            "Cotton Bowl",
+            "Fiesta Bowl",
+            "Orange Bowl",
+            "Sugar Bowl"
+        ]
+    },
+    {
+        "question": "What are the three traditional colors associated with Mardi Gras?",
+        "answer": [
+            "green",
+            "gold",
+            "purple"
+        ]
+    },
+    {
+        "question": "Which specific organizations financially contributed to the construction of Wembley Stadium?",
+        "answer": [
+            "Sport England",
+            [
+                "WNSL",
+                "Wembley National Stadium Limited"
+            ],
+            "the Football Association",
+            "London Development Agency",
+            "Department for Digital",
+            "Culture",
+            "Media and Sport"
+        ]
+    },
+    {
+        "question": "What are the official primary and secondary team colors of the Arizona Diamondbacks as of the current season?",
+        "answer": [
+            "White",
+            "Sedona Red",
+            "Sonoran Sand",
+            "Teal",
+            "Black"
+        ]
+    },
+    {
+        "question": "Which teams are in the AFC East division along with the New England Patriots as of the latest NFL season?",
+        "answer": [
+            "New York Jets",
+            "Buffalo Bills",
+            "Miami Dolphins"
+        ]
+    },
+    {
+        "question": "What are the tier names in the hierarchical order of Minor League Baseball?",
+        "answer": [
+            "Rookie",
+            "Low-A",
+            "High-A",
+            [
+                "AA",
+                "Double-A"
+            ],
+            [
+                "AAA",
+                "Triple-A"
+            ]
+        ]
+    },
+    {
+        "question": "Which NFL teams have won the Super Bowl in two or more consecutive years?",
+        "answer": [
+            "Pittsburgh Steelers",
+            "Miami Dolphins",
+            "Green Bay Packers",
+            "Dallas Cowboys",
+            "San Francisco 49ers",
+            "Denver Broncos",
+            "New England Patriots",
+            "Kansas City Chiefs"
+        ]
+    },
+    {
+        "question": "Who were the registered ownership groups of Justify, the winner of the 2018 Triple Crown in horse racing?",
+        "answer": [
+            "China Horse Club",
+            "Head of Plains Partners",
+            "Starlight Racing",
+            "WinStar Farm",
+            "Carcone Racing Stable"
+        ]
+    },
+    {
+        "question": "List the names of NFL teams that have lost four or more Super Bowls, ordered by the number of these losses.",
+        "answer": [
+            "Denver Broncos",
+            "New England Patriots",
+            "Buffalo Bills",
+            "Minnesota Vikings"
+        ]
+    },
+    {
+        "question": "What are the roles of the playable characters in Battlefield 1?",
+        "answer": [
+            "Harlem Hellfighters",
+            "British tank driver",
+            "ANZAC runner",
+            "Royal Flying Corps fighter pilot",
+            "Bedouin warrior"
+        ]
+    },
+    {
+        "question": "What are the official gaming consoles for playing The Legend of Zelda: Breath of the Wild?",
+        "answer": [
+            "Wii U",
+            "Nintendo Switch"
+        ]
+    },
+    {
+        "question": "List the countries that have ever won the FIFA World Cup as of 2023.",
+        "answer": [
+            "Brazil",
+            "Germany",
+            "Italy",
+            "Argentina",
+            "Uruguay",
+            "England",
+            "France",
+            "Spain"
+        ]
+    },
+    {
+        "question": "What are the primary official colors of the Seattle Seahawks?",
+        "answer": [
+            "College Navy",
+            "Action Green",
+            "Wolf Grey"
+        ]
+    },
+    {
+        "question": "What are the names of the three peaks that comprise the Yorkshire Three Peaks challenge?",
+        "answer": [
+            "Whernside",
+            "Ingleborough",
+            "Pen-y-ghent"
+        ]
+    },
+    {
+        "question": "What are the colors represented on the Olympic flag?",
+        "answer": [
+            "yellow",
+            "red",
+            "blue",
+            "black",
+            "green"
+        ]
+    },
+    {
+        "question": "What are some car models from Ford that start with the letter 'F' and include the 'Ford' prefix in the answer?",
+        "answer": [
+            "Ford Fiesta",
+            "Ford Falcon",
+            "Ford Focus",
+            "Ford Fusion",
+            "Ford F-150",
+            "Ford F-250",
+            "Ford F-350"
+        ]
+    },
+    {
+        "question": "Who were the foundational scientists directly responsible for formulating the principles of the cell theory?",
+        "answer": [
+            "Matthias Jakob Schleiden",
+            "Theodor Schwann",
+            "Rudolf Virchow"
+        ]
+    },
+    {
+        "question": "Who were the primary scientists to first propose the double helical model of DNA?",
+        "answer": [
+            "Francis Crick",
+            "James Watson"
+        ]
+    },
+    {
+        "question": "Who were the key scientists responsible for initially identifying the depletion of the Earth's ozone layer?",
+        "answer": [
+            "Joe Farman",
+            "Jonathan Shanklin",
+            "Brian Gardiner"
+        ]
+    },
+    {
+        "question": "Who were the two naturalists who first formulated the theory of natural selection?",
+        "answer": [
+            "Charles Darwin",
+            "Alfred Russel Wallace"
+        ]
+    },
+    {
+        "question": "What are the names of the psychologists who developed the Baddeley-Hitch model of working memory?",
+        "answer": [
+            "Alan Baddeley",
+            "Graham Hitch"
+        ]
+    },
+    {
+        "question": "Who directly contributed to the formulation of the law of conservation of electric charge?",
+        "answer": [
+            "Benjamin Franklin",
+            "Michael Faraday",
+            "William Watson"
+        ]
+    },
+    {
+        "question": "Who were the primary developers involved in the creation of the Java programming language?",
+        "answer": [
+            "James Gosling",
+            "Patrick Naughton",
+            "Mike Sheridan"
+        ]
+    },
+    {
+        "question": "Who were the two boxers that competed in the world heavyweight boxing title match during the 1974 event known as the Rumble in the Jungle?",
+        "answer": [
+            "Muhammad Ali",
+            "George Foreman"
+        ]
+    },
+    {
+        "question": "Which two NFL teams competed in the inaugural Super Bowl?",
+        "answer": [
+            "Kansas City Chiefs",
+            "Green Bay Packers"
+        ]
+    },
+    {
+        "question": "What are the names of individuals who lit the Olympic cauldron at the London 2012 Olympic Games?",
+        "answer": [
+            "Desir\u00e8e Henry",
+            "Katie Kirk",
+            "Aidan Reynolds",
+            "Adelle Tracey",
+            "Callum Airlie",
+            "Jordan Duckitt",
+            "Cameron MacRitchie"
+        ]
+    },
+    {
+        "question": "Which teams did England compete against in the group stage of the 2002 FIFA World Cup?",
+        "answer": [
+            "Sweden",
+            "Nigeria",
+            "Argentina"
+        ]
+    },
+    {
+        "question": "Who were the performers during the Super Bowl LII halftime show in February 2018?",
+        "answer": [
+            "Justin Timberlake",
+            "University of Minnesota Marching Band",
+            "The Tennessee Kids"
+        ]
+    },
+    {
+        "question": "Which two national football teams competed in the final match of the 2014 FIFA World Cup?",
+        "answer": [
+            "Argentina",
+            "Germany"
+        ]
+    },
+    {
+        "question": "Which AFL football teams played in the 1998 AFL Grand Final?",
+        "answer": [
+            "Adelaide Crows",
+            "North Melbourne Kangaroos"
+        ]
+    },
+    {
+        "question": "Which three African countries officially submitted bids to host the 2010 FIFA World Cup?",
+        "answer": [
+            "South Africa",
+            "Egypt",
+            "Morocco",
+            "Libya",
+            "Tunisia"
+        ]
+    },
+    {
+        "question": "What are the official names of the four major golf championships on the PGA Tour?",
+        "answer": [
+            "The Masters Tournament",
+            "The U.S. Open",
+            "The Open Championship",
+            "The PGA Championship"
+        ]
+    },
+    {
+        "question": "Which two NFL teams participated in the 2017 Hall of Fame Game?",
+        "answer": [
+            "Arizona Cardinals",
+            "Dallas Cowboys"
+        ]
+    },
+    {
+        "question": "As of the 2023 NFL season, which teams are in the NFC South division along with the Carolina Panthers?",
+        "answer": [
+            "Atlanta Falcons",
+            "Tampa Bay Buccaneers",
+            "New Orleans Saints",
+            "Carolina Panther"
+        ]
+    },
+    {
+        "question": "In which teams did France play against in the FIFA World Cup finals as of 2022?",
+        "answer": [
+            "Croatia",
+            "Italy",
+            "Argentina"
+        ]
+    },
+    {
+        "question": "What are the names of finalists in the 2017 season of America's Got Talent?",
+        "answer": [
+            "Evie Clair",
+            "Diavolo",
+            "Angelica Hale",
+            "Light Balance",
+            "Darci Lynne",
+            "Kechi Okwuchi",
+            "Sara and Hero",
+            "Preacher Lawson",
+            "Chase Goehring",
+            "Mandy Harvey"
+        ]
+    },
+    {
+        "question": "Who were the opening acts for the Green Day tour in 2017 worldwide?",
+        "answer": [
+            "Jesse Malin",
+            "Catfish and the Bottlemen",
+            "The Interrupters",
+            "Rancid",
+            "Against Me!",
+            "Dog Party"
+        ]
+    },
+    {
+        "question": "List the teams that the Denver Broncos defeated in their Super Bowl victories.",
+        "answer": [
+            "Atlanta Falcons",
+            "Green Bay Packers",
+            "Carolina Panthers"
+        ]
+    },
+    {
+        "question": "What are the full names of both teams that played in the 2001 Australian Football League (AFL) Grand Final?",
+        "answer": [
+            "Essendon Bombers",
+            "Brisbane Lions"
+        ]
+    },
+    {
+        "question": "Which NFL teams have defeated the New England Patriots in Super Bowl matches?",
+        "answer": [
+            "Philadelphia Eagles",
+            "New York Giants",
+            "Chicago Bears",
+            "Dallas Cowboys"
+        ]
+    },
+    {
+        "question": "Which football teams were automatically promoted to the English Premier League for the 2018-19 season, excluding any teams promoted through play-off matches?",
+        "answer": [
+            "Fulham",
+            "Cardiff City",
+            "Wolverhampton Wanderers"
+        ]
+    },
+    {
+        "question": "What were the exact years (YYYY-YYYY) when Brad Johnson played for the Minnesota Vikings?",
+        "answer": [
+            "1992-1998",
+            "2005-2006"
+        ]
+    },
+    {
+        "question": "List the specific years the Detroit Tigers won the World Series championships?",
+        "answer": [
+            "1935",
+            "1945",
+            "1968",
+            "1984"
+        ]
+    },
+    {
+        "question": "In which specific years did the US women's soccer team win the FIFA Women's World Cup?",
+        "answer": [
+            "1991",
+            "1999",
+            "2015",
+            "2019"
+        ]
+    },
+    {
+        "question": "What are the year intervals (YYYY-YYYY) during which Michael Jordan played basketball in the NBA?",
+        "answer": [
+            "1984-1993",
+            "1995-1998",
+            "2001-2003"
+        ]
+    },
+    {
+        "question": "List specific NBA teams by their exact names during the time Pete Maravich was a player for each.",
+        "answer": [
+            "Boston Celtics",
+            "Atlanta Hawks",
+            "New Orleans Jazz",
+            "Utah Jazz"
+        ]
+    },
+    {
+        "question": "In which calendar years did the Super Bowl games featuring the Buffalo Bills occur?",
+        "answer": [
+            "1990",
+            "1991",
+            "1992",
+            "1993"
+        ]
+    },
+    {
+        "question": "What are the specific NHL seasons (YYYY-YY) during which the New York Rangers won the Stanley Cup?",
+        "answer": [
+            "1927-28",
+            "1932-33",
+            "1939-40",
+            "1993-94"
+        ]
+    },
+    {
+        "question": "In which years did the Philadelphia Eagles participate in the Super Bowl finals?",
+        "answer": [
+            "1980",
+            "2004",
+            "2017",
+            "2022"
+        ]
+    },
+    {
+        "question": "What are the years the Chicago Cubs have won the World Series?",
+        "answer": [
+            "1907",
+            "1908",
+            "2016"
+        ]
+    },
+    {
+        "question": "List the specific years when Red Rum won the Grand National race.",
+        "answer": [
+            "1973",
+            "1974",
+            "1977"
+        ]
+    },
+    {
+        "question": "In which FIFA World Cup years did the Republic of Ireland participate?",
+        "answer": [
+            "1990",
+            "1994",
+            "2002"
+        ]
+    },
+    {
+        "question": "What are the specific years in which England reached exactly the semi-finals of the World Cup?",
+        "answer": [
+            "1966",
+            "1990",
+            "2018"
+        ]
+    },
+    {
+        "question": "List the years when New Zealand won the America's Cup.",
+        "answer": [
+            "1995",
+            "2000",
+            "2017",
+            "2021"
+        ]
+    },
+    {
+        "question": "What are the names of the seven continents of the world?",
+        "answer": [
+            "Africa",
+            "South America",
+            "Australia",
+            "North America",
+            "Asia",
+            "Europe",
+            "Antarctica"
+        ]
+    },
+    {
+        "question": "List the emirates that make up the United Arab Emirates.",
+        "answer": [
+            "Abu Dhabi",
+            "Ajman",
+            "Sharjah",
+            "Dubai",
+            "Fujairah",
+            "Ras Al Khaimah",
+            "Umm Al Quwain"
+        ]
+    },
+    {
+        "question": "What are the constituent countries of the United Kingdom?",
+        "answer": [
+            "Northern Ireland",
+            "Scotland",
+            "Wales",
+            "England"
+        ]
+    },
+    {
+        "question": "What are the official names of the metropolitan municipalities in South Africa as recognized by the government?",
+        "answer": [
+            "Mangaung Metropolitan Municipality",
+            "Nelson Mandela Bay Metropolitan Municipality",
+            "eThekwini Metropolitan Municipality",
+            "City of Tshwane Metropolitan Municipality",
+            "City of Johannesburg Metropolitan Municipality",
+            "Buffalo City Metropolitan Municipality",
+            "City of Cape Town Metropolitan Municipality",
+            "City of Ekurhuleni Metropolitan Municipality"
+        ]
+    },
+    {
+        "question": "List members of the Ivy League, a specific group of prestigious universities predominantly in the Northeastern United States.",
+        "answer": [
+            "Yale University",
+            "Dartmouth College",
+            "University of Pennsylvania",
+            "Brown University",
+            "Princeton University",
+            "Harvard University",
+            "Columbia University",
+            "Cornell University"
+        ]
+    },
+    {
+        "question": "What are the three specific court levels within the Illinois state judicial system?",
+        "answer": [
+            "Supreme Court of Illinois",
+            "Illinois Appellate Court",
+            "Illinois Circuit Courts"
+        ]
+    },
+    {
+        "question": "List sovereign countries that have official names starting with the letter D.",
+        "answer": [
+            "Dominica",
+            "Dominican Republic",
+            "Denmark",
+            "Djibouti"
+        ]
+    },
+    {
+        "question": "What are the official names of the five Great Lakes in North America, including the word \"Lake\" where applicable?",
+        "answer": [
+            "Lake Huron",
+            "Lake Ontario",
+            "Lake Michigan",
+            "Lake Erie",
+            "Lake Superior"
+        ]
+    },
+    {
+        "question": "Which mountain railway lines in India are designated as UNESCO World Heritage sites?",
+        "answer": [
+            "Darjeeling Himalayan Railway",
+            "Nilgiri Mountain Railway",
+            "Kalka Shimla Railway",
+            "Chhatrapati Shivaji Terminus"
+        ]
+    },
+    {
+        "question": "What are the primary mineral resources found in North Korea?",
+        "answer": [
+            "Magnesite",
+            "Zinc",
+            "Iron",
+            "Tungsten ore",
+            "Coal",
+            "Iron ore",
+            "Nickel",
+            "Gold",
+            "anthracite coal",
+            "Limestone",
+            "Dolomite",
+            "Pyrophyllite",
+            "Quartz",
+            "Graphite",
+            "Barite",
+            "Apatite",
+            "Molybdenite"
+        ]
+    },
+    {
+        "question": "What are the names of languages from the Philippines that have no remaining native speakers and are considered extinct?",
+        "answer": [
+            "Katabaga",
+            "Villaviciosa Agta",
+            "Tayabas Ayta",
+            "Dicamay Agta"
+        ]
+    },
+    {
+        "question": "What are the primary minerals that contribute significantly to Brazil's economy?",
+        "answer": [
+            "iron ore",
+            "tin",
+            "bauxite",
+            "manganese",
+            "gold",
+            "quartz",
+            "diamonds"
+        ]
+    },
+    {
+        "question": "What are the primary languages spoken by the majority of residents in the Grand Cayman Islands?",
+        "answer": [
+            "English",
+            "Spanish"
+        ]
+    },
+    {
+        "question": "What are the common Japanese names used for the nation of Japan?",
+        "answer": [
+            "Nippon",
+            "Nihon"
+        ]
+    },
+    {
+        "question": "What are the names of the four tectonic plates predominantly located beneath the Atlantic Ocean?",
+        "answer": [
+            "North American Plate",
+            "South American Plate",
+            "African Plate",
+            "Eurasian Plate"
+        ]
+    },
+    {
+        "question": "What are the official terms used to describe the two primary climatic seasons in the Philippines?",
+        "answer": [
+            "the dry season",
+            "the rainy season"
+        ]
+    },
+    {
+        "question": "What specific types of agricultural products is the Wachau Valley known for?",
+        "answer": [
+            "grapes",
+            "apricots"
+        ]
+    },
+    {
+        "question": "What are the official languages of South Africa?",
+        "answer": [
+            "Zulu",
+            "Xhosa",
+            "Afrikaans",
+            "English",
+            "Southern Sotho",
+            "Tswana",
+            "Tsonga",
+            "Swazi",
+            "Venda",
+            "Southern Ndebele",
+            "Sepedi",
+            "South African Sign Language"
+        ]
+    },
+    {
+        "question": "What are the names of the two major rivers in Iraq?",
+        "answer": [
+            "Euphrates",
+            "Tigris"
+        ]
+    },
+    {
+        "question": "What are the main types of tree crops commercially cultivated in Liberia?",
+        "answer": [
+            "Timber",
+            "Palm oil",
+            "Rubber",
+            "cocoa"
+        ]
+    },
+    {
+        "question": "What are the complete titles of each book in J.R.R. Tolkien's The Lord of the Rings trilogy?",
+        "answer": [
+            "The Fellowship of the Ring",
+            "The Two Towers",
+            "The Return of the King"
+        ]
+    },
+    {
+        "question": "Which books in the Bible mention the gifts of the Spirit?",
+        "answer": [
+            "Peter",
+            "Corinthians",
+            "Ephesians",
+            "Romans",
+            "Timothy"
+        ]
+    },
+    {
+        "question": "Name the publishers of 'The Adventures of Huckleberry Finn' specifically in the United States and in the United Kingdom.",
+        "answer": [
+            "Charles L. Webster And Company",
+            "Chatto & Windus"
+        ]
+    },
+    {
+        "question": "What are the primary books of the Bible that detail the life and reign of King David?",
+        "answer": [
+            "Samuel",
+            "Chronicles"
+        ]
+    },
+    {
+        "question": "What are the recognized literary genres of the book series 'A Series of Unfortunate Events'?",
+        "answer": [
+            "Black comedy', 'Gothic fiction', \"Children's fiction",
+            "Absurdist fiction",
+            "Mystery",
+            "Comedy-Drama",
+            "Steampunk"
+        ]
+    },
+    {
+        "question": "What are the primary literary genres of the novel 'Gulliver's Travels'?",
+        "answer": [
+            "Science Fiction",
+            "Satire"
+        ]
+    },
+    {
+        "question": "List specific fairy tales that are explicitly included in the plot of the musical 'Into the Woods'.",
+        "answer": [
+            "Jack and the Beanstalk",
+            "Cinderella",
+            "Little Red Riding Hood",
+            "Rapunzel"
+        ]
+    },
+    {
+        "question": "On which specific books by Lewis Carroll are the lyrics of Jefferson Airplane's song 'White Rabbit' based?",
+        "answer": [
+            "Alice's Adventures in Wonderland",
+            "Through the Looking-Glass"
+        ]
+    },
+    {
+        "question": "What are the names of the Deathly Hallows in the Harry Potter series?",
+        "answer": [
+            "The Elder Wand",
+            "The Resurrection Stone",
+            "The Cloak of Invisibility"
+        ]
+    },
+    {
+        "question": "What are the names of Unforgivable Curses from the Harry Potter books?",
+        "answer": [
+            "Imperio",
+            "Crucio",
+            "Avada Kedavra"
+        ]
+    },
+    {
+        "question": "What are the titles in The Hunger Games book series?",
+        "answer": [
+            "The Hunger Games",
+            "Catching Fire",
+            "Mockingjay"
+        ]
+    },
+    {
+        "question": "What specific terms does Plato use in his dialogues to describe the method of questioning employed by Socrates?",
+        "answer": [
+            "maieutics",
+            "elenctic method",
+            "Socratic method",
+            "method of elenchus"
+        ]
+    },
+    {
+        "question": "What books are considered wisdom literature in the Christian Bible?",
+        "answer": [
+            "Psalms",
+            "Proverbs",
+            "Job",
+            "Introduction to the Books of Wisdom.",
+            "Songs of Solomon",
+            "Wisdom",
+            "Ecclesiastes"
+        ]
+    },
+    {
+        "question": "What are the titles of the books in 'The Trials of Apollo' series?",
+        "answer": [
+            "The Hidden Oracle",
+            "The Dark Prophecy",
+            "The Burning Maze",
+            "The Tyrant\u2019s Tomb",
+            "The Tower of Nero"
+        ]
+    },
+    {
+        "question": "Who provided the voice and vocal consultant work for BB-8 in \"Star Wars: The Force Awakens\"?",
+        "answer": [
+            "Bill Hader",
+            "Ben Schwartz"
+        ]
+    },
+    {
+        "question": "Who were the main cast members of the film 'How to Marry a Millionaire'?",
+        "answer": [
+            "Betty Grable",
+            "Lauren Bacall",
+            "Marilyn Monroe",
+            "David Wayne",
+            "Rory Calhoun",
+            "Cameron Mitchell",
+            "Alex D\\'Arcy",
+            "Fred Clark",
+            "William Powell"
+        ]
+    },
+    {
+        "question": "Who are the main cast members of the movie 'A Quiet Place'?",
+        "answer": [
+            "Noah Jupe",
+            "John Krasinski",
+            "Emily Blunt",
+            "Millicent Simmonds"
+        ]
+    },
+    {
+        "question": "Who were the main cast members of 'The Big Valley' TV show, listing their names?",
+        "answer": [
+            "Barbara Stanwyck",
+            "Lee Majors",
+            "Linda Evans",
+            "Peter Breck",
+            "Richard Long"
+        ]
+    },
+    {
+        "question": "Who are the lead actors in the movie 'A View to a Kill'?",
+        "answer": [
+            "Roger Moore",
+            "Grace Jones",
+            "Tanya Roberts",
+            "Christopher Walken",
+            "Patrick Macnee"
+        ]
+    },
+    {
+        "question": "Who were the main actors in the 1952 film 'The Greatest Show on Earth'?",
+        "answer": [
+            "Cornel Wilde",
+            "Charlton Heston",
+            "Betty Hutton",
+            "James Stewart"
+        ]
+    },
+    {
+        "question": "Who were the main actors in the movie 'To Kill a Mockingbird'?",
+        "answer": [
+            "Gregory Peck",
+            "Mary Badham",
+            "Phillip Alford",
+            "James Anderson",
+            "Frank Overton",
+            "Ruth White",
+            "Brock Peters",
+            "Paul Fix"
+        ]
+    },
+    {
+        "question": "Who were the cast members of the 'Twilight Zone' episode titled 'The Mind and the Matter'?",
+        "answer": [
+            "Shelley Berman",
+            "Jack Grinnage",
+            "Chet Stratton",
+            "Jeane Wood",
+            "Robert McCord"
+        ]
+    },
+    {
+        "question": "Who are the lead actresses in the film 'Thelma & Louise'?",
+        "answer": [
+            "Susan Sarandon",
+            "Geena Davis"
+        ]
+    },
+    {
+        "question": "Who are the actors in the 2015 film 'Far From the Madding Crowd'?",
+        "answer": [
+            "Matthias Schoenaerts",
+            "Michael Sheen",
+            "Juno Temple",
+            "Tom Sturridge",
+            "Carey Mulligan"
+        ]
+    },
+    {
+        "question": "Who were the main actors in the movie 'West Side Story' (2021 film)?",
+        "answer": [
+            "Ansel Elgort",
+            "Ariana DeBose",
+            "David Alvarez",
+            "Mike Faist",
+            "Rita Moreno",
+            "Rachel Zegler"
+        ]
+    },
+    {
+        "question": "List \"the  characters from the animated series 'The Raggy Dolls' by their commonly known names.",
+        "answer": [
+            "Claude",
+            "Dotty",
+            "Sad Sack",
+            "Princess",
+            "Back-To-Front",
+            "Ragamuffin",
+            "Hi-Fi",
+            "Lucy"
+        ]
+    },
+    {
+        "question": "Who were the main actors in the film 'Butch Cassidy and the Sundance Kid'?",
+        "answer": [
+            "Paul Newman",
+            "Robert Redford",
+            "Katharine Ross"
+        ]
+    },
+    {
+        "question": "Who were the main cast members of the film 'A Tree Grows in Brooklyn'?",
+        "answer": [
+            "Ted Donaldson",
+            "Joan Blondell",
+            "James Dunn",
+            "Lloyd Nolan",
+            "Ruth Nelson",
+            "Peggy Ann Garner",
+            "John Alexander",
+            "Dorothy McGuire",
+            "B.S. Pully",
+            "James Gleason"
+        ]
+    },
+    {
+        "question": "Who were the original cast members of the 1979 movie 'Going in Style'?",
+        "answer": [
+            "Lee Strasberg",
+            "George Burns",
+            "Art Carney",
+            "Charles Hallahan"
+        ]
+    },
+    {
+        "question": "Who starred in 'The Night the Lights Went Out in Georgia'?",
+        "answer": [
+            "Don Stroud",
+            "Kristy McNichol",
+            "Barry Corbin",
+            "Mark Hamill",
+            "Arlen Dean Snyder",
+            "Dennis Quaid"
+        ]
+    },
+    {
+        "question": "What are the full names of the actors who portrayed Fred and George Weasley in the Harry Potter film series?",
+        "answer": [
+            "Oliver Martyn John Phelps",
+            "James Andrew Eric Phelps"
+        ]
+    },
+    {
+        "question": "What are the real names of the actors who played leading roles in 'Ek Hazaaron Mein Meri Behna Hai'?",
+        "answer": [
+            "Karan Tacker",
+            "Krystle D'Souza",
+            "Nia Sharma",
+            "Kushal Tandon"
+        ]
+    },
+    {
+        "question": "Who were the lead actors in the movie 'Gidget Goes Hawaiian'?",
+        "answer": [
+            "James Darren",
+            "Michael Callan",
+            "Deborah Walley"
+        ]
+    },
+    {
+        "question": "Who provided the voice acting for the gargoyle characters in the animated film 'The Hunchback of Notre Dame'?",
+        "answer": [
+            "Jane Withers",
+            "Jason Alexander",
+            "Charles Kimbrough"
+        ]
+    },
+    {
+        "question": "List the full names of the ninja turtle characters from the Teenage Mutant Ninja Turtles group.",
+        "answer": [
+            "Michelangelo",
+            "Leonardo",
+            "Raphael",
+            "Donatello"
+        ]
+    },
+    {
+        "question": "Who were the main cast members in the movie 'A Summer Place'?",
+        "answer": [
+            "Dorothy McGuire",
+            "Richard Egan",
+            "Troy Donahue",
+            "Sandra Dee",
+            "Constance Ford"
+        ]
+    },
+    {
+        "question": "Who were the main cast members in the 1961 film 'Voyage to the Bottom of the Sea'?",
+        "answer": [
+            "Walter Pidgeon",
+            "Barbara Eden",
+            "Peter Lorre",
+            "Joan Fontaine",
+            "Robert Sterling",
+            "Michael Ansara",
+            "Frankie Avalon"
+        ]
+    },
+    {
+        "question": "List the main actors in the film 'The Quiet Man'.",
+        "answer": [
+            "Victor McLaglen",
+            "Maureen O\\'Hara",
+            "Barry Fitzgerald",
+            "John Wayne",
+            "Ward Bond",
+            "Mildred Natwick",
+            "Francis Ford"
+        ]
+    },
+    {
+        "question": "Who were the main cast members of 'Pretty in Pink'?",
+        "answer": [
+            "Harry Dean Stanton",
+            "Andrew McCarthy",
+            "Annie Potts",
+            "James Spader",
+            "Jon Cryer",
+            "Molly Ringwald"
+        ]
+    },
+    {
+        "question": "Who were the main actors in the movie 'Guess Who's Coming to Dinner'?",
+        "answer": [
+            "Sidney Poitier",
+            "Spencer Tracy",
+            "Katharine Hepburn",
+            "Katharine Houghton"
+        ]
+    },
+    {
+        "question": "Who were the credited screenplay writers of the movie 'King Arthur: Legend of the Sword'?",
+        "answer": [
+            "Lionel Wigram",
+            "Joby Harold",
+            "Guy Ritchie"
+        ]
+    },
+    {
+        "question": "Who are the main actors in the movie 'The Lost City of Z'?",
+        "answer": [
+            "Charlie Hunnam",
+            "Sienna Miller",
+            "Robert Pattinson",
+            "Tom Holland"
+        ]
+    },
+    {
+        "question": "What are the names of the actresses who voiced the muses in Disney's 'Hercules'?",
+        "answer": [
+            "LaChanze",
+            "Cheryl Freeman",
+            "Lillias White",
+            "Vaneese Thomas",
+            "Roz Ryan"
+        ]
+    },
+    {
+        "question": "Who were the main actors in the movie 'The Inn of the Sixth Happiness'?",
+        "answer": [
+            "Ingrid Bergman",
+            "Curt J\u00fcrgens",
+            "Robert Donat"
+        ]
+    },
+    {
+        "question": "Who are the main cast members of the movie \"Captain America: The Winter Soldier\" as listed in the movie's opening credits?",
+        "answer": [
+            "Chris Evans",
+            "Samuel L. Jackson",
+            "Scarlett Johansson",
+            "Robert Redford",
+            "Sebastian Stan",
+            "Anthony Mackie",
+            "Cobie Smulders",
+            "Frank Grillo",
+            "Emily VanCamp",
+            "Hayley Atwell"
+        ]
+    },
+    {
+        "question": "List main actors from the film 'The Night of the Grizzly'.",
+        "answer": [
+            "Nancy Kulp",
+            "Martha Hyer",
+            "Clint Walker",
+            "Keenan Wynn",
+            "Jack Elam"
+        ]
+    },
+    {
+        "question": "Who were the cast members of the film 'The Ghost and Mr. Chicken'?",
+        "answer": [
+            "Don Knotts",
+            "Joan Staley",
+            "Liam Redmond",
+            "Dick Sargent",
+            "Sandra Gould",
+            "Skip Homeier"
+        ]
+    },
+    {
+        "question": "Who were the principal cast members of 'Indiana Jones and the Temple of Doom'?",
+        "answer": [
+            "Harrison Ford",
+            "Kate Capshaw",
+            "Amrish Puri",
+            "Roshan Seth",
+            "David Yip",
+            "Philip Stone",
+            "Ke Huy Quan"
+        ]
+    },
+    {
+        "question": "List the main actors in the film 'The Boy in the Plastic Bubble'.",
+        "answer": [
+            "Robert Reed",
+            "Diana Hyland",
+            "Ralph Bellamy",
+            "P.J. Soles",
+            "John Travolta",
+            "Glynnis O\u2019Connor"
+        ]
+    },
+    {
+        "question": "Who were the main actors in the movie 'As Good as It Gets'?",
+        "answer": [
+            "Jack Nicholson",
+            "Helen Hunt",
+            "Greg Kinnear"
+        ]
+    },
+    {
+        "question": "List the main genres of plays written by Shakespeare.",
+        "answer": [
+            "history",
+            "tragedy",
+            "comedy"
+        ]
+    },
+    {
+        "question": "List the years in which New Zealand hosted the Commonwealth Games.",
+        "answer": [
+            "1950",
+            "1974",
+            "1990"
+        ]
+    },
+    {
+        "question": "What are the specific months and years (MM-YYYY) when India conducted nuclear tests at Pokhran?",
+        "answer": [
+            "05-1974",
+            "05-1998"
+        ]
+    },
+    {
+        "question": "As of 2023, list the names of individuals whose remains are interred in the Meditation Garden at Graceland.",
+        "answer": [
+            "Gladys Presley",
+            "Vernon Presley",
+            "Elvis Presley",
+            "Minnie Mae Presley",
+            "Lisa Marie Presley",
+            "Benjamin Keough"
+        ]
+    },
+    {
+        "question": "What were the specific years (YYYY) when the Dome of the Rock's dome was initially painted gold?",
+        "answer": [
+            "1959",
+            "1960",
+            "1961"
+        ]
+    },
+    {
+        "question": "On which specific days  (DD-MM-YYYY) did the Great Fire of London exist?",
+        "answer": [
+            "02-09-1666",
+            "03-09-1666",
+            "04-09-1666",
+            "05-09-1666"
+        ]
+    },
+    {
+        "question": "As of February 1861, list the states that had officially declared secession from the United States.",
+        "answer": [
+            "Florida",
+            "Texas",
+            "Mississippi",
+            "Georgia",
+            "Louisiana",
+            "Alabama"
+        ]
+    },
+    {
+        "question": "What types of governance were employed in the Spartan constitution?",
+        "answer": [
+            "Oligarchical",
+            "Monarchical",
+            "Democratic"
+        ]
+    },
+    {
+        "question": "Who were the official judges of the television show 'Sa Re Ga Ma Pa' in the year 2012?",
+        "answer": [
+            "Rahul Ram",
+            "Sajid-Wajid",
+            "Shankar Mahadevan"
+        ]
+    },
+    {
+        "question": "Who were the main cast members of the TV show 'How I Met Your Mother'?",
+        "answer": [
+            "Jason Segel",
+            "Cobie Smulders",
+            "Neil Patrick Harris",
+            "Josh Radnor",
+            "Alyson Hannigan"
+        ]
+    },
+    {
+        "question": "What are the names of Donald Duck's three nephews?",
+        "answer": [
+            "Huey",
+            "Dewey",
+            "Louie"
+        ]
+    },
+    {
+        "question": "Who are the voice actors for the characters Bingo and Rolly in the television series 'Puppy Dog Pals'?",
+        "answer": [
+            "Issac Ryan Brown",
+            "Sam Lavagnino"
+        ]
+    },
+    {
+        "question": "What are the full names of the main characters in the animated series Scooby-Doo?",
+        "answer": [
+            "Shaggy Rogers",
+            "Fred Jones",
+            "Daphne Blake",
+            "Velma Dinkley"
+        ]
+    },
+    {
+        "question": "Who were the hosts of the show 'That's Incredible' during its original airing period from 1980 to 1984?",
+        "answer": [
+            "John Davidson",
+            "Fran Tarkenton",
+            "Cathy Lee Crosby"
+        ]
+    },
+    {
+        "question": "Who are the main voice actors for the characters in the animated series 'Sofia the First'?",
+        "answer": [
+            "Tyler Merna",
+            "Wayne Brady",
+            "Travis Willingham",
+            "Darcy Rose Byrnes",
+            "Jess Harnell",
+            "Ariel Winter",
+            "Tim Gunn",
+            "Sara Ramirez",
+            "Meghan Strange",
+            "Ashley Eckstein"
+        ]
+    },
+    {
+        "question": "Who were the main judges for the entirety of Season 15 on 'So You Think You Can Dance'?",
+        "answer": [
+            "Stephen 'tWitch' Boss",
+            "Vanessa Hudgens",
+            "Nigel Lythgoe",
+            "Mary Murphy"
+        ]
+    },
+    {
+        "question": "Who are the original co-creators of the animated series Rick and Morty?",
+        "answer": [
+            "Justin Roiland",
+            "Dan Harmon"
+        ]
+    },
+    {
+        "question": "Who have been the main hosts of the TV show America's Got Talent since its inception?",
+        "answer": [
+            "Tyra Banks",
+            "Nick Cannon",
+            "Jerry Springer",
+            "Regis Philbin",
+            "Terry Crews"
+        ]
+    },
+    {
+        "question": "List the actresses who have portrayed the role of Mackenzie Browning on 'The Young and the Restless'.",
+        "answer": [
+            "Kelly Kruger",
+            "Clementine Ford",
+            "Rachel Kimsey",
+            "Ashley Bashioum"
+        ]
+    },
+    {
+        "question": "Who have been the hosts of the American version of the Late Late Show?",
+        "answer": [
+            "Craig Kilborn",
+            "Tom Snyder",
+            "Craig Ferguson",
+            "James Corden"
+        ]
+    },
+    {
+        "question": "Who have officially served as hosts for the US version of 'Whose Line Is It Anyway?'?",
+        "answer": [
+            "Drew Carey",
+            "Aisha Tyler"
+        ]
+    },
+    {
+        "question": "Who were the contestants of America's Next Top Model Cycle 1?",
+        "answer": [
+            "Elyse Sewell",
+            "Ebony Haith",
+            "Tessa Carlson",
+            "Shannon Stewart",
+            "Kesse Wallace",
+            "Katie Cleary",
+            "Nicole Panattoni",
+            "Adrianne Curry",
+            "Giselle Samson",
+            "Robin Manning"
+        ]
+    },
+    {
+        "question": "Who were the contestants that entered as wild card participants in the seventh season of the reality TV show Bigg Boss (Hindi TV series)?",
+        "answer": [
+            "Ajaz Khan",
+            "Asif Azim",
+            "Candy Brar",
+            "Sofia Hayat",
+            "Vivek Mishra"
+        ]
+    },
+    {
+        "question": "Who played the character Shawn Brady on the TV show 'Days of Our Lives' from its inception until 2023?",
+        "answer": [
+            "Brandon Beemer",
+            "Jason Cook",
+            "Noel Bennett Castle",
+            "Paul Zachary",
+            "Scott Groff",
+            "Collin O'Donnell"
+        ]
+    },
+    {
+        "question": "List the primary voice actors who have portrayed the character Dora in the television series 'Dora the Explorer'.",
+        "answer": [
+            "F\u00e1tima Ptacek",
+            "Kathleen Herles",
+            "Caitlin Sanchez"
+        ]
+    },
+    {
+        "question": "Who are the actors who portray the characters of the seven dwarfs in the television series \"Once Upon a Time\"?",
+        "answer": [
+            "Faustino Di Bauda",
+            "Jeffrey Kaiser",
+            "David Paul Grove",
+            "Geoff Gustafson",
+            "Gabe Khouth",
+            "Mig Macario",
+            "Michael Coleman"
+        ]
+    },
+    {
+        "question": "What are the names of actresses who have portrayed the character Mackenzie Browning on the TV show 'The Young and the Restless'?",
+        "answer": [
+            "Kelly Kruger",
+            "Rachel Kimsey",
+            "Clementine Ford",
+            "Ashley Bashioum"
+        ]
+    },
+    {
+        "question": "Who are the actors listed as main cast members in the opening credits of the show 'God Friended Me'?",
+        "answer": [
+            "Brandon Micheal Hall",
+            "Suraj Sharma",
+            "Violett Beane",
+            "Javicia Leslie",
+            "Joe Morton",
+            "Erica Gimpel"
+        ]
+    },
+    {
+        "question": "Who are the primary voice actors for the main characters in 'Jake and the Never Land Pirates' as of its initial seasons?",
+        "answer": [
+            "Jeff Bennett",
+            "Corey Burton",
+            "David Arquette",
+            "Jonathan Morgan Heit",
+            "Madison Pettis",
+            "Colin Ford"
+        ]
+    },
+    {
+        "question": "Who were the judges on 'Britain's Got Talent' during its first season in 2007?",
+        "answer": [
+            "Simon Cowell",
+            "Piers Morgan",
+            "Amanda Holden"
+        ]
+    },
+    {
+        "question": "Who were the main judges of Pepsi Battle of the Bands, Season 3?",
+        "answer": [
+            "Fawad Khan",
+            "Meesha Shafi",
+            "Strings"
+        ]
+    },
+    {
+        "question": "Who have portrayed the character Hope Logan on the TV show 'The Bold and the Beautiful'?",
+        "answer": [
+            "Rachel and Amanda Pace",
+            "Annika Noelle",
+            "Kim Matula"
+        ]
+    },
+    {
+        "question": "Who were the judges on the first season of America's Got Talent in 2006?",
+        "answer": [
+            "Piers Morgan",
+            "Brandy Norwood",
+            "David Hasselhoff"
+        ]
+    },
+    {
+        "question": "Who are the actors who have played the character Susan Banks on the TV show 'Days of Our Lives'?",
+        "answer": [
+            "Eileen Davidson",
+            "Brynn Thayer",
+            "Stacy Haiduk"
+        ]
+    },
+    {
+        "question": "Who are the founding creators of the television show 'So You Think You Can Dance'?",
+        "answer": [
+            "Simon Fuller",
+            "Nigel Lythgoe"
+        ]
+    },
+    {
+        "question": "Who have portrayed the character of the Master as a primary character in the TV series Doctor Who?",
+        "answer": [
+            "Roger Delgado",
+            "Peter Pratt",
+            "John Simm",
+            "Eric Roberts",
+            "Geoffrey Beevers",
+            "Derek Jacobi",
+            "Michelle Gomez",
+            "Anthony Ainley",
+            "Sacha Dhawan"
+        ]
+    },
+    {
+        "question": "Who are the primary actors who have portrayed the character Billie Reed on Days of Our Lives?",
+        "answer": [
+            "Krista Allen",
+            "Julie Pinson",
+            "Lisa Rinna"
+        ]
+    },
+    {
+        "question": "Who have been the voice actors for the character Diego in the animated series \"Go, Diego, Go!\"?",
+        "answer": [
+            "Brandon Zambrano",
+            "Matt Hunter",
+            "Jake T. Austin"
+        ]
+    },
+    {
+        "question": "Who have been the regular hosts of 'The Price Is Right' during its regular seasons since its debut?",
+        "answer": [
+            "Bob Barker",
+            "Drew Carey"
+        ]
+    },
+    {
+        "question": "Who have been the female judges on America's Got Talent as of 2023?",
+        "answer": [
+            "Brandy",
+            "Sharon Osbourne",
+            "Heidi Klum",
+            "Mel B",
+            "Julianne Hough",
+            "Sof\u00eda Vergara",
+            "Gabrielle Union"
+        ]
+    },
+    {
+        "question": "Who has portrayed the character Eric Brady in the TV series 'Days of Our Lives' from its inception to present?",
+        "answer": [
+            "Rory Beauregard",
+            "Jesse Davis",
+            "Edward Palma",
+            "Bradley Halloc",
+            "Scotty Hauser",
+            "Jensen Ackles",
+            "Greg Vaughan",
+            "Jason Gerhardt"
+        ]
+    },
+    {
+        "question": "Which four countries formally claimed territory in Oregon during the early 1800s?",
+        "answer": [
+            "Spain",
+            "Great Britain",
+            "Russia",
+            "United States"
+        ]
+    },
+    {
+        "question": "Who were the chief guests of India on Republic Day in the year 2018, listing each individual's name?",
+        "answer": [
+            "Rodrigo Roa Duterte",
+            "Hun Sen",
+            "Htin Kyaw",
+            "Najib Razak",
+            "Thongloun Sisoulith",
+            "Nguy\u1ec5n Xu\u00e2n Ph\u00fac",
+            "Joko Widodo",
+            "Hassanal Bolkiah",
+            "Halimah Yacob",
+            "Nguy\u1ec5n Xu\u00e2n Ph\u00fac"
+        ]
+    },
+    {
+        "question": "Which Native American tribes were victorious in the Battle of the Little Bighorn?",
+        "answer": [
+            "Arapaho",
+            "Lakota",
+            "Northern Cheyenne"
+        ]
+    },
+    {
+        "question": "Which countries were officially part of the Central Powers throughout World War One?",
+        "answer": [
+            "Austria-Hungary",
+            "Kingdom of Bulgaria",
+            "German Empire",
+            "Ottoman Empire"
+        ]
+    },
+    {
+        "question": "Which territories were officially acquired by the U.S. as a result of the Treaty of Paris (1898) following the Spanish-American War?",
+        "answer": [
+            "Puerto Rico",
+            "Guam",
+            "the Philippines"
+        ]
+    },
+    {
+        "question": "Which countries were direct combatants in the Spanish-American War?",
+        "answer": [
+            "Philippines",
+            "Puerto Rico",
+            "Cuba",
+            "United States",
+            "Spain"
+        ]
+    },
+    {
+        "question": "What were the primary countries involved in the Croatian War of Independence?",
+        "answer": [
+            "Republic of Croatia",
+            "Republic of Serbian Krajina",
+            "SFR Yugoslavia",
+            "SAO Krajina",
+            "SAO Eastern Slavonia, Baranja and Western Syrmia",
+            "SAO Western Slavonia",
+            "Bosnia and Herzegovina",
+            "Republika Srpska"
+        ]
+    },
+    {
+        "question": "Specify the countries of primary national armies that participated in the WW1 Christmas Truce.",
+        "answer": [
+            "France",
+            "United Kingdom",
+            "German Empire",
+            "Russian Empire",
+            "Austria-Hungary"
+        ]
+    },
+    {
+        "question": "Specify the groups or forces involved in the Waterloo Creek massacre.",
+        "answer": [
+            "Civilian",
+            "Gamilaraay people",
+            "Mounted police"
+        ]
+    },
+    {
+        "question": "Which countries were direct combatants in the First Balkan War?",
+        "answer": [
+            "Bulgaria",
+            "Serbia",
+            "Greece",
+            "Montenegro",
+            "Ottoman Empire"
+        ]
+    },
+    {
+        "question": "Which countries were the main adversaries of the U.S. in World War I?",
+        "answer": [
+            "Germany",
+            "Austro-Hungarian Empire",
+            "Ottoman Empire",
+            "Bulgaria"
+        ]
+    },
+    {
+        "question": "What are the countries that suffered major casualties and damage from the 2004 Boxing Day tsunami?",
+        "answer": [
+            "Malaysia",
+            "Maldives",
+            "Myanmar",
+            "Somalia",
+            "Indonesia",
+            "India",
+            "Sri Lanka",
+            "Thailand"
+        ]
+    },
+    {
+        "question": "What were notable contents of the Treaty of Versailles in 1919?",
+        "answer": [
+            "Territorial changes",
+            "Mandates",
+            "Military restrictions",
+            "Reparations",
+            "Guarantess",
+            "International organizations",
+            "War Crimes"
+        ]
+    },
+    {
+        "question": "Which countries signed formal treaties of military alliance with Germany during World War II?",
+        "answer": [
+            "Japan",
+            "Italy",
+            "Hungary",
+            "Romania",
+            "Bulgaria",
+            "Finland",
+            "Slovak",
+            "Croatia",
+            "Thailand"
+        ]
+    },
+    {
+        "question": "What were the primary combatant countries in the Battle of Vimy Ridge?",
+        "answer": [
+            "German Empire",
+            "Canada",
+            "United Kingdom"
+        ]
+    },
+    {
+        "question": "Which countries in Asia gained political independence from Japan immediately following the Second World War between 1945 and 1950?",
+        "answer": [
+            "Cambodia",
+            "South Korea",
+            "North Korea",
+            "Indonesia",
+            "Laos",
+            "Taiwan",
+            "Thailand",
+            "Vietnam"
+        ]
+    },
+    {
+        "question": "Which tribes fought alongside the British colonists during the French and Indian War?",
+        "answer": [
+            "Iroquois Confederacy",
+            "Catawba",
+            "Cherokee Nation",
+            "Mingo"
+        ]
+    },
+    {
+        "question": "What nations were involved in the Battle of Waterloo?",
+        "answer": [
+            "France",
+            "United Kingdom",
+            "Prussia",
+            "Netherlands",
+            "Hanover",
+            "Nassau",
+            "Brunswick"
+        ]
+    },
+    {
+        "question": "Which military forces directly participated in the Battle of San Jacinto?",
+        "answer": [
+            "Mexican army",
+            "Texan army"
+        ]
+    },
+    {
+        "question": "What were the key political and economic causes of Shays' Rebellion in Massachusetts?",
+        "answer": [
+            "Political corruption and cronyism",
+            "Aggressive tax and debt collection policies"
+        ]
+    },
+    {
+        "question": "Who were the primary participants and organizations directly involved in the Railroad Strike of 1877?",
+        "answer": [
+            "Railroad workers",
+            "Federal troops",
+            "Workingmen\\'s Party",
+            "National Guard",
+            "Unofficial militias",
+            "City Police"
+        ]
+    },
+    {
+        "question": "Which countries officially celebrate their national independence day on August 15th, the same date as India?",
+        "answer": [
+            "Sourth Korea",
+            "North Korea",
+            "Congo, Democratic Republic of the",
+            "Congo, Republic of the"
+        ]
+    },
+    {
+        "question": "Which belligerents were directly involved in combat during the Soviet invasion of Afghanistan?",
+        "answer": [
+            "Soviet Army",
+            "Afghanistan",
+            "Afghan Mujahideen",
+            "Afghan Interim Government"
+        ]
+    },
+    {
+        "question": "List the founding member countries of the Non-Aligned Movement that were recognized as such during the initial conference in 1961.",
+        "answer": [
+            "Egypt",
+            "India",
+            "Ghana",
+            "Indonesia",
+            "Yugoslavia"
+        ]
+    },
+    {
+        "question": "Specify the primary countries that participated in the military coalition of the 1991 Gulf War.",
+        "answer": [
+            "France",
+            "Saudi Arabia",
+            "Iraq",
+            "United States",
+            "Kuwait",
+            "United Kingdom",
+            "Egypt"
+        ]
+    },
+    {
+        "question": "Which specific countries and sovereign entities were part of the Second Coalition against France in 1798?",
+        "answer": [
+            "Austria",
+            "Great Britain",
+            "Naples",
+            "Ottoman Empire",
+            "Portugal",
+            "Russia",
+            "Sweden",
+            "Papal States"
+        ]
+    },
+    {
+        "question": "Which countries had military forces directly engaged in the Battle of Dunkirk?",
+        "answer": [
+            "France",
+            "Germany",
+            "United Kingdom",
+            "Belgium",
+            "Netherlands",
+            "Poland",
+            "Canada",
+            "India",
+            "West Africa"
+        ]
+    },
+    {
+        "question": "Which two specific months (in English) of the year are known for the equinoxes, during which all places on Earth experience about 12 hours of daylight?",
+        "answer": [
+            "March",
+            "September"
+        ]
+    },
+    {
+        "question": "What are the specific months during which love bugs appear in Florida?",
+        "answer": [
+            "April",
+            "May",
+            "August",
+            "September"
+        ]
+    },
+    {
+        "question": "Who were the primary designers of the Times New Roman typeface, which is extensively used in British newspapers?",
+        "answer": [
+            "Stanley Morison",
+            "Victor Lardent"
+        ]
+    },
+    {
+        "question": "Who are the characters identified as potential fathers in the musical 'Mamma Mia'?",
+        "answer": [
+            "Harry Bright",
+            "Bill Austin",
+            "Sam Carmichael"
+        ]
+    },
+    {
+        "question": "Who are individual architects credited with the design of the Bird's Nest Stadium in Beijing?",
+        "answer": [
+            "Li Xinggang",
+            "Ai Weiwei",
+            "Stefan Marbach",
+            "Pierre de Meuron",
+            "Jacques Herzog"
+        ]
+    },
+    {
+        "question": "Who are the core fictional characters created as members of the band Gorillaz?",
+        "answer": [
+            "2-D",
+            "Noodle",
+            "Murdoc Niccals",
+            "Russel Hobbs"
+        ]
+    },
+    {
+        "question": "Who are the narrators in the audiobook 'A Day in the Life of Marlon Bundo'?",
+        "answer": [
+            "Jeff Garlin",
+            "John Lithgow",
+            "Jim Parsons",
+            "Jack McBrayer",
+            "RuPaul",
+            "Ellie Kemper",
+            "Jesse Tyler Ferguson"
+        ]
+    },
+    {
+        "question": "Which models appeared in George Michael's 'Freedom' music video?",
+        "answer": [
+            "Christy Turlington",
+            "Linda Evangelista",
+            "Tatjana Patitz",
+            "Naomi Campbell",
+            "Cindy Crawford"
+        ]
+    },
+    {
+        "question": "Who were the artists known for using the drip painting technique specifically within the Abstract Expressionism movement?",
+        "answer": [
+            "Jackson Pollock",
+            "Max Ernst",
+            "Andr\u00e9 Masson",
+            "David Alfaro Siqueiros"
+        ]
+    },
+    {
+        "question": "What were the titles of the films nominated for the Best Picture Oscar in 2006 that did not win?",
+        "answer": [
+            "Little Miss Sunshine",
+            "Babel",
+            "Letters from Iwo Jima",
+            "The Queen"
+        ]
+    },
+    {
+        "question": "Who were the individuals who died due to an accident during the filming of 'Twilight Zone: The Movie'?",
+        "answer": [
+            "Vic Morrow",
+            "Myca Dinh Le",
+            "Renee Shin-Yi Chen"
+        ]
+    },
+    {
+        "question": "Who won Academy Awards for 'Dallas Buyers Club'?",
+        "answer": [
+            "Adruitha Lee",
+            "Robin Mathews",
+            "Jared Leto",
+            "Matthew McConaughey"
+        ]
+    },
+    {
+        "question": "Which pairs of characters end up together in a romantic sense at the end of the movie The Breakfast Club?",
+        "answer": [
+            "Claire and Bender",
+            "Allison and Andrew"
+        ]
+    },
+    {
+        "question": "Which characters are in a romantic relationship by the end of 'Hart of Dixie'?",
+        "answer": [
+            "George Tucker and Annabeth Nass",
+            "Zoe Hart and Wade Kinsella",
+            "Lemon Breeland and Lavon Hayes"
+        ]
+    },
+    {
+        "question": "What are the specific identified general pathways of the diagenesis of bone?",
+        "answer": [
+            "Chemical deterioration of the organic phase",
+            "Chemical deterioration of the mineral phase",
+            "(Micro) biological attack of the composite"
+        ]
+    },
+    {
+        "question": "List the distinct stages of the Rapid Application Development model as commonly recognized in software development.",
+        "answer": [
+            "Requirements Planning",
+            "User Design",
+            "Construction",
+            "Cutover"
+        ]
+    },
+    {
+        "question": "What are the biological stages involved in the healing of a bone fracture?",
+        "answer": [
+            "Hematoma formation",
+            "Granulation tissue formation",
+            "Bony callus formation",
+            "Bony Remodeling"
+        ]
+    },
+    {
+        "question": "What are the goals of embalming a dead body?",
+        "answer": [
+            "sanitization",
+            "presentation",
+            "preservation"
+        ]
+    },
+    {
+        "question": "What are the names of the nine forms of Mother Durga in Hindu mythology?",
+        "answer": [
+            "Shailaputri",
+            "Brahmacharini",
+            "Chandraghanta",
+            "Kushmanda",
+            "Skandamata",
+            "Katyayini",
+            "Kaalratri",
+            "Mahagauri",
+            "Siddhidhatri"
+        ]
+    },
+    {
+        "question": "Which countries have fully or partially hosted the Rugby World Cup as of 2023?",
+        "answer": [
+            "France",
+            "Scotland",
+            "England",
+            "South Africa",
+            "Ireland",
+            "Australia",
+            "New Zealand",
+            "Wales",
+            "Japan"
+        ]
+    },
+    {
+        "question": "What are the names of hotel properties in Las Vegas owned by Caesars Entertainment as of 2023?",
+        "answer": [
+            "The Cromwell hotel and casino",
+            "Planet Hollywood Resort and Casino",
+            "Flamingo Las Vegas",
+            "Paris Las Vegas",
+            "The Linq Hotel and Casino",
+            "Caesars Palace",
+            "Harrah\\'s las vegas",
+            "Horseshoe las vegas",
+            "nobu hotel"
+        ]
+    },
+    {
+        "question": "What are the names of U.S. states that host more than one NFL team, considering only teams that are named after and play within those states?",
+        "answer": [
+            "California",
+            "Florida",
+            "Maryland",
+            "Texas",
+            "Pennsylvania",
+            "Ohio",
+            "New Jersey"
+        ]
+    },
+    {
+        "question": "Which FM radio stations in Maine broadcast New England Patriots games?",
+        "answer": [
+            "WBLM 102.9 FM",
+            "WEBB 98.5 FM",
+            "WOZI 101.9 FM",
+            "WWMJ 92.9 FM"
+        ]
+    },
+    {
+        "question": "Which U.S. cities have officially hosted the Summer or Winter Olympic Games?",
+        "answer": [
+            "Squaw Valley",
+            "Lake Placid",
+            "St. Louis",
+            "Atlanta",
+            "Los Angeles",
+            "Salt Lake City"
+        ]
+    },
+    {
+        "question": "Which stadiums did the New Orleans Saints use for their home games in the seasons following Hurricane Katrina in 2005?",
+        "answer": [
+            "Alamodome",
+            "Giants Stadium",
+            "Tiger Stadium"
+        ]
+    },
+    {
+        "question": "What are the names of the specific stadiums where the 2017 World Series games were played?",
+        "answer": [
+            "Dodger Stadium",
+            "Minute Maid Park"
+        ]
+    },
+    {
+        "question": "Which three specific countries are officially co-hosting the FIFA World Cup in 2026?",
+        "answer": [
+            "Mexico",
+            "Canada",
+            "United States"
+        ]
+    },
+    {
+        "question": "Which stadiums did the St. Louis Cardinals baseball team play in before moving to the current Busch Stadium?",
+        "answer": [
+            "Robison Field",
+            "Busch Memorial Stadium",
+            "Sportsman's Park",
+            "League Park",
+            "Union Park"
+        ]
+    },
+    {
+        "question": "What were the specific airbases where the Memphis Belle was stationed during World War II?",
+        "answer": [
+            "RAF Bassingbourn",
+            "Prestwick",
+            "RAF Kimbolton"
+        ]
+    },
+    {
+        "question": "List the names of Scottish golf courses that have hosted The Open Championship.",
+        "answer": [
+            "Prestwick Golf Club",
+            "Old Course at St Andrews",
+            "Carnoustie Golf Links",
+            "Royal Troon Golf Club",
+            "Turnberry",
+            "Muirfield",
+            "Musselburgh Links"
+        ]
+    },
+    {
+        "question": "In which specific cities in the United States were the Winter Olympics held?",
+        "answer": [
+            "Lake Placid",
+            "Salt Lake City",
+            "Squaw Valley",
+            "Utah",
+            "New York"
+        ]
+    },
+    {
+        "question": "Which countries hosted matches of the 2019 Cricket World Cup?",
+        "answer": [
+            "England",
+            "Wales"
+        ]
+    },
+    {
+        "question": "What were the initial cities designated to host the 1940 Olympics before any cancellations?",
+        "answer": [
+            "Tokyo",
+            "Helsinki"
+        ]
+    },
+    {
+        "question": "What are the names of the cities where the Minnesota Twins' minor league affiliate teams are based?",
+        "answer": [
+            "Cedar Rapids",
+            "Fort Myers",
+            "saint Paul",
+            "Boca Chica",
+            "Wichita"
+        ]
+    },
+    {
+        "question": "Where are the training facilities of army training regiments where phase 1 British Army training is conducted?",
+        "answer": [
+            "Army Training Centre Pirbright",
+            "Sir John Moore Barracks, Winchester",
+            "Prince William of Gloucester Barracks, Grantham"
+        ]
+    },
+    {
+        "question": "What are other festival names used regionally across India that correspond to the celebration of Makar Sankranti?",
+        "answer": [
+            "Uttarayan",
+            "Sankranti",
+            "Til Sakraat",
+            "Magha",
+            "Mela",
+            "M\u00f4k\u00f4r S\u00f4\u1e45kr\u0101nti",
+            "Ghughuti",
+            "Pedda Oabdyga",
+            "Bhogi",
+            "Sakraat",
+            "Pongal",
+            "Peddha Panduga",
+            "sakrat",
+            "khicha\u1e5bi"
+        ]
+    },
+    {
+        "question": "Which countries experienced a high death toll and widespread destruction due to the 2004 tsunami?",
+        "answer": [
+            "Sri Lanka",
+            "Thailand",
+            "Indonesia",
+            "India",
+            "Maldives",
+            "Myanmar",
+            "Somalia"
+        ]
+    },
+    {
+        "question": "What are jobs in Morgues?",
+        "answer": [
+            "Morgue technician",
+            "Esthetician",
+            "Funeral service assistant",
+            "Forensic science technician",
+            "funeral director",
+            "pathology assistant"
+        ]
+    },
+    {
+        "question": "What are the three specific characteristics of reality written in Pali language that are presupposed by the Four Noble Truths in Buddhist philosophy?",
+        "answer": [
+            "anicca",
+            "dukkha",
+            "anatt\u0101"
+        ]
+    },
+    {
+        "question": "What are the specifically highlighted themes in the play 'My Mother Said I Never Should'?",
+        "answer": [
+            "independence",
+            "secrets",
+            "growing up"
+        ]
+    },
+    {
+        "question": "What are the Fundamental Economic Freedoms of the European Union as established by the Single Market?",
+        "answer": [
+            "Free movement of goods",
+            "Free movement of services",
+            "Free movement of capital",
+            "Free movement of people"
+        ]
+    },
+    {
+        "question": "Who are the characters mentioned in the novel 'The Curious Incident of the Dog in the Night-Time'?",
+        "answer": [
+            "Judy Boone",
+            "Wellington",
+            "Christopher John Francis Boone",
+            "Mrs. Alexander",
+            "Toby",
+            "Siobhan",
+            "Rhodri",
+            "Ed Boone",
+            "Roger Shears",
+            "Eileen Shears",
+            "Mr. Jeavons",
+            "Sandy",
+            "Reverend Peters"
+        ]
+    },
+    {
+        "question": "What are the names of the female characters in the musical 'Joseph and the Amazing Technicolor Dreamcoat'?",
+        "answer": [
+            "Narrator",
+            "Mrs. Potiphar",
+            "Wives",
+            "Three ladies"
+        ]
+    },
+    {
+        "question": "Who were the lyricists and composers of the song \"You Don't Bring Me Flowers Anymore\"?",
+        "answer": [
+            "Marilyn Bergman",
+            "Neil Diamond",
+            "Alan Bergman"
+        ]
+    },
+    {
+        "question": "What are the full names of the Darling family members in the story \"Peter Pan\"?",
+        "answer": [
+            "George Darling",
+            "Mary Darling",
+            "Wendy Moira Angela Darling",
+            "John Napoleon Darling",
+            "Michael Nicholas Darling",
+            "Nana",
+            "Jane",
+            "Margaret"
+        ]
+    },
+    {
+        "question": "Which mortal allies directly assist Odysseus in the battle against the suitors in Book XXII of the Odyssey?",
+        "answer": [
+            "Eumaeus",
+            "Philoetius",
+            "Telemachus"
+        ]
+    },
+    {
+        "question": "Who are the main characters in the 'Throne of Glass' series?",
+        "answer": [
+            "Celaena Sardothien",
+            "Chaol Westfall",
+            "Dorian Havillard",
+            "Manon Blackbeak Crochan",
+            "Rowan Whitethorn Galathynius",
+            "Chaol Westfall",
+            "Elide Lochan"
+        ]
+    },
+    {
+        "question": "List main actors in the original 1959 Broadway debut cast of 'A Raisin in the Sun'.",
+        "answer": [
+            "Sidney Poitier",
+            "Louis Gossett",
+            "Glynn Turman",
+            "Douglas Turner",
+            "Ivan Dixon",
+            "Claudia McNeil",
+            "Ruby Dee",
+            "Diana Sands",
+            "John Fiedler",
+            "Ed Hall",
+            "Lonne Elder III"
+        ]
+    },
+    {
+        "question": "Who are the main ghosts that visit Scrooge on Christmas Eve in 'A Christmas Carol'?",
+        "answer": [
+            "Ghost of Christmas Past",
+            "Ghost of Christmas Present",
+            [
+                "Ghost of Christmas Yet to Come",
+                "Ghost of Future"
+            ]
+        ]
+    },
+    {
+        "question": "What are the specific names given to the character known as the Wicked Witch of the West in different adaptations of 'The Wizard of Oz'?",
+        "answer": [
+            "Elphaba",
+            "Bastinda",
+            "Old Snarl-Spats",
+            "Lynessa",
+            "Mordra",
+            "Miss West",
+            "Morella",
+            "Theodora Elphaba"
+        ]
+    },
+    {
+        "question": "What are the names of the primary characters in the 'Alvin and the Chipmunks' animated series?",
+        "answer": [
+            "Alvin",
+            "Simon",
+            "Theodore"
+        ]
+    },
+    {
+        "question": "What are the full names of the main characters in 'The Wind in the Willows' as described in the book?",
+        "answer": [
+            "Mr. Toad",
+            "Mr. Badger",
+            "Rat",
+            "Mole"
+        ]
+    },
+    {
+        "question": "Who are the characters that accompany Dorothy on her journey to the south in the book 'The Wonderful Wizard of Oz'?",
+        "answer": [
+            "Scarecrow",
+            "Tin Woodman",
+            "Cowardly Lion"
+        ]
+    },
+    {
+        "question": "Who originally performed the song 'Anything You Can Do (I Can Do Better)' in its debut on Broadway in the musical 'Annie Get Your Gun'?",
+        "answer": [
+            "Ray Middleton",
+            "Ethel Merman"
+        ]
+    },
+    {
+        "question": "Who were the first characters to see the ghost of King Hamlet together in the play \"Hamlet\"?",
+        "answer": [
+            "Marcellus",
+            "Horatio",
+            "Bernardo"
+        ]
+    },
+    {
+        "question": "Who are the primary characters depicted in Edgar Allan Poe's short story 'The Tell-Tale Heart'?",
+        "answer": [
+            "narrator",
+            "The old man"
+        ]
+    },
+    {
+        "question": "Which characters are explicitly confirmed to be alive and present at the conclusion of the play \"King Lear\"?",
+        "answer": [
+            "Edgar",
+            "Albany",
+            "Kent"
+        ]
+    },
+    {
+        "question": "Who are the wizards mentioned in J.R.R. Tolkien's original 'The Lord of the Rings' book series?",
+        "answer": [
+            "Saruman",
+            "Gandalf",
+            "Radagast",
+            "Alatar",
+            "Pallando"
+        ]
+    },
+    {
+        "question": "What are the full names of the Herdman siblings featured in the book 'The Best Christmas Pageant Ever'?",
+        "answer": [
+            "Leroy Herdman",
+            "Gladys Herdman",
+            "Imogene Herdman",
+            "Ollie Herdman",
+            "Claude Herdman",
+            "Ralph Herdman"
+        ]
+    },
+    {
+        "question": "Who are the lyricists credited for writing the lyrics of the opera 'Porgy and Bess'?",
+        "answer": [
+            "DuBose Heyward",
+            "Ira Gershwin"
+        ]
+    },
+    {
+        "question": "What are the release years of the main series of Game of Thrones books written by George R.R. Martin?",
+        "answer": [
+            "1996",
+            "1998",
+            "2000",
+            "2005",
+            "2011"
+        ]
+    },
+    {
+        "question": "What were the release years of the original seven Harry Potter books?",
+        "answer": [
+            "1997",
+            "1998",
+            "1999",
+            "2000",
+            "2003",
+            "2005",
+            "2007"
+        ]
+    },
+    {
+        "question": "What are the exact release dates, including day, month, and year (DD-MM-YYYY), of each book in 'The Lord of the Rings' series?",
+        "answer": [
+            "29-07-1954",
+            "11-11-1954",
+            "20-10-1955"
+        ]
+    },
+    {
+        "question": "What specific breeds comprised Pudsey, the dog that appeared on Britain's Got Talent?",
+        "answer": [
+            "Border Collie",
+            "Bichon Frise",
+            "Chinese Crested Powderpuff Cross"
+        ]
+    },
+    {
+        "question": "What are the members that are part of the Executive Office of the President of the United States?",
+        "answer": [
+            "White House Office",
+            "Council on Environmental Quality",
+            "Executive Residence Staff and Operations",
+            "President\\'s Intelligence Advisory Board",
+            "Office of Management and Budget",
+            "Office of Administration",
+            "National Security Council",
+            "Council of Economic Advisers",
+            "Office of the Vice President",
+            "Homeland Security Council",
+            "Office of National Drug Control Policy",
+            "Office of the National Cyber Director",
+            "Office of Science and Technology Policy",
+            "Office of the United States Trade Representative"
+        ]
+    },
+    {
+        "question": "What are the three main branches of the national government in the Philippines?",
+        "answer": [
+            "Executive",
+            "Legislative",
+            "Judicial"
+        ]
+    },
+    {
+        "question": "What are the primary objectives of the Federal Reserve System as identified in its statutory mandate?",
+        "answer": [
+            "maximum employment",
+            "stable prices",
+            "moderate long-term interest rates"
+        ]
+    },
+    {
+        "question": "What are the primary categories of local government structures commonly recognized at the sub-state level in the United States?",
+        "answer": [
+            "Municipal",
+            "Town",
+            "County",
+            "Township",
+            "Boroughs",
+            "Parishes"
+        ]
+    },
+    {
+        "question": "What are the official titles of the presiding officers in the United States Senate?",
+        "answer": [
+            "Vice President of the United States",
+            "President pro tempore of the United States Senate"
+        ]
+    },
+    {
+        "question": "What are the primary government levels of United States responsible for the administrative management of Medicaid insurance benefits?",
+        "answer": [
+            "Federal government",
+            "State governments"
+        ]
+    },
+    {
+        "question": "What are the names of the major political coalitions in Australia as of the most recent election?",
+        "answer": [
+            "Australian Labor Party",
+            "Liberal Coalition",
+            "National Coalition"
+        ]
+    },
+    {
+        "question": "What is a three-part mission of the Securities and Exchange Commission (SEC)?",
+        "answer": [
+            "protect investors",
+            "maintain fair, orderly, and efficient markets",
+            "facilitate capital formation"
+        ]
+    },
+    {
+        "question": "What are the primary bases operated by the defense forces of the Irish Army located in Dublin?",
+        "answer": [
+            "McKee Barracks",
+            "St Bricin\\'s Military Hospital"
+        ]
+    },
+    {
+        "question": "List major federal tax categories in the United States.",
+        "answer": [
+            "Income",
+            "Payroll",
+            "Estate",
+            "Gift",
+            "Capital gains",
+            "property",
+            "sales",
+            "dividends",
+            "imports"
+        ]
+    },
+    {
+        "question": "What are the different hierarchical categories of ministers in the central government?",
+        "answer": [
+            "Ministers of State",
+            "Cabinet Ministers",
+            "Deputy Ministers"
+        ]
+    },
+    {
+        "question": "Which types of budget are presented in India?",
+        "answer": [
+            "Balanced budget",
+            "surplus budget",
+            "deficit budget"
+        ]
+    },
+    {
+        "question": "What are the specific types of legally binding agreements that the President of the United States can enter into?",
+        "answer": [
+            "Congressional-executive agreements",
+            "Treaties"
+        ]
+    },
+    {
+        "question": "What were the key ideological platforms of the Know-Nothing Party?",
+        "answer": [
+            "American nationalism",
+            "Anti-immigration sentiment",
+            "Anti-Catholicism",
+            "Anti-Irish sentiment",
+            "Anti-German sentiment",
+            "Cultural assimilation",
+            "Nativism",
+            "Populism",
+            "Republicanism"
+        ]
+    },
+    {
+        "question": "Which specific verses (book chapter:verse_start-verse_end) in the Bible list the 10 Commandments?",
+        "answer": [
+            "Exodus 20:2-17",
+            "Deuteronomy 5:6-21",
+            "Exodus 34:11\u201326"
+        ]
+    },
+    {
+        "question": "List crowns identified symbolically in the Biblical context, seen as rewards or honors for particular virtues or achievements, as specified by 'five' in the phrasing.",
+        "answer": [
+            "Crown of Life",
+            "Crown of Rejoicing",
+            "Crown of Glory",
+            "Incorruptible Crown",
+            "Crown of Righteousness"
+        ]
+    },
+    {
+        "question": "What are the names of Nala and Simba's offspring in the Disney animated movies?",
+        "answer": [
+            "Kiara",
+            "Kion",
+            "Kopa"
+        ]
+    },
+    {
+        "question": "Who are the superheroes featured in the 2017 'Justice League' film directed by Zack Snyder?",
+        "answer": [
+            "Superman",
+            "Wonder Woman",
+            "Cyborg",
+            "Aquaman",
+            "The Flash",
+            "Batman"
+        ]
+    },
+    {
+        "question": "What is the complete list of soundtrack songs featured in the movie 'Sonu Ke Titu Ki Sweety'?",
+        "answer": [
+            "Bom Diggy Diggy",
+            "Chhote Chhote Peg",
+            "Sweety Slowly Slowly",
+            "Kaun Nachdi",
+            "Lakk Mera Hit",
+            "Subah Subah",
+            "Dil Chori",
+            "Tera Yaar Hoon Main"
+        ]
+    },
+    {
+        "question": "What are the names of the directors for each individual movie in the Fast and the Furious series?",
+        "answer": [
+            "Rob Cohen",
+            "John Singleton",
+            "Justin Lin",
+            "James Wan",
+            "F. Gary Gray",
+            "David Leitch",
+            "Louis Leterrier"
+        ]
+    },
+    {
+        "question": "What are the full titles of the movies that comprise The Lord of the Rings film trilogy directed by Peter Jackson?",
+        "answer": [
+            "The Lord of the Rings: The Fellowship of the Ring",
+            "The Lord of the Rings: The Two Towers",
+            "The Lord of the Rings: The Return of the King"
+        ]
+    },
+    {
+        "question": "What are the full titles of the movies in The Hobbit series?",
+        "answer": [
+            "The Hobbit: An Unexpected Journey",
+            "The Hobbit: The Desolation of Smaug",
+            "The Hobbit: The Battle of the Five Armies"
+        ]
+    },
+    {
+        "question": "What are the names of the stepsisters in the 1950 Disney animated film \"Cinderella\"?",
+        "answer": [
+            "Anastasia",
+            "Drizella"
+        ]
+    },
+    {
+        "question": "List the titles of the movies in the \"Pirates of the Caribbean\" series.",
+        "answer": [
+            "The Curse of the Black Pearl",
+            "Dead Man's Chest",
+            "At World's End",
+            "On Stranger Tides",
+            "Dead Men Tell No Tales"
+        ]
+    },
+    {
+        "question": "List main and supporting characters from the animated film 'The Fox and the Hound'.",
+        "answer": [
+            "Abigail",
+            "Bear",
+            "Big Mama",
+            "Boomer",
+            "Cash",
+            "Chief",
+            "Copper",
+            "Dinky",
+            "Dixie",
+            "Mr. Digger",
+            "Porcupine",
+            "Tod",
+            "Vixey",
+            "Waylon and Floyd",
+            "Zelda"
+        ]
+    },
+    {
+        "question": "What are the names of the fox and the hound in the Disney movie \"The Fox and the Hound\"?",
+        "answer": [
+            "Copper",
+            "Tod"
+        ]
+    },
+    {
+        "question": "List the unique names of the Infinity Stones in the Marvel Cinematic Universe.",
+        "answer": [
+            "Soul",
+            "Mind",
+            "Reality",
+            "Space",
+            "Power",
+            "Time"
+        ]
+    },
+    {
+        "question": "List actresses who have portrayed the character Mackenzie Browning in the television show 'The Young and the Restless'.",
+        "answer": [
+            "Ashley Bashioum",
+            "Nicole Tarantini",
+            "Kelly Kruger",
+            "Rachel Kimsey",
+            "Clementine Ford"
+        ]
+    },
+    {
+        "question": "Who are the current hosts of the show 'Love It or List It' as of 2023?",
+        "answer": [
+            "David Visentin",
+            "Hilary Farr"
+        ]
+    },
+    {
+        "question": "Who were the main scriptwriters for seasons of The Big Bang Theory?",
+        "answer": [
+            "Steven Molaro",
+            "Chuck Lorre",
+            "Bill Prady"
+        ]
+    },
+    {
+        "question": "What are the names of characters who were legally married to Chris Tate in the TV show \"Emmerdale\"?",
+        "answer": [
+            "Rachel Hughes",
+            "Charity Dingle",
+            "Kathy Merrick"
+        ]
+    },
+    {
+        "question": "Who are the cast members who had recurring roles on the TV show 'Brooklyn Nine-Nine'?",
+        "answer": [
+            "Dirk Blocker",
+            "Melissa Fumero",
+            "Chelsea Peretti",
+            "Andy Samberg",
+            "Terry Crews",
+            "Joe Lo Truglio",
+            "Joel McKinnon",
+            "Stephanie Beatriz",
+            "Andre Braugher",
+            "Marc Evan Jackson"
+        ]
+    },
+    {
+        "question": "What specific offenses are defined as illegal under the Computer Misuse Act 1990?",
+        "answer": [
+            "Unauthorized access to computer material",
+            "Unauthorized access with intent to commit or facilitate commission of further offenses",
+            "unauthorised acts with intent to impair, or with recklessness as to impairing, operation of computer, etcetera"
+        ]
+    },
+    {
+        "question": "List distinct music genres that categorize the works of 3 Doors Down as recognized in the music industry.",
+        "answer": [
+            "Hard rock",
+            "Alternative rock",
+            "Post-grunge",
+            "southern rock"
+        ]
+    },
+    {
+        "question": "What specific music genres is Florence and the Machine known for?",
+        "answer": [
+            "Indie rock",
+            "folk",
+            "baroque pop",
+            "chamber pop",
+            "neo soul",
+            "art pop",
+            "art rock",
+            "indie pop"
+        ]
+    },
+    {
+        "question": "What are the primary music genres performed by Milky Chance as categorized by mainstream music classification?",
+        "answer": [
+            "Alternative rock",
+            "electronic",
+            "reggae",
+            "folk",
+            "indie"
+        ]
+    },
+    {
+        "question": "What specific music genres is Bon Jovi known for?",
+        "answer": [
+            "arena rock",
+            "hard rock",
+            "pop rock",
+            "glam metal"
+        ]
+    },
+    {
+        "question": "List music genres and sub-genres The Avett Brothers are typically recognized for performing.",
+        "answer": [
+            "Folk",
+            "Bluegrass",
+            "Americana",
+            "Indie folk",
+            "Folk rock"
+        ]
+    },
+    {
+        "question": "What are the primary music genres of Little Mix?",
+        "answer": [
+            "Pop",
+            "R&B",
+            "Dance-pop"
+        ]
+    },
+    {
+        "question": "What are the constitutional requirements to be eligible for the presidency of the United States?",
+        "answer": [
+            "At least 35 years old",
+            "A natural born citizen of the United States",
+            "Resident in the United States for at least 14 years"
+        ]
+    },
+    {
+        "question": "What are the three customer categories defined in the Net Promoter Score (NPS) model?",
+        "answer": [
+            "Detractors",
+            "Passives",
+            "Promoters"
+        ]
+    },
+    {
+        "question": "What are the four primary categories of market segmentation according to marketing theory?",
+        "answer": [
+            "behavioral",
+            "geographic",
+            "psychographic",
+            "demographic"
+        ]
+    },
+    {
+        "question": "What are the three pillars of the triple bottom line?",
+        "answer": [
+            "profit",
+            "people",
+            "planet"
+        ]
+    },
+    {
+        "question": "List titles included in the Crash Bandicoot N. Sane Trilogy.",
+        "answer": [
+            "Crash Bandicoot",
+            "Crash Bandicoot 2: Cortex Strikes Back",
+            "Crash Bandicoot 3: Warped"
+        ]
+    },
+    {
+        "question": "Who can officially propose amendments to the US Constitution through direct constitutional means?",
+        "answer": [
+            "The United States Congress",
+            "A National Convention called by Congress upon request by two-thirds of the state legislatures"
+        ]
+    },
+    {
+        "question": "Which U.S. Presidents were formally impeached by the House of Representatives?",
+        "answer": [
+            "Bill Clinton",
+            "Andrew Johnson",
+            "Donald Trump"
+        ]
+    },
+    {
+        "question": "Who introduced the 'Not Too Young To Run' bill in the legislature?",
+        "answer": [
+            "AbdulAziz Nyako",
+            "Tony Nwulu"
+        ]
+    },
+    {
+        "question": "What are the official roles that can serve as the presiding officer of the US Senate under various circumstances?",
+        "answer": [
+            "the Vice President under normal circumstances",
+            "an elected United States Senator in the absence of the Vice President",
+            "the Chief Justice during impeachment trials of the President"
+        ]
+    },
+    {
+        "question": "What are the specific types of cheese traditionally used in a Philly cheesesteak sandwich?",
+        "answer": [
+            "Provolone",
+            "American cheese",
+            "Cheez Whiz"
+        ]
+    },
+    {
+        "question": "What are the specific subjects covered in the Australian citizenship test?",
+        "answer": [
+            "Australia and its People",
+            "Australian Values",
+            "Australia\\'s democratic beliefs",
+            "rights, and liberties",
+            "Government and the Law in Australia"
+        ]
+    },
+    {
+        "question": "What are the six official languages used by the United Nations for formal communication?",
+        "answer": [
+            "Arabic",
+            "Chinese",
+            "English",
+            "French",
+            "Russian",
+            "Spanish"
+        ]
+    },
+    {
+        "question": "What are the titles of songs that the Steve Miller Band has officially released as live recordings?",
+        "answer": [
+            "The Joker",
+            "Gangster of Love",
+            "Abracadabra",
+            "Jungle Love",
+            "Jet Airliner",
+            "Mercury Blues"
+        ]
+    },
+    {
+        "question": "Identify four common instruments that belong to the brass family.",
+        "answer": [
+            "tuba",
+            "horn",
+            "trombone",
+            "trumpet"
+        ]
+    },
+    {
+        "question": "What are the names of three specific genres of traditional musical ensembles in Thailand?",
+        "answer": [
+            "Khrueang sai",
+            "Mahori",
+            "Piphat"
+        ]
+    },
+    {
+        "question": "What specific instruments and sound effects are used in the song 'Royals' by Lorde?",
+        "answer": [
+            "finger snaps",
+            "bass",
+            "percussion",
+            "hip hop beat"
+        ]
+    },
+    {
+        "question": "Which songs did Jimmy Page use a bow to play on studio recordings?",
+        "answer": [
+            "Dazed and Confused",
+            "How Many More Times",
+            "In the Evening"
+        ]
+    },
+    {
+        "question": "Which specific instruments are played in the song 'All of My Love' by Led Zeppelin?",
+        "answer": [
+            "guitar",
+            "drums",
+            "synthesizer",
+            "bass guitar"
+        ]
+    },
+    {
+        "question": "What are the specific music genres that have been officially categorized for the song 'Sail' by AWOLNATION according to music databases?",
+        "answer": [
+            "Industrial rock",
+            "Alternative rock",
+            "Electronic rock",
+            "Electropop"
+        ]
+    },
+    {
+        "question": "What are the release years of the Disney animated and live-action 'Beauty and the Beast' movies?",
+        "answer": [
+            "1991",
+            "2017"
+        ]
+    },
+    {
+        "question": "What specific roles do the Senate and the House of Representatives play in the impeachment process in the United States?",
+        "answer": [
+            "The House of Representatives initiates impeachment cases by bringing charges.",
+            "The Senate conducts the impeachment trial to decide on the case."
+        ]
+    },
+    {
+        "question": "In the United States, for what federal crimes can someone be sentenced to the death penalty?",
+        "answer": [
+            "murder",
+            "treason",
+            "genocide",
+            "killing or kidnapping of a Congressman, the President, or a Supreme Court justice"
+        ]
+    },
+    {
+        "question": "Which subjects were transferred from the state list to the concurrent list under the 42nd amendment of the Indian Constitution in 1976?",
+        "answer": [
+            "Education",
+            "ForestsWeights & Measures",
+            "Protection of Wild Animals and Birds",
+            "Administration of Justice"
+        ]
+    },
+    {
+        "question": "Who were the main directors of each episode of Season 7 of Game of Thrones?",
+        "answer": [
+            "Alan Taylor",
+            "Jeremy Podeswa",
+            "Mark Mylod",
+            "Matt Shakman"
+        ]
+    },
+    {
+        "question": "What are the full names of the characters based on real-life serial killers in the TV series 'American Horror Story: Hotel'?",
+        "answer": [
+            "Jeffrey Dahmer",
+            "Zodiac Killer",
+            "John Wayne Gacy",
+            "Aileen Wuornos",
+            "Richard Ramirez"
+        ]
+    },
+    {
+        "question": "What are the complete names of daughters of Ned Stark in the series \"A Song of Ice and Fire\"?",
+        "answer": [
+            "Sansa Stark",
+            "Arya Stark"
+        ]
+    },
+    {
+        "question": "What are the seven gifts of the Holy Spirit given during Confirmation according to Catholic doctrine?",
+        "answer": [
+            "knowledge",
+            "counsel",
+            "understanding",
+            "piety",
+            "fortitude",
+            "wisdom",
+            "fear of the Lord"
+        ]
+    },
+    {
+        "question": "What are the Four Last Things in Catholic theology?",
+        "answer": [
+            "Death",
+            "Judgment",
+            "Heaven",
+            "Hell"
+        ]
+    },
+    {
+        "question": "What are the names of main and recurring characters in the Tweenies?",
+        "answer": [
+            "Milo",
+            "Max",
+            "Fizz",
+            "Bella",
+            "Jake",
+            "Doodles",
+            "Izzles",
+            "Judy"
+        ]
+    },
+    {
+        "question": "List the actresses who have portrayed the role of Assistant District Attorney (ADA) in the TV series \"Law and Order: Special Victims Unit\".",
+        "answer": [
+            "Alexandra Cabot",
+            "Casey Novak",
+            "Kim Greylek",
+            "Rafael Barba",
+            "Dominick Carisi"
+        ]
+    },
+    {
+        "question": "Who are the actresses who have portrayed the character Angelica on the TV show 'Days of Our Lives'?",
+        "answer": [
+            "Shelley Taylor Morgan",
+            "Judith Chapman",
+            "Morgan Fairchild",
+            "Jane Elliot"
+        ]
+    },
+    {
+        "question": "What are the three specific categories of the Universal Design for Learning (UDL) framework?",
+        "answer": [
+            "Multiple means of engagement",
+            "Multiple means of representation",
+            "Multiple means of expression"
+        ]
+    },
+    {
+        "question": "Identify the three main branches of phonetics.",
+        "answer": [
+            "Articulatory phonetics",
+            "Acoustic phonetics",
+            "Auditory phonetics"
+        ]
+    },
+    {
+        "question": "What are the three specific forms of leakages in the circular flow of income, according to conventional economic theory?",
+        "answer": [
+            "tax payments",
+            "imports",
+            "savings"
+        ]
+    },
+    {
+        "question": "What are the specific factors that can shift the equilibrium of a chemical reaction according to Le Chatelier's principle?",
+        "answer": [
+            "Temperature",
+            "Concentration",
+            "Pressure"
+        ]
+    },
+    {
+        "question": "What are the three main types of symbiotic relationships in nature?",
+        "answer": [
+            "commensalism",
+            "mutualism",
+            "parasitism"
+        ]
+    },
+    {
+        "question": "What are the three primary concepts defined in expectancy violations theory?",
+        "answer": [
+            "violation valence",
+            "communicator reward valence",
+            "expectancies"
+        ]
+    },
+    {
+        "question": "Which specific types of animals are primary reservoirs contributing significantly to the transmission cycle of Japanese encephalitis?",
+        "answer": [
+            "Wild birds",
+            "Pigs"
+        ]
+    },
+    {
+        "question": "What are the specific functions commonly performed by a USB flash drive?",
+        "answer": [
+            "Storage of digital files",
+            "Backup of important data",
+            "Transfer of files between computers"
+        ]
+    },
+    {
+        "question": "On which gaming consoles and operating systems can you play Bendy and the Ink Machine?",
+        "answer": [
+            "Microsoft Windows",
+            "macOS",
+            "Linux",
+            "Nintendo Switch",
+            "PlayStation 4",
+            "Xbox One",
+            "iosandroid"
+        ]
+    },
+    {
+        "question": "Who are the original creators of the character Black Panther from Marvel Comics?",
+        "answer": [
+            "Stan Lee",
+            "Jack Kirby"
+        ]
+    },
+    {
+        "question": "Who were the composers involved in the music for the movie 'The Dark Knight'?",
+        "answer": [
+            "Hans Zimmer",
+            "James Newton Howard"
+        ]
+    },
+    {
+        "question": "Who have played the character Morticia Addams in the various adaptations of The Addams Family?",
+        "answer": [
+            "Carolyn Jones",
+            "Anjelica Huston",
+            "Catherine Zeta-Jones"
+        ]
+    },
+    {
+        "question": "Who played the part of Maria in the original and subsequent major revivals of 'West Side Story' on Broadway?",
+        "answer": [
+            "Marlys Watters",
+            "Josefina Scaglione",
+            "Josie de Guzman",
+            "Carol Lawrence",
+            "Shereen Pimentel"
+        ]
+    },
+    {
+        "question": "Who were the original creators of the comic book character Chakra the Invincible?",
+        "answer": [
+            "Stan Lee",
+            "Sharad Devarajan",
+            "Gotham Chopra"
+        ]
+    },
+    {
+        "question": "What are the names of the seven sacraments recognized by the Roman Catholic Church?",
+        "answer": [
+            "Baptism",
+            "Confirmation",
+            "Eucharist",
+            "Reconciliation",
+            "Anointing of the Sick",
+            [
+                "Matrimony",
+                "Marriage"
+            ],
+            "Holy Orders"
+        ]
+    },
+    {
+        "question": "List the seven deadly sins as identified in mainstream Christian theology.",
+        "answer": [
+            "pride",
+            "greed",
+            "lust",
+            "envy",
+            "gluttony",
+            "wrath",
+            "sloth"
+        ]
+    },
+    {
+        "question": "What are the five specific ministry gifts listed in the New Testament of the Bible?",
+        "answer": [
+            "evangelists",
+            "apostles",
+            "prophets",
+            "teachers",
+            "pastors"
+        ]
+    },
+    {
+        "question": "What are the official nicknames of the four ghosts featured in the original Pac-Man video game?",
+        "answer": [
+            "Clyde",
+            "Pinky",
+            "Inky",
+            "Blinky"
+        ]
+    },
+    {
+        "question": "Which characters are playable by the player in 'God of War: Ragnarok'?",
+        "answer": [
+            "Atreus",
+            "Kratos"
+        ]
+    },
+    {
+        "question": "What are the names of the Pixies characters in the animated series Winx Club?",
+        "answer": [
+            "Bloom",
+            "Musa",
+            "Lockette",
+            "Digit",
+            "Cherie",
+            "Piff",
+            "Flora",
+            "Stella",
+            "Amore",
+            "Tune",
+            "Sky",
+            "Aisha",
+            "Tecna",
+            "Chatta",
+            "Caramel",
+            "Roxy"
+        ]
+    },
+    {
+        "question": "What are the names of each of the three dragons featured in the TV series \"Game of Thrones\"?",
+        "answer": [
+            "Drogon",
+            "Rhaegal",
+            "Viserion"
+        ]
+    },
+    {
+        "question": "What are the two specific types of malice as defined in legal context?",
+        "answer": [
+            "express malice",
+            "implied malice"
+        ]
+    },
+    {
+        "question": "List the types of writs specified in the Constitution of India.",
+        "answer": [
+            "Habeas Corpus",
+            "Mandamus",
+            "Prohibition",
+            "Quo Warranto",
+            "Certiorari"
+        ]
+    },
+    {
+        "question": "What are the names of the four houses at Hogwarts in the Harry Potter series?",
+        "answer": [
+            "Gryffindor",
+            "Ravenclaw",
+            "Slytherin",
+            "Hufflepuff"
+        ]
+    },
+    {
+        "question": "What are the conventional names of nine reindeer commonly associated with Santa Claus in the poem \"A Visit from St. Nicholas\"?",
+        "answer": [
+            "Rudolph",
+            "Donner",
+            "Vixen",
+            "Dasher",
+            "Prancer",
+            "Comet",
+            "Cupid",
+            "Dancer",
+            "Blitzen"
+        ]
+    },
+    {
+        "question": "Who are the co-founders of WhatsApp?",
+        "answer": [
+            "Jan Koum",
+            "Brian Acton"
+        ]
+    },
+    {
+        "question": "What are the full names of the individuals who co-founded the first free web-based email service, Hotmail?",
+        "answer": [
+            "Jack Smith",
+            "Sabeer Bhatia"
+        ]
+    },
+    {
+        "question": "Which countries are permanent members of the United Nations Security Council as of 2023?",
+        "answer": [
+            "France",
+            "Russia",
+            "United Kingdom",
+            "China",
+            "United States"
+        ]
+    },
+    {
+        "question": "What are the three levels of government in the United States where elections are held?",
+        "answer": [
+            "State",
+            "Local",
+            "Federal"
+        ]
+    },
+    {
+        "question": "Which specific parent breeds (including gender) were crossed to create the Columbia sheep?",
+        "answer": [
+            "Lincoln rams",
+            "Rambouillet ewes"
+        ]
+    },
+    {
+        "question": "What are the common clinical symptoms documented for a systemic anaphylactic reaction in medical literature?",
+        "answer": [
+            "vomiting",
+            "throat or tongue swelling",
+            "shortness of breath",
+            "lightheadedness",
+            "itchy rash",
+            "low blood pressure"
+        ]
+    },
+    {
+        "question": "What are the two primary categories for organ donors based on their life status?",
+        "answer": [
+            "Living donors",
+            "Deceased donors"
+        ]
+    },
+    {
+        "question": "What are the full names of the elephant characters in the animated series Peppa Pig?",
+        "answer": [
+            "Mummy Elephant",
+            "Edmond Elephant",
+            "Emily Elephant",
+            "Doctor Elephant"
+        ]
+    },
+    {
+        "question": "What specific rights are enumerated in the First Amendment of the United States Constitution?",
+        "answer": [
+            "Freedom of speech",
+            "Free exercise of religion",
+            "Right to peaceably assemble",
+            "Freedom of the press",
+            "Right to petition the government for a redress of grievances"
+        ]
+    },
+    {
+        "question": "What are the specific military definitions of the acronym 'GI'?",
+        "answer": [
+            "government issue",
+            "general issue",
+            "garrison issue",
+            "general infantry"
+        ]
+    },
+    {
+        "question": "What are the standard alcoholic and non-alcoholic ingredients in a Long Island Iced Tea cocktail?",
+        "answer": [
+            "tequila",
+            "light rum",
+            "gin",
+            "cola",
+            "triple sec",
+            "vodka",
+            "lemon juice",
+            "simple syrup"
+        ]
+    },
+    {
+        "question": "What are the names of the three main branches of the United States federal government?",
+        "answer": [
+            "Legislative",
+            "Executive",
+            "Judicial"
+        ]
+    },
+    {
+        "question": "What are the specific names of the two legislative bodies that make up the United States Congress?",
+        "answer": [
+            "the Senate",
+            "the House of Representatives"
+        ]
+    },
+    {
+        "question": "What specific programs or initiatives does the March of Dimes fundraise for?",
+        "answer": [
+            "Community programs",
+            "Education programs for pregnant women",
+            "Government advocacy for maternal and child health",
+            "Medical research",
+            "support of pregnant women and mothers"
+        ]
+    },
+    {
+        "question": "Who were the creators of the Teenage Mutant Ninja Turtles?",
+        "answer": [
+            "Kevin Eastman",
+            "Peter Laird"
+        ]
+    },
+    {
+        "question": "What are the primary standard time zones recognized in the United States according to official timekeeping agencies?",
+        "answer": [
+            "Eastern Standard Time",
+            "Central Standard Time",
+            "Mountain Standard Time",
+            "Pacific Standard Time",
+            "Alaska Standard Time",
+            "Hawaii-Aleutian Standard Time"
+        ]
+    },
+    {
+        "question": "In which specific months does snowfall usually occur in Tasmania?",
+        "answer": [
+            "June",
+            "July",
+            "August"
+        ]
+    },
+    {
+        "question": "List the Santa's reindeer, including both traditional and popular culture additions.",
+        "answer": [
+            "Dasher",
+            "Dancer",
+            "Prancer",
+            "Vixen",
+            "Comet",
+            "Cupid",
+            "Donner",
+            "Blitzen",
+            "Rudolph"
+        ]
+    },
+    {
+        "question": "What are the three specific types of milk traditionally used to make Tres Leches cake?",
+        "answer": [
+            "evaporated milk",
+            "condensed milk",
+            "heavy cream"
+        ]
+    },
+    {
+        "question": "Which characters die in the Battle of the Five Armies in 'The Hobbit' book version?",
+        "answer": [
+            "F\u00edli",
+            "Thorin",
+            "K\u00edli"
+        ]
+    },
+    {
+        "question": "What specific crimes did the killer commit against Susie in 'The Lovely Bones'?",
+        "answer": [
+            "rape",
+            "murder",
+            "dismemberment of body"
+        ]
+    },
+    {
+        "question": "Who were the characters responsible for planning and executing the poisoning of King Joffrey Baratheon in the \"Game of Thrones\" book?",
+        "answer": [
+            "Petyr Baelish",
+            "Olenna Tyrell"
+        ]
+    },
+    {
+        "question": "What specific tragedies befell Mackenzie's daughter in the book 'The Shack'?",
+        "answer": [
+            "Abduction",
+            "Murder"
+        ]
+    },
+    {
+        "question": "What are the names of the two Jewish High Holy Days?",
+        "answer": [
+            "Rosh Hashanah",
+            "Yom Kippur"
+        ]
+    },
+    {
+        "question": "What are the names of the five standard prayer services observed during Yom Kippur in the Ashkenazi Jewish tradition?",
+        "answer": [
+            "Kol Nidrei and Ma\\'ariv",
+            "Shachrit",
+            "Musaf",
+            "Mincha",
+            "Ne\\'ilah"
+        ]
+    },
+    {
+        "question": "Who played the character Templeton Peck in both the A-Team TV series and the A-Team movie?",
+        "answer": [
+            "Tim Dunigan",
+            "Dirk Benedict",
+            "Bradley Cooper"
+        ]
+    },
+    {
+        "question": "List the season titles of the series \"American Horror Story\" up to the year 2023.",
+        "answer": [
+            "Murder House",
+            "Asylum",
+            "Coven",
+            "Freak Show",
+            "Hotel",
+            "Roanoke",
+            "Cult",
+            "Apocalypse",
+            "1984",
+            "Double Feature",
+            "NYC"
+        ]
+    },
+    {
+        "question": "What platforms is the Assassin's Creed video game available on?",
+        "answer": [
+            "PlayStation 3",
+            "Xbox 360",
+            "Microsoft Windows"
+        ]
+    },
+    {
+        "question": "Which individuals or group members were inducted into the Rock and Roll Hall of Fame in 2022?",
+        "answer": [
+            "Pat Benatar",
+            "Neil Giraldo",
+            "Warren Cuccurullo",
+            "Simon Le Bon",
+            "Nick Rhodes",
+            "Andy Taylor",
+            "John Taylor",
+            "Roger Taylor",
+            "Eminem",
+            "Eurythmics",
+            "Dolly Parton",
+            "Lionel Richie",
+            "Carly Simon"
+        ]
+    },
+    {
+        "question": "What are the specific breeds of dogs listed in the UK Dangerous Dogs Act as of 2021?",
+        "answer": [
+            "Japanese Tosa",
+            "Dogo Argentino",
+            "Fila Brasileiro",
+            "Pit Bull Terrier"
+        ]
+    },
+    {
+        "question": "What are the names of the corner squares on the standard Monopoly board?",
+        "answer": [
+            "GO",
+            "Jail/Just Visiting",
+            "Free Parking",
+            "Go to Jail"
+        ]
+    },
+    {
+        "question": "Who are the co-founders of Ben and Jerry's Ice Cream Company?",
+        "answer": [
+            "Jerry Greenfield",
+            "Ben Cohen"
+        ]
+    },
+    {
+        "question": "What jobs has Whitney Port had, including her past professions?",
+        "answer": [
+            "author",
+            "television personality",
+            "fashion designer"
+        ]
+    },
+    {
+        "question": "What jobs has Lance Bass had, including her past professions?",
+        "answer": [
+            "singer",
+            "film and television producer",
+            "author",
+            "dancer",
+            "podcaster"
+        ]
+    },
+    {
+        "question": "Which individuals have been awarded the title 'Sexiest Man Alive' by People Magazine more than once?",
+        "answer": [
+            "Johnny Depp",
+            "Brad Pitt",
+            "George Clooney",
+            "Richard Gere"
+        ]
+    },
+    {
+        "question": "What are the types of juries based on their function in the United States' legal system?",
+        "answer": [
+            "grand juries",
+            "civil juries",
+            [
+                "petit juries",
+                "trial juries"
+            ]
+        ]
+    },
+    {
+        "question": "List the Fast and Furious movies that include the character Han Lue.",
+        "answer": [
+            "Better Luck Tomorrow",
+            "Fast Five",
+            "Fast & Furious",
+            "Fast & Furious 6",
+            "Los Bandoleros",
+            "Furious 7",
+            "F9",
+            "Fast X",
+            "The Fast and the Furious: Tokyo Drift"
+        ]
+    },
+    {
+        "question": "On which specific operating systems and game consoles is Monster Hunter World available?",
+        "answer": [
+            "Microsoft Windows",
+            "PlayStation 4",
+            "Xbox One"
+        ]
+    },
+    {
+        "question": "What are the 4 fundamentals of physics?",
+        "answer": [
+            "gravity",
+            "electromagnetism",
+            "weak nuclear force",
+            "strong nuclear force"
+        ]
+    },
+    {
+        "question": "What are the key structural features that define the Gothic architectural style?",
+        "answer": [
+            "ribbed vault",
+            "stained-glass windows",
+            "spires",
+            "flying buttress",
+            "pointed arch"
+        ]
+    },
+    {
+        "question": "What airlines currently operate direct flights out of Rapid City Regional Airport?",
+        "answer": [
+            "American Airlines",
+            "Allegiant Air",
+            "United",
+            "Delta",
+            "Sun Country"
+        ]
+    },
+    {
+        "question": "What are the names of the principal theme parks at Disneyland Paris?",
+        "answer": [
+            "Disneyland Park",
+            "Walt Disney Studios Park"
+        ]
+    },
+    {
+        "question": "What specific roles or staff positions are typically awarded a championship ring when an NBA team wins a championship?",
+        "answer": [
+            "coaches",
+            "players",
+            "executives",
+            "staff members"
+        ]
+    },
+    {
+        "question": "What are the different types of money supply in the United States?",
+        "answer": [
+            "M0",
+            "MB",
+            "M1",
+            "M2",
+            "M3",
+            "MZM"
+        ]
+    },
+    {
+        "question": "What were the major professions of Audrey Hepburn?",
+        "answer": [
+            "model",
+            "dancer",
+            "actress"
+        ]
+    },
+    {
+        "question": "What are the specific religious symbols depicted on the Coexist bumper sticker?",
+        "answer": [
+            "peace sign",
+            "yin-yang symbol",
+            "Islamic crescent moon",
+            "Star of David",
+            "Star of David",
+            "pentacle"
+        ]
+    },
+    {
+        "question": "Who are the original founding members of the Justice League as introduced in the comic book series?",
+        "answer": [
+            "Superman",
+            "Wonder Woman",
+            "Green Lantern",
+            "Martian Manhunter",
+            "Aquaman",
+            "Flash",
+            "Batman"
+        ]
+    },
+    {
+        "question": "What are the names of the original American Girl doll characters introduced at the brand's inception?",
+        "answer": [
+            "Molly McIntire",
+            "Kirsten Larson",
+            "Samantha Parkington"
+        ]
+    },
+    {
+        "question": "What are the main compositional style periods of Igor Stravinsky, distinguished by distinct stylistic characteristics?",
+        "answer": [
+            "Russian period",
+            "Neoclassical period",
+            "Serial period"
+        ]
+    },
+    {
+        "question": "What are the symbolic meanings of the color green in Chinese culture?",
+        "answer": [
+            "wealth",
+            "regeneration",
+            "fertility",
+            "health",
+            "harmony"
+        ]
+    },
+    {
+        "question": "At what specific stages of a game round are cards burned in Texas Hold'em poker?",
+        "answer": [
+            "Before the flop",
+            "Before the turn",
+            "Before the river"
+        ]
+    },
+    {
+        "question": "What were the birth names of each of the Marx Brothers?",
+        "answer": [
+            "Leonard Marx",
+            "Adolph Marx",
+            "Julius Henry Marx",
+            "Herbert Manfred Marx",
+            "Milton Marx"
+        ]
+    },
+    {
+        "question": "What are the key artistic techniques commonly associated with Renaissance art?",
+        "answer": [
+            "proportion",
+            "foreshortening",
+            "perspective",
+            "chiaroscuro",
+            "sfumato"
+        ]
+    },
+    {
+        "question": "What are the city names where homes featured in 'Property Brothers' are located?",
+        "answer": [
+            "Nashville",
+            "Toronto",
+            "Atlanta",
+            "Westchester County",
+            "Austin",
+            "Vancouver",
+            "Calgary"
+        ]
+    },
+    {
+        "question": "What are the specific labels for the four quadrants of the Eisenhower Matrix in time management?",
+        "answer": [
+            "Important & Urgent",
+            "Important & Not Urgent",
+            "Unimportant & Urgent",
+            "Unimportant & Not Urgent"
+        ]
+    },
+    {
+        "question": "List the specific love languages as identified in Dr. Gary Chapman's theory.",
+        "answer": [
+            "Quality Time",
+            "Gifts",
+            "Words of Affirmation",
+            "Physical Touch",
+            "Acts of Service"
+        ]
+    },
+    {
+        "question": "Identify the primary parties typically involved in civil lawsuits in common law legal systems.",
+        "answer": [
+            "Plaintiff",
+            "Defendant"
+        ]
+    },
+    {
+        "question": "Which artists or bands were officially inducted into the Rock and Roll Hall of Fame in the year 2018 according to the Hall of Fame's records?",
+        "answer": [
+            "The Cars",
+            "The Moody Blues",
+            "Nina Simone",
+            "Dire Straits",
+            "Bon Jovi"
+        ]
+    },
+    {
+        "question": "Which specific Bible verses directly state the principle 'do unto others as you would have them do unto you'?",
+        "answer": [
+            "Luke 6:31",
+            "Matthew 7:12"
+        ]
+    },
+    {
+        "question": "What are the main types of cellular respiration?",
+        "answer": [
+            "Aerobic respiration",
+            "Anaerobic respiration"
+        ]
+    },
+    {
+        "question": "List the specific freedoms protected by the First Amendment of the U.S. Constitution.",
+        "answer": [
+            "speech",
+            "religion",
+            [
+                "assemble",
+                "assembly"
+            ],
+            "press",
+            "petition"
+        ]
+    },
+    {
+        "question": "What specific cultural art styles influenced the design of the cross page in the Lindisfarne Gospels?",
+        "answer": [
+            "Anglo-Saxon",
+            "Celtic",
+            "Mediterranean"
+        ]
+    },
+    {
+        "question": "Which United States presidents are carved into the face of Mount Rushmore?",
+        "answer": [
+            "George Washington",
+            "Thomas Jefferson",
+            "Abraham Lincoln",
+            "Theodore Roosevelt"
+        ]
+    },
+    {
+        "question": "Which federal agencies are responsible for scheduling controlled substances in the United States?",
+        "answer": [
+            "Food and Drug Administration",
+            "Drug Enforcement Administration"
+        ]
+    },
+    {
+        "question": "What are the primary components of the Federal Reserve System?",
+        "answer": [
+            "Board of Governors",
+            "Federal Open Market Committee",
+            "Federal Reserve Banks"
+        ]
+    },
+    {
+        "question": "What kinds of noble gases (Symbols) are there?",
+        "answer": [
+            "He",
+            "Ne",
+            "Ar",
+            "Kr",
+            "Xe",
+            "Rn",
+            "Og"
+        ]
+    },
+    {
+        "question": "What are the common slang terms used to describe the act of injecting a drug with a needle?",
+        "answer": [
+            "slamming",
+            "jacking-up",
+            "banging",
+            "pinning",
+            "shooting up",
+            "smashing"
+        ]
+    },
+    {
+        "question": "What are the corporate entities that develop the Salesforce Tower in San Francisco?",
+        "answer": [
+            "Hines Interests Limited Partnership",
+            "Boston Properties"
+        ]
+    },
+    {
+        "question": "What are the key ingredients typically required to prepare Chiles en Nogada?",
+        "answer": [
+            "Pomegranate",
+            "Poblano chiles",
+            "Picadillo",
+            "Walnut",
+            "cream"
+        ]
+    },
+    {
+        "question": "What are the names of the main family members regularly featured on the TV show 'Chrisley Knows Best'?",
+        "answer": [
+            "Todd Chrisley",
+            "Julie Chrisley",
+            "Chase Chrisley",
+            "Savannah Chrisley",
+            "Grayson Chrisley",
+            "Faye Chrisley",
+            "Chloe Chrisley",
+            "Kyle Chrisley",
+            "Lindsie Chrisley Campbell"
+        ]
+    },
+    {
+        "question": "Who are officially recognized as the founding members of Facebook?",
+        "answer": [
+            "Andrew McCollum",
+            "Dustin Moskovitz",
+            "Eduardo Saverin",
+            "Mark Zuckerberg",
+            "Chris Hughes"
+        ]
+    },
+    {
+        "question": "Who were the finalist contestants in the 2018 Ireland's Got Talent competition?",
+        "answer": [
+            "Double Impact",
+            "Zacc Milne",
+            "Linda McLoughlin",
+            "Matt Dodd",
+            "Aaron J. Hart",
+            "Xquisite",
+            "RDC",
+            "FKFT"
+        ]
+    },
+    {
+        "question": "Who were the final nominees for the Best Female Hip-Hop Artist category at the 2017 BET Awards?",
+        "answer": [
+            "Remy Ma",
+            "Nicki Minaj",
+            "Missy Elliott",
+            "Cardi B",
+            "Young M.A"
+        ]
+    },
+    {
+        "question": "What are the specific names used for the festival of Holi in West Bengal and Odisha?",
+        "answer": [
+            "Basanta Utsav",
+            "Dol Jatra"
+        ]
+    },
+    {
+        "question": "What are the specific names of categories of diplomas and degrees awarded by colleges in Canada?",
+        "answer": [
+            [
+                "associate\\'s degree",
+                "associate degree"
+            ],
+            "Master\\'s Degree",
+            "Doctoral Degree",
+            "bachelor\\'s degree"
+        ]
+    },
+    {
+        "question": "Which religions have been primarily involved in conflicts over control of Jerusalem throughout history?",
+        "answer": [
+            "Judaism",
+            "Christianity",
+            "Islam"
+        ]
+    },
+    {
+        "question": "What are the common interpretations of the phrase 'mind your P's and Q's' in the context of social etiquette?",
+        "answer": [
+            "mind your language",
+            "mind your manners",
+            "be on your best behaviour",
+            "watch what you're doing"
+        ]
+    },
+    {
+        "question": "What types of locations are suitable for receiving the Anointing of the Sick?",
+        "answer": [
+            "home",
+            "church",
+            "hospital",
+            "institution"
+        ]
+    },
+    {
+        "question": "What specific sub-genres of comedy are officially categorized for the TV show 'Curb Your Enthusiasm'?",
+        "answer": [
+            "Cringe comedy",
+            [
+                "Dark comedy",
+                "Black Comedy"
+            ],
+            "Improvisational comedy"
+        ]
+    },
+    {
+        "question": "What are the ethnic or regional origins associated with the last name Rios?",
+        "answer": [
+            "Spanish",
+            "Galician",
+            "Portuguese"
+        ]
+    },
+    {
+        "question": "What are the gifts of the Holy Spirit as listed in the New International Version (NIV) of 1 Corinthians 12?",
+        "answer": [
+            "Word of wisdom",
+            "Word of knowledge",
+            "Faith",
+            "Gifts of healing",
+            [
+                "Miraculous powers",
+                "miracles"
+            ],
+            "Prophecy",
+            [
+                "Distinguishing between spirits",
+                "discerning of spirits"
+            ],
+            [
+                "Speaking in different kinds of tongues",
+                "diverse kinds of tongues"
+            ],
+            "Interpretation of tongues"
+        ]
+    },
+    {
+        "question": "Which airlines currently operate flights into Salt Lake City International Airport?",
+        "answer": [
+            "American Airlines",
+            "SkyWest Airlines",
+            "Alaska Airlines",
+            "Delta Air Lines",
+            "Southwest Airlines",
+            "Aerom\u00e9xico",
+            "Air Canada",
+            "American Eagle",
+            "Delta Connection",
+            "Frontier Airlines",
+            "Hawaiian Airlines",
+            "JetBlue",
+            "KLM",
+            "Redtail Air Adventures",
+            "Spirit Airlines",
+            "Sun Country Airlines",
+            "United Airlines",
+            "United Express"
+        ]
+    },
+    {
+        "question": "What are the first names of the daughters featured on 'Little House on the Prairie'?",
+        "answer": [
+            "Carrie",
+            "Grace",
+            "Cassandra",
+            "Laura",
+            "Mary"
+        ]
+    },
+    {
+        "question": "What are the names of  character alignments in the Dungeons and Dragons game?",
+        "answer": [
+            "Lawful good",
+            "Neutral good",
+            "Chaotic good",
+            "Lawful neutral",
+            "True Neutral",
+            "Chaotic neutral",
+            "Lawful evil",
+            "Neutral evil",
+            "Chaotic evil"
+        ]
+    },
+    {
+        "question": "What are the engine capacities, in liters, available for the 2000 Chevy Silverado?",
+        "answer": [
+            "4.8L",
+            "4.3L",
+            "5.3L"
+        ]
+    },
+    {
+        "question": "What specific rights does the Great Ape Project advocate for great apes?",
+        "answer": [
+            "Right of life",
+            "protection of individual liberty",
+            "prohibition of torture"
+        ]
+    },
+    {
+        "question": "What are the common names for each finger on a human hand?",
+        "answer": [
+            "Thumb",
+            [
+                "Index Finger",
+                "pointer finger",
+                "forefinger"
+            ],
+            [
+                "Middle Finger",
+                "long finger"
+            ],
+            "Ring Finger",
+            [
+                "Little Finger",
+                "pinky finger",
+                "small finger"
+            ]
+        ]
+    },
+    {
+        "question": "What specific weather phenomena and climatic patterns result directly from the circulation of air in Hadley cells?",
+        "answer": [
+            "Subtropical deserts",
+            "Jet streams",
+            "Hurricanes",
+            "Tropical cyclones",
+            "Trade winds",
+            "tropical rainbelts"
+        ]
+    },
+    {
+        "question": "What are specific medical conditions classified as Type III hypersensitivity reactions?",
+        "answer": [
+            "Vasculitis",
+            "Glomerulonephritis",
+            "Arthritis"
+        ]
+    },
+    {
+        "question": "What are the standard structural components of a typical buckle used in accessories like belts and shoes?",
+        "answer": [
+            "Chape",
+            "Bar",
+            "Frame",
+            "Prong"
+        ]
+    }
+]
