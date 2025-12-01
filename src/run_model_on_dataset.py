@@ -275,14 +275,8 @@ def run_model_on_dataset():
     This function loops over all datasets, their categories and subcategories
     """
 
-    # TODO: Somehow loop over dataset so the questions can be processed at least in
-    #  batches in 8
-
-    datasets = []
-
     # TODO: Somehow loop over the datasets
-    #datasets = [[1]]
-
+    datasets = [[1]]
     results_df = pd.DataFrame()
 
     model = Model()
