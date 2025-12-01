@@ -17,7 +17,7 @@ pip install -U bitsandbytes
 pip install flash-attn --no-build-isolation
 ```
 
-pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+pip install --upgrade torch torchvision --index-url https://download.pytorch.org/whl/cpu
 
 ## Used Resources
 TODO
