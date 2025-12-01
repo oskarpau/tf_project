@@ -55,8 +55,8 @@ class Model:
             self.model = Qwen3VLForConditionalGeneration.from_pretrained(
                 self.model_name,
                 quantization_config=bnb_config,
-                device_map="auto",
-                attn_implementation="flash_attention_2"
+                device_map="auto"
+                # attn_implementation="flash_attention_2"
             )
 
         else:
