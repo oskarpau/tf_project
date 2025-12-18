@@ -5,9 +5,15 @@
 import os
 import subprocess
 import sys
-subprocess.check_call([sys.executable, "-m", "pip", "install", "pyarrow"])
-subprocess.check_call([sys.executable, "-m", "pip", "install", "fastparquet"])
-subprocess.check_call([sys.executable, "-m", "pip", "install", "transformers"])
+#from google.colab import drive
+import pandas as pd
+import time
+from datetime import datetime, timedelta
+import csv
+
+# subprocess.check_call([sys.executable, "-m", "pip", "install", "pyarrow"])
+# subprocess.check_call([sys.executable, "-m", "pip", "install", "fastparquet"])
+# subprocess.check_call([sys.executable, "-m", "pip", "install", "transformers"])
 #subprocess.check_call([sys.executable, "-m", "pip", "install", "torch"])
 from model import Model
 # Get the directory where this script is located
@@ -15,8 +21,7 @@ script_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Print it
 print("Directory of this script:", script_dir)
-#from google.colab import drive
-import pandas as pd
+
 
 # todo
 # kõik vastused ühele kujule . stringide list
@@ -31,7 +36,7 @@ rightanswers list
 question type = "true/false", "multi string" list
 '''
 
-base_path =script_dir+"\\..\\datasets\\"
+base_path = os.path.join(script_dir, os.pardir, 'datasets') # os.pardir equals '..' (parent path).
 
 # 3. For strategyqa_dataset:
 strategyqa_dev_df = pd.read_json(os.path.join(base_path, 'strategyqa_dataset', 'dev.json'))
@@ -212,7 +217,7 @@ def round_answers_to_integers(answer_list):
 for dataset_name, df in all_datasets.items():
     if 'answer' in df.columns:
         df['answer'] = df['answer'].apply(round_answers_to_integers)
-        #print(f"  '{dataset_name}' 'answer' column rounded.")
+        print(f"  '{dataset_name}' 'answer' column rounded.")
 
 
 
@@ -240,11 +245,11 @@ if 'gsm8k_test' in all_datasets:
 
 if 'maqa_MAQA_commonsense_reasoning' in all_datasets:
     #print("\n--- maqa_MAQA_commonsense_reasoning sample ---")
-    sample_df = all_datasets['maqa_MAQA_commonsense_reasoning'].head(2)
+    sample_df = all_datasets['maqa_MAQA_commonsense_reasoning'].head(10)
     for index, row in sample_df.iterrows():
         answer_value = row['answer']
-        #print(f"  Question: {row['question'][:50]}...")
-        #print(f"  Answer: {answer_value}, Type: {type(answer_value)}, Item Type: {type(answer_value[0]) if answer_value else 'N/A'}")
+        print(f"  Question: {row['question']}")
+        print(f"  Answer: {answer_value}, Type: {type(answer_value)}, Item Type: {type(answer_value[0]) if answer_value else 'N/A'}")
 
 if 'strategyqa_dev' in all_datasets:
     #print("\n--- strategyqa_dev sample ---")
@@ -264,8 +269,9 @@ if 'strategyqa_dev' in all_datasets:
 
 
 
-RESULTS_PATH = ""
+RESULTS_PATH = "initial_results.csv"
 BATCH_SIZE = 1
+CSV_SEP = ";"
 
 
 
@@ -275,25 +281,62 @@ def run_model_on_dataset():
     This function loops over all datasets, their categories and subcategories
     """
 
-    # TODO: Somehow loop over the datasets
-    datasets = [[1]]
-    results_df = pd.DataFrame()
+    print(f"Overwriting output to {RESULTS_PATH}")
+    with open(RESULTS_PATH, "w", encoding="utf-8", newline=""):
+        pass
 
     model = Model()
 
-    for dataset in datasets:
-        for row in dataset:
+    start_perf = time.perf_counter()
+    processed_this_run = 0
+
+
+    total_number_rows = 0
+    for dataset_name, df in all_datasets.items():
+        total_number_rows += df.shape[0]
+
+    rows_processed = 0
+    is_first_write = True
+    for dataset_name, df in all_datasets.items():
+        for index, row in df.iterrows():
+            question_start = time.perf_counter()
             dataframe_to_append = model.run_batch_and_compute_confidence(
-                dataset_name="dummy", 
+                dataset_name= dataset_name, 
                 categories = ["dummy_categorie"], 
                 subcategories = ["dummy_subcategorie"],
-                questions = ["What is equal to 2 + 2?"],
-                right_answers = [["4"]],
+                questions = [row['question']],
+                right_answers = [row['answer']],
                 question_types = ["multi_str"]
                 )
-            results_df = pd.concat([results_df, dataframe_to_append])
+
+            write_header = is_first_write
+            write_mode = "w" if is_first_write else "a"
+            dataframe_to_append.to_csv(
+                RESULTS_PATH,
+                mode=write_mode,
+                header=write_header,
+                index=False,
+                sep=CSV_SEP,
+            )
+            is_first_write = False
+
+            rows_processed += 1
+
+            question_seconds = time.perf_counter() - question_start
+            elapsed_seconds = time.perf_counter() - start_perf
+            avg_seconds = elapsed_seconds / rows_processed if rows_processed else 0.0
+            remaining = total_number_rows - rows_processed
+            eta_seconds = max(0.0, avg_seconds * remaining)
+            eta_td = timedelta(seconds=int(eta_seconds))
+            finish_wall = datetime.now() + timedelta(seconds=eta_seconds)
+
+            print(
+                f"Rows processed: {rows_processed} / {total_number_rows} | "
+                f"this question: {question_seconds:.2f}s | avg/question: {avg_seconds:.2f}s | "
+                f"Total est. time: {eta_td} | now: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} | "
+                f"est. finish wall time: {finish_wall.strftime('%Y-%m-%d %H:%M:%S')}"
+            )
     
-    results_df.to_csv(RESULTS_PATH, index=False, sep=";")
 
 
 if __name__ == "__main__":

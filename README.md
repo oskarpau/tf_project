@@ -12,7 +12,7 @@ TODO
 conda create -n tf_project python=3.10.18 -y
 conda activate tf_project
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
-pip install numpy pandas psutil transformers accelerate pillow
+pip install numpy pandas psutil transformers accelerate pillow pyarrow
 pip install -U bitsandbytes
 pip install flash-attn --no-build-isolation
 ```
