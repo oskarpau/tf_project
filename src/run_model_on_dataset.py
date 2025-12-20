@@ -5,22 +5,38 @@
 import os
 import subprocess
 import sys
-#subprocess.check_call([sys.executable, "-m", "pip", "install", "pyarrow"])
-#subprocess.check_call([sys.executable, "-m", "pip", "install", "fastparquet"])
-#subprocess.check_call([sys.executable, "-m", "pip", "install", "transformers"])
-#subprocess.check_call([sys.executable, "-m", "pip", "install", "torch"])
-#from model import Model
-
-# Get the directory where this script is located
-#script_dir = os.path.dirname(os.path.abspath(__file__))
-
-import re
+#from google.colab import drive
 import pandas as pd
-import numpy as np
+import time
+from datetime import datetime, timedelta
+import csv
 
-#script_dir = os.path.dirname(os.path.abspath(__file__))
-#base_path =script_dir+"/../datasets/"
-base_path = "../datasets/"
+# subprocess.check_call([sys.executable, "-m", "pip", "install", "pyarrow"])
+# subprocess.check_call([sys.executable, "-m", "pip", "install", "fastparquet"])
+# subprocess.check_call([sys.executable, "-m", "pip", "install", "transformers"])
+#subprocess.check_call([sys.executable, "-m", "pip", "install", "torch"])
+from model import Model
+# Get the directory where this script is located
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Print it
+print("Directory of this script:", script_dir)
+
+
+# todo
+# kõik vastused ühele kujule . stringide list
+# answerist <<=5>> välja
+
+'''
+dataset_name
+categories
+subcategories
+question
+rightanswers list
+question type = "true/false", "multi string" list
+'''
+
+base_path = os.path.join(script_dir, os.pardir, 'datasets') # os.pardir equals '..' (parent path).
 
 # 3. For strategyqa_dataset:
 strategyqa_dev_df = pd.read_json(os.path.join(base_path, 'strategyqa_dataset', 'dev.json'))
@@ -53,6 +69,26 @@ all_datasets = {
 for name, df in maqa_dfs.items():
     all_datasets[f'maqa_{name}'] = df
 
+'''
+print("All loaded DataFrames are now organized into the 'all_datasets' dictionary.")
+print(f"Total DataFrames in dictionary: {len(all_datasets)}")
+print("Keys in all_datasets:")
+for key in all_datasets.keys():
+    print(f"- {key}")
+'''
+
+
+#DATA CLEANSING AND TRANSFORMATION STARTS HERE
+#####################
+
+
+
+
+# DATA CLEANING TRANSFORMATION
+# 1. SOLVE << ... >>>
+
+import re
+import pandas as pd
 
 def get_processed_answer_list(answer_input):
 
@@ -101,6 +137,8 @@ for dataset_name, df in all_datasets.items():
 # data CLEANINS
 # 2. SPLIT (A) (B) (C)
 
+import re
+
 def split_multi_part_questions(row):
     question_text = row['question']
     original_answers = row['answer'] # This is expected to be a list like ['a', 'b']
@@ -135,6 +173,7 @@ def split_multi_part_questions(row):
 ###################
 # 2 CONTINUES
 
+import pandas as pd
 
 # Get the maqa_MAQA_commonsense_reasoning DataFrame
 maqa_commonsense_df = all_datasets['maqa_MAQA_commonsense_reasoning']
@@ -154,6 +193,8 @@ all_datasets['maqa_MAQA_commonsense_reasoning'] = expanded_maqa_commonsense_df
 #data processing
 # 3
 # 18.0 -> 18 ROUND
+
+import numpy as np
 
 def round_answers_to_integers(answer_list):
     """
@@ -176,7 +217,7 @@ def round_answers_to_integers(answer_list):
 for dataset_name, df in all_datasets.items():
     if 'answer' in df.columns:
         df['answer'] = df['answer'].apply(round_answers_to_integers)
-        #print(f"  '{dataset_name}' 'answer' column rounded.")
+        print(f"  '{dataset_name}' 'answer' column rounded.")
 
 
 
@@ -204,11 +245,11 @@ if 'gsm8k_test' in all_datasets:
 
 if 'maqa_MAQA_commonsense_reasoning' in all_datasets:
     #print("\n--- maqa_MAQA_commonsense_reasoning sample ---")
-    sample_df = all_datasets['maqa_MAQA_commonsense_reasoning'].head(2)
+    sample_df = all_datasets['maqa_MAQA_commonsense_reasoning'].head(10)
     for index, row in sample_df.iterrows():
         answer_value = row['answer']
-        #print(f"  Question: {row['question'][:50]}...")
-        #print(f"  Answer: {answer_value}, Type: {type(answer_value)}, Item Type: {type(answer_value[0]) if answer_value else 'N/A'}")
+        print(f"  Question: {row['question']}")
+        print(f"  Answer: {answer_value}, Type: {type(answer_value)}, Item Type: {type(answer_value[0]) if answer_value else 'N/A'}")
 
 if 'strategyqa_dev' in all_datasets:
     #print("\n--- strategyqa_dev sample ---")
@@ -219,21 +260,6 @@ if 'strategyqa_dev' in all_datasets:
         #print(f"  Answer: {answer_value}, Type: {type(answer_value)}, Item Type: {type(answer_value[0]) if answer_value else 'N/A'}")
 
 
-# Function to determine answer type
-def get_answer_type(answer_list):
-    if all(isinstance(item, str) and item.lower() in ['true', 'false'] for item in answer_list):
-        return 'true/false'
-    return 'multi_str'
-
-# Add 'answer_type' column to all dataframes in all_datasets
-print("Adding 'answer_type' column to all datasets...")
-for dataset_name, df in all_datasets.items():
-    if 'answer' in df.columns:
-        df['answer_type'] = df['answer'].apply(get_answer_type)
-        print(f"  '{dataset_name}' 'answer_type' column added.")
-
-print(df)
-
 #################################
 # END OF CLEANSING
 ################################
@@ -242,10 +268,10 @@ print(df)
 # SRC/RUN_DATASETS
 
 
-'''
 
-RESULTS_PATH = ""
+RESULTS_PATH = "initial_results.csv"
 BATCH_SIZE = 1
+CSV_SEP = ";"
 
 
 
@@ -255,27 +281,63 @@ def run_model_on_dataset():
     This function loops over all datasets, their categories and subcategories
     """
 
-    # TODO: Somehow loop over the datasets
-    datasets = [[1]]
-    results_df = pd.DataFrame()
+    print(f"Overwriting output to {RESULTS_PATH}")
+    with open(RESULTS_PATH, "w", encoding="utf-8", newline=""):
+        pass
 
     model = Model()
 
-    for dataset in datasets:
-        for row in dataset:
+    start_perf = time.perf_counter()
+    processed_this_run = 0
+
+
+    total_number_rows = 0
+    for dataset_name, df in all_datasets.items():
+        total_number_rows += df.shape[0]
+
+    rows_processed = 0
+    is_first_write = True
+    for dataset_name, df in all_datasets.items():
+        for index, row in df.iterrows():
+            question_start = time.perf_counter()
             dataframe_to_append = model.run_batch_and_compute_confidence(
-                dataset_name="dummy", 
+                dataset_name= dataset_name, 
                 categories = ["dummy_categorie"], 
                 subcategories = ["dummy_subcategorie"],
-                questions = ["What is equal to 2 + 2?"],
-                right_answers = [["4"]],
+                questions = [row['question']],
+                right_answers = [row['answer']],
                 question_types = ["multi_str"]
                 )
-            results_df = pd.concat([results_df, dataframe_to_append])
+
+            write_header = is_first_write
+            write_mode = "w" if is_first_write else "a"
+            dataframe_to_append.to_csv(
+                RESULTS_PATH,
+                mode=write_mode,
+                header=write_header,
+                index=False,
+                sep=CSV_SEP,
+            )
+            is_first_write = False
+
+            rows_processed += 1
+
+            question_seconds = time.perf_counter() - question_start
+            elapsed_seconds = time.perf_counter() - start_perf
+            avg_seconds = elapsed_seconds / rows_processed if rows_processed else 0.0
+            remaining = total_number_rows - rows_processed
+            eta_seconds = max(0.0, avg_seconds * remaining)
+            eta_td = timedelta(seconds=int(eta_seconds))
+            finish_wall = datetime.now() + timedelta(seconds=eta_seconds)
+
+            print(
+                f"Rows processed: {rows_processed} / {total_number_rows} | "
+                f"this question: {question_seconds:.2f}s | avg/question: {avg_seconds:.2f}s | "
+                f"Total est. time: {eta_td} | now: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} | "
+                f"est. finish wall time: {finish_wall.strftime('%Y-%m-%d %H:%M:%S')}"
+            )
     
-    results_df.to_csv(RESULTS_PATH, index=False, sep=";")
 
 
 if __name__ == "__main__":
     run_model_on_dataset()
-    '''
