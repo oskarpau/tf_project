@@ -360,7 +360,8 @@ class Model:
             verbal = False,
             second_try = False,
             wrong_answer_indexes = None,
-            active_indexes = None
+            active_indexes = None,
+            update_answers_and_correctness: bool = True,
         ) -> tuple[pd.DataFrame, list]:
 
         if wrong_answer_indexes is None:
@@ -368,33 +369,34 @@ class Model:
         if active_indexes is None:
             active_indexes = list(range(len(output_text)))
 
-        # Determine if answer was correct
-        for i, text in enumerate(output_text):
-            question_idx = active_indexes[i]
-            question_entry = quest_answ_confid_model_answ[question_idx]
-            # Extract answer string between ||...||
-            answer_str = text.lower().split("||")[1]
-            # Split answers, strip whitespace
-            model_answer = [a.strip() for a in answer_str.split(",")]
-            correct_answer = True
-            for right in question_entry["right answer"]:
-                if right.lower().strip() not in model_answer:
-                    correct_answer = False
-                    if not second_try:
-                        wrong_answer_indexes.append(question_idx)
-                    break
-            
-            # Now we add this to entry in the DataFrame
-            if not second_try:
-                df_out.loc[question_idx, "first_try_correct"] = correct_answer
-                df_out.loc[question_idx, "first_try_answer"] = model_answer
-                question_entry["wrong on first try"] = not correct_answer
-                question_entry["model answer"] = answer_str
+        # Determine if answer was correct (only for the non-verbal runs).
+        if update_answers_and_correctness:
+            for i, text in enumerate(output_text):
+                question_idx = active_indexes[i]
+                question_entry = quest_answ_confid_model_answ[question_idx]
+                # Extract answer string between ||...||
+                answer_str = text.lower().split("||")[1]
+                # Split answers, strip whitespace
+                model_answer = [a.strip() for a in answer_str.split(",")]
+                correct_answer = True
+                for right in question_entry["right answer"]:
+                    if right.lower().strip() not in model_answer:
+                        correct_answer = False
+                        if not second_try:
+                            wrong_answer_indexes.append(question_idx)
+                        break
                 
-            else:
-                df_out.loc[question_idx, "second_try_correct"] = correct_answer
-                df_out.loc[question_idx, "second_try_answer"] = model_answer
-                question_entry["model second answer"] = answer_str
+                # Now we add this to entry in the DataFrame
+                if not second_try:
+                    df_out.loc[question_idx, "first_try_correct"] = correct_answer
+                    df_out.loc[question_idx, "first_try_answer"] = model_answer
+                    question_entry["wrong on first try"] = not correct_answer
+                    question_entry["model answer"] = answer_str
+                    
+                else:
+                    df_out.loc[question_idx, "second_try_correct"] = correct_answer
+                    df_out.loc[question_idx, "second_try_answer"] = model_answer
+                    question_entry["model second answer"] = answer_str
             
 
         # Calculate confidence and add to DataFrame
@@ -425,10 +427,12 @@ class Model:
 
             confidence_for_second_try = [round(conf, 2) for conf in confidence_verbal]
         
-        if not second_try and wrong_answer_indexes:
-            wrong_idx_set = set(wrong_answer_indexes)
+        if not second_try:
+            # Store first-try confidence for use in the second-try prompt.
+            # We tie this to the token-run notion of "wrong on first try", not
+            # whether the current (possibly verbal) run's answer is correct.
             for batch_pos, question_idx in enumerate(active_indexes):
-                if question_idx in wrong_idx_set:
+                if quest_answ_confid_model_answ[question_idx].get("wrong on first try", False):
                     quest_answ_confid_model_answ[question_idx]["confidence"] = confidence_for_second_try[batch_pos]
         elif second_try:
             for batch_pos, question_idx in enumerate(active_indexes):
@@ -545,7 +549,7 @@ class Model:
         )
         
         # 2. Calculate token probabilities of wrongly answered question
-        if wrong_answer_indexes != []:
+        if any(entry.get("wrong on first try", False) for entry in quest_answ_confid_model_answ):
             batched_prompts, quest_answ_confid_model_answ, active_indexes =  self.preprocess_prompt(
                 quest_answ_confid_model_answ, 
                 second_try=True
@@ -578,11 +582,12 @@ class Model:
             generated_ids_trimmed,
             wrong_answer_indexes=wrong_answer_indexes,
             verbal=True,
-            active_indexes=active_indexes
+            active_indexes=active_indexes,
+            update_answers_and_correctness=False,
         )
 
         # 4. Calculate verbalized probabilities of wrongly answered question
-        if wrong_answer_indexes != []:
+        if any(entry.get("wrong on first try", False) for entry in quest_answ_confid_model_answ):
             batched_prompts, quest_answ_confid_model_answ, active_indexes =  self.preprocess_prompt(
                 quest_answ_confid_model_answ, 
                 use_verbal_confidence=True,
@@ -598,7 +603,8 @@ class Model:
                 wrong_answer_indexes=wrong_answer_indexes,
                 second_try=True,
                 verbal=True,
-                active_indexes=active_indexes
+                active_indexes=active_indexes,
+                update_answers_and_correctness=False,
             )
         return df_out
     
