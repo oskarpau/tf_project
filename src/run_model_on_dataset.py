@@ -1,7 +1,3 @@
-
-
-
-# !pip install -U bitsandbytes
 import os
 import subprocess
 import sys
@@ -10,22 +6,14 @@ import pandas as pd
 import time
 from datetime import datetime, timedelta
 import csv
+import re
 
-# subprocess.check_call([sys.executable, "-m", "pip", "install", "pyarrow"])
-# subprocess.check_call([sys.executable, "-m", "pip", "install", "fastparquet"])
-# subprocess.check_call([sys.executable, "-m", "pip", "install", "transformers"])
-#subprocess.check_call([sys.executable, "-m", "pip", "install", "torch"])
 from model import Model
 # Get the directory where this script is located
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Print it
 print("Directory of this script:", script_dir)
-
-
-# todo
-# kõik vastused ühele kujule . stringide list
-# answerist <<=5>> välja
 
 '''
 dataset_name
@@ -38,36 +26,79 @@ question type = "true/false", "multi string" list
 
 base_path = os.path.join(script_dir, os.pardir, 'datasets') # os.pardir equals '..' (parent path).
 
-# 3. For strategyqa_dataset:
+# 1. For strategyqa_dataset:
+# No categorie specified
+# categorie: NA, subcategorie: NA
 strategyqa_dev_df = pd.read_json(os.path.join(base_path, 'strategyqa_dataset', 'dev.json'))
 strategyqa_train_df = pd.read_json(os.path.join(base_path, 'strategyqa_dataset', 'train.json'))
+strategyqa_train_df['categorie'], strategyqa_dev_df['categorie'] = 'NA', 'NA'
+strategyqa_train_df['subcategorie'], strategyqa_dev_df['subcategorie'] = 'NA', 'NA'
 
-# 4. For gsm8k_datasets:
+# 2. For gsm8k_datasets:
+# categorie: math, subcategorie: NA
 gsm8k_test_df = pd.read_parquet(os.path.join(base_path, 'gsm8k_datasets', 'test-00000-of-00001.parquet'))
 gsm8k_train_df = pd.read_parquet(os.path.join(base_path, 'gsm8k_datasets', 'train-00000-of-00001.parquet'))
+gsm8k_test_df['categorie'], gsm8k_train_df['categorie'] = 'math', 'math'
+gsm8k_test_df['subcategorie'], gsm8k_train_df['subcategorie'] = 'NA', 'NA'
 
-# 5. For maqa_datasets:
-maqa_dfs = {}
-maqa_dataset_path = os.path.join(base_path, 'maqa_datasets')
-for filename in os.listdir(maqa_dataset_path):
-    if filename.endswith('.json'):
-        file_path = os.path.join(maqa_dataset_path, filename)
-        df_name = os.path.splitext(filename)[0] # Get filename without extension
-        maqa_dfs[df_name] = pd.read_json(file_path)
+# 3. For maqa_datasets:
+# categorie: math, subcategorie: single
+# categorie: math, subcategorie: multi
+# categorie: world knowledge, subcategorie: multi HLS
+# categorie: world knowledge, subcategorie: multi NQ
+# categorie: world knowledge, subcategorie: single NQ
+# categorie: commonsense single, subcategorie: NA
+maqa_commonsense_df = pd.read_json(os.path.join(base_path, 'maqa_datasets', 'MAQA_commonsense_reasoning.json'))
+# The questions are actually single answer despite MAQA prefix
+maqa_commonsense_df['categorie'], maqa_commonsense_df['subcategorie'] = 'commonsense single', 'NA'
 
-# Set display option to show full column content
-pd.set_option('display.max_colwidth', None)
+maqa_math_df = pd.read_json(os.path.join(base_path, 'maqa_datasets', 'MAQA_mathmatical_reasoning.json'))
+maqa_math_df['categorie'], maqa_math_df['subcategorie'] = 'math', 'multi'
+
+maqa_world_hls_df = pd.read_json(os.path.join(base_path, 'maqa_datasets', 'MAQA_world_knowledge_HLS.json'))
+maqa_world_hls_df['categorie'], maqa_world_hls_df['subcategorie'] = 'world knowledge', 'multi HLS'
+
+maqa_world_nq_df = pd.read_json(os.path.join(base_path, 'maqa_datasets', 'MAQA_world_knowledge_nq.json'))
+maqa_world_nq_df['categorie'], maqa_world_nq_df['subcategorie'] = 'world knowledge', 'multi NQ'
+
+maqa_single_commonsense_df = pd.read_json(os.path.join(base_path, 'maqa_datasets', 'single_commonsens_reasoning(StrategyQA).json'))
+maqa_single_commonsense_df['categorie'], maqa_single_commonsense_df['subcategorie'] = 'commonsense single', 'NA'
+
+maqa_single_math_df = pd.read_json(os.path.join(base_path, 'maqa_datasets', 'single_mathematical_reasoning(gsm8k).json'))
+maqa_single_math_df['categorie'], maqa_single_math_df['subcategorie'] = 'math', 'single'
+
+maqa_single_world_nq_df = pd.read_json(os.path.join(base_path, 'maqa_datasets', 'single_world_knowledge(NQ).json'))
+maqa_single_world_nq_df['categorie'], maqa_single_world_nq_df['subcategorie'] = 'world knowledge', 'single NQ'
 
 all_datasets = {
     'strategyqa_dev': strategyqa_dev_df,
     'strategyqa_train': strategyqa_train_df,
     'gsm8k_test': gsm8k_test_df,
-    'gsm8k_train': gsm8k_train_df
+    'gsm8k_train': gsm8k_train_df,
+    'maqa_commonsense_reasoning': maqa_commonsense_df,
+    'maqa_mathematical_reasoning': maqa_math_df,
+    'maqa_world_knowledge_hls': maqa_world_hls_df,
+    'maqa_world_knowledge_nq': maqa_world_nq_df,
+    'maqa_single_commonsense_reasoning': maqa_single_commonsense_df,
+    'maqa_single_math_reasoning': maqa_single_math_df,
+    'maqa_single_world_knowledge_nq': maqa_single_world_nq_df
+
 }
 
-# Add MAQA datasets to the main dictionary
-for name, df in maqa_dfs.items():
-    all_datasets[f'maqa_{name}'] = df
+# maqa_dfs = {}
+# maqa_dataset_path = os.path.join(base_path, 'maqa_datasets')
+# for filename in os.listdir(maqa_dataset_path):
+#     if filename.endswith('.json'):
+#         file_path = os.path.join(maqa_dataset_path, filename)
+#         df_name = os.path.splitext(filename)[0] # Get filename without extension
+#         maqa_dfs[df_name] = pd.read_json(file_path)
+
+# # Add MAQA datasets to the main dictionary
+# for name, df in maqa_dfs.items():
+#     all_datasets[f'maqa_{name}'] = df
+
+# Set display option to show full column content
+pd.set_option('display.max_colwidth', None)
 
 '''
 print("All loaded DataFrames are now organized into the 'all_datasets' dictionary.")
@@ -78,17 +109,11 @@ for key in all_datasets.keys():
 '''
 
 
-#DATA CLEANSING AND TRANSFORMATION STARTS HERE
+#DATA CLEANING AND TRANSFORMATION STARTS HERE
 #####################
-
-
-
 
 # DATA CLEANING TRANSFORMATION
 # 1. SOLVE << ... >>>
-
-import re
-import pandas as pd
 
 def get_processed_answer_list(answer_input):
 
@@ -137,17 +162,15 @@ for dataset_name, df in all_datasets.items():
 # data CLEANINS
 # 2. SPLIT (A) (B) (C)
 
-import re
-
 def split_multi_part_questions(row):
     question_text = row['question']
     original_answers = row['answer'] # This is expected to be a list like ['a', 'b']
-    new_rows = []
     parts = re.findall(r'\((\w)\)\s*(.*?)(?=\(\w\)|$)', question_text, re.DOTALL)
 
     if not parts:
         return [{**row.to_dict(), 'question': question_text, 'answer': original_answers}]
 
+    new_rows = []
     for letter, q_text in parts:
         is_true = str(letter) in original_answers
         new_row = row.to_dict().copy()
@@ -168,15 +191,12 @@ def split_multi_part_questions(row):
 #print("The function `split_multi_part_questions` has been defined.")
 
 
-
 # data cleaning and processing
 ###################
 # 2 CONTINUES
 
-import pandas as pd
-
 # Get the maqa_MAQA_commonsense_reasoning DataFrame
-maqa_commonsense_df = all_datasets['maqa_MAQA_commonsense_reasoning']
+maqa_commonsense_df = all_datasets['maqa_commonsense_reasoning']
 
 # Apply the function to each row and collect the results
 expanded_rows = []
@@ -185,16 +205,15 @@ for index, row in maqa_commonsense_df.iterrows():
 
 # Create a new DataFrame from the expanded rows
 expanded_maqa_commonsense_df = pd.DataFrame(expanded_rows)
+expanded_maqa_commonsense_df['categorie'], expanded_maqa_commonsense_df['subcategorie'] = 'commonsense single', 'NA' 
 
 # Replace the original DataFrame in all_datasets with the expanded one
-all_datasets['maqa_MAQA_commonsense_reasoning'] = expanded_maqa_commonsense_df
+all_datasets['maqa_commonsense_reasoning'] = expanded_maqa_commonsense_df
 
 
 #data processing
 # 3
 # 18.0 -> 18 ROUND
-
-import numpy as np
 
 def round_answers_to_integers(answer_list):
     """
@@ -221,8 +240,8 @@ for dataset_name, df in all_datasets.items():
 
 
 
-#cleansin
-#4 all in format ['string]
+#cleaning
+#4 all in format ['string']
 
 
 #print("Re-processing 'answer' column to ensure ['string'] format for all datasets...")
@@ -259,55 +278,100 @@ if 'strategyqa_dev' in all_datasets:
         #print(f"  Question: {row['question'][:50]}...")
         #print(f"  Answer: {answer_value}, Type: {type(answer_value)}, Item Type: {type(answer_value[0]) if answer_value else 'N/A'}")
 
+# Function to determine answer type
+def get_answer_type(answer_list):
+    if all(isinstance(item, str) and item.lower() in ['true', 'false'] for item in answer_list):
+        return 'true/false'
+    return 'multi_str'
+
+# Add 'answer_type' column to all dataframes in all_datasets
+print("Adding 'answer_type' column to all datasets...")
+for dataset_name, df in all_datasets.items():
+    if 'answer' in df.columns:
+        df['answer_type'] = df['answer'].apply(get_answer_type)
+        print(f"  '{dataset_name}' 'answer_type' column added.")
+
+print(df.head(2))
 
 #################################
-# END OF CLEANSING
+# END OF CLEANING
 ################################
 
-
 # SRC/RUN_DATASETS
-
-
-
 RESULTS_PATH = "initial_results.csv"
 BATCH_SIZE = 1
 CSV_SEP = ";"
 
 
+def _get_last_written_index(path: str, sep: str = CSV_SEP) -> int:
+    """Return the last written integer index from the results CSV.
 
+    Assumes the first column is the index and the first row is a header.
+    Returns -1 when the file does not exist or has no data rows.
+    """
+    if not os.path.exists(path) or os.path.getsize(path) == 0:
+        return -1
+    last_row = None
+    with open(path, "r", encoding="utf-8", newline="") as f:
+        reader = csv.reader(f, delimiter=sep)
+        try:
+            next(reader)  # header
+        except StopIteration:
+            return -1
+
+        for row in reader:
+            if row:
+                last_row = row
+
+    if not last_row:
+        return -1
+    try:
+        return int(str(last_row[0]).strip())
+    except (ValueError, TypeError, IndexError):
+        raise ValueError(
+            f"Could not parse last index from {path}. Expected integer in first column, got: {last_row[:1]!r}"
+        )
 
 def run_model_on_dataset():
     """
     This function loops over all datasets, their categories and subcategories
     """
 
-    print(f"Overwriting output to {RESULTS_PATH}")
-    with open(RESULTS_PATH, "w", encoding="utf-8", newline=""):
-        pass
+    last_written_index = _get_last_written_index(RESULTS_PATH, sep=CSV_SEP)
+    if last_written_index >= 0:
+        print(f"Resuming from {RESULTS_PATH} at index {last_written_index + 1}")
+    else:
+        print(f"Starting fresh output to {RESULTS_PATH}")
 
     model = Model()
 
     start_perf = time.perf_counter()
-    processed_this_run = 0
-
 
     total_number_rows = 0
     for dataset_name, df in all_datasets.items():
         total_number_rows += df.shape[0]
 
-    rows_processed = 0
-    is_first_write = True
+    processed_this_run = 0
+    global_row_idx = 0
+    is_first_write = (not os.path.exists(RESULTS_PATH)) or (os.path.getsize(RESULTS_PATH) == 0)
     for dataset_name, df in all_datasets.items():
         for index, row in df.iterrows():
+            if global_row_idx <= last_written_index:
+                global_row_idx += 1
+                continue
+
             question_start = time.perf_counter()
             dataframe_to_append = model.run_batch_and_compute_confidence(
                 dataset_name= dataset_name, 
-                categories = ["dummy_categorie"], 
-                subcategories = ["dummy_subcategorie"],
+                categories = [row['categorie']], 
+                subcategories = [row['subcategorie']],
                 questions = [row['question']],
                 right_answers = [row['answer']],
-                question_types = ["multi_str"]
+                question_types = [row['answer_type']]
                 )
+
+            # Ensure the CSV "index" column is labeled and unique across streamed writes.
+            dataframe_to_append.index = [global_row_idx]
 
             write_header = is_first_write
             write_mode = "w" if is_first_write else "a"
@@ -315,27 +379,33 @@ def run_model_on_dataset():
                 RESULTS_PATH,
                 mode=write_mode,
                 header=write_header,
-                index=False,
+                index=True,
+                index_label="index",
                 sep=CSV_SEP,
             )
             is_first_write = False
 
-            rows_processed += 1
+            processed_this_run += 1
+            global_row_idx += 1
+
+            rows_done_global = (last_written_index + 1) + processed_this_run
 
             question_seconds = time.perf_counter() - question_start
             elapsed_seconds = time.perf_counter() - start_perf
-            avg_seconds = elapsed_seconds / rows_processed if rows_processed else 0.0
-            remaining = total_number_rows - rows_processed
+            avg_seconds = elapsed_seconds / processed_this_run if processed_this_run else 0.0
+            remaining = max(0, total_number_rows - rows_done_global)
             eta_seconds = max(0.0, avg_seconds * remaining)
             eta_td = timedelta(seconds=int(eta_seconds))
             finish_wall = datetime.now() + timedelta(seconds=eta_seconds)
 
             print(
-                f"Rows processed: {rows_processed} / {total_number_rows} | "
+                f"Rows processed: {rows_done_global} / {total_number_rows} | "
                 f"this question: {question_seconds:.2f}s | avg/question: {avg_seconds:.2f}s | "
-                f"Total est. time: {eta_td} | now: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} | "
+                f"Total est. running time: {eta_td} | now: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} | "
                 f"est. finish wall time: {finish_wall.strftime('%Y-%m-%d %H:%M:%S')}"
             )
+
+    print(f"Finished! Total time: {timedelta(seconds=int(time.perf_counter() - start_perf))}")
     
 
 

@@ -1,10 +1,48 @@
-from transformers import Qwen3VLForConditionalGeneration, AutoProcessor, BitsAndBytesConfig
 import torch
-import os
-import time
-import psutil
 import math
 import numpy as np
+import re
+
+
+_NUMBER_RE = re.compile(r"[-+]?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][-+]?\d+)?")
+
+
+def _try_parse_confidence_from_segment(segment: str) -> tuple[float | None, str]:
+    """Try to extract a single confidence value from a candidate segment.
+
+    Returns (value, "") on success, or (None, reason) on failure.
+    """
+    if segment is None:
+        return None, "segment is None"
+
+    segment_str = str(segment)
+    numbers = _NUMBER_RE.findall(segment_str)
+    if not numbers:
+        return None, "no numeric tokens found"
+
+    parsed: list[float] = []
+    for token in numbers:
+        try:
+            parsed.append(float(token))
+        except ValueError:
+            # Should be rare given the regex, but keep this safe.
+            continue
+
+    if not parsed:
+        return None, f"numeric tokens found but none could be parsed as float: {numbers!r}"
+
+    in_0_100 = [v for v in parsed if 0.0 <= v <= 100.0]
+    in_0_1 = [v for v in parsed if 0.0 <= v <= 1.0]
+
+    if in_0_100:
+        # If multiple values exist, use the last one (most common pattern: "..., CONF1||CONF2").
+        return float(in_0_100[-1]), ""
+
+    if in_0_1 and not any(v > 1.0 for v in parsed):
+        # If everything looks like probabilities, scale to 0-100.
+        return float(in_0_1[-1] * 100.0), ""
+
+    return None, f"numeric candidates found {parsed!r} but none in [0, 100] (or all-in-[0,1] prob form)"
 
 
 def estimate_confidence_max_prob(
@@ -180,7 +218,72 @@ def verbal_confidence(output_text):
         list[float]: Confidences
     """
     
-    confidences = []
+    confidences: list[float] = []
     for text in output_text:
-        confidences.append(float(text.split(",")[-1]))
+        raw = text
+        try:
+            if not isinstance(text, str):
+                raise TypeError(f"expected str, got {type(text).__name__}")
+            stripped = text.strip()
+            if not stripped:
+                raise ValueError("empty output text")
+
+            # Preferred format per prompt: "||ANSWER(S)||, CONFIDENCE".
+            segments_to_try: list[tuple[str, str]] = []
+
+            # 1) Keyword-based (most explicit)
+            segments_to_try.append(("keyword 'confidence'", stripped))
+
+            # 2) Portion after the answer delimiters, if present
+            parts = stripped.split("||")
+            if len(parts) >= 3:
+                after_delims = "||".join(parts[2:]).strip()
+                segments_to_try.append(("after '||...||'", after_delims))
+
+            # 3) Portion after the last comma
+            if "," in stripped:
+                segments_to_try.append(("after last comma", stripped.split(",")[-1].strip()))
+
+            # 4) Full text as a last resort
+            segments_to_try.append(("full text", stripped))
+
+            chosen: float | None = None
+            failure_reasons: list[str] = []
+
+            # Special-case: if "confidence: X" appears anywhere, try to parse from the tail of that match first.
+            m = re.search(r"\bconfidence\b\s*[:=]\s*(.*)$", stripped, flags=re.IGNORECASE)
+            if m:
+                candidate = m.group(1)
+                value, reason = _try_parse_confidence_from_segment(candidate)
+                if value is not None:
+                    chosen = value
+                else:
+                    failure_reasons.append(f"keyword confidence match failed: {reason}; segment={candidate!r}")
+
+            if chosen is None:
+                for label, segment in segments_to_try:
+                    value, reason = _try_parse_confidence_from_segment(segment)
+                    if value is not None:
+                        chosen = value
+                        break
+                    failure_reasons.append(f"{label} failed: {reason}; segment={segment!r}")
+
+            if chosen is None:
+                # Hard failure: print raw text and all reasons, then return NaN.
+                print("[verbal_confidence] Could not extract confidence. Returning NaN.")
+                print(f"[verbal_confidence] Raw text: {raw!r}")
+                print("[verbal_confidence] Reasons:")
+                for r in failure_reasons:
+                    print(f"  - {r}")
+                confidences.append(float("nan"))
+                continue
+
+            confidences.append(float(chosen))
+        except Exception as e:
+            # Safety net: never crash the pipeline due to parsing; emit diagnostics.
+            print("[verbal_confidence] Exception while extracting confidence. Returning NaN.")
+            print(f"[verbal_confidence] Raw text: {raw!r}")
+            print(f"[verbal_confidence] Exception: {type(e).__name__}: {e}")
+            confidences.append(float("nan"))
+
     return confidences

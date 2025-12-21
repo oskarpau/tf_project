@@ -8,6 +8,7 @@ TODO
 ## Install
 ### Creating the environment
 
+Using conda:
 ```
 conda create -n tf_project python=3.10.18 -y
 conda activate tf_project
@@ -17,7 +18,22 @@ pip install -U bitsandbytes
 pip install flash-attn --no-build-isolation
 ```
 
-pip install --upgrade torch torchvision --index-url https://download.pytorch.org/whl/cpu
+If not cuda device available:
+
+`pip install --upgrade torch torchvision --index-url https://download.pytorch.org/whl/cpu`
+
+In HPC, using venv:
+```
+mkdir envs
+cd envs
+module load python/3.10.10
+python -m venv tf_project
+source tf_project/bin/activate
+python -m pip install --upgrade pip wheel setuptools
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+pip install numpy pandas psutil transformers accelerate pillow pyarrow
+pip install -U bitsandbytes
+```
 
 ## Used Resources
 TODO
