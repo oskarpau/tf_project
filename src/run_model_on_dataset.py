@@ -9,6 +9,12 @@ import csv
 import re
 
 from model import Model
+
+# SRC/RUN_DATASETS
+RESULTS_PATH = "initial_results.csv"
+BATCH_SIZE = 1
+CSV_SEP = ";"
+
 # Get the directory where this script is located
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
@@ -296,12 +302,6 @@ print(df.head(2))
 #################################
 # END OF CLEANING
 ################################
-
-# SRC/RUN_DATASETS
-RESULTS_PATH = "initial_results.csv"
-BATCH_SIZE = 1
-CSV_SEP = ";"
-
 
 def _get_last_written_index(path: str, sep: str = CSV_SEP) -> int:
     """Return the last written integer index from the results CSV.

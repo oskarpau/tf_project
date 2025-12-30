@@ -12,9 +12,11 @@ Using conda:
 ```
 conda create -n tf_project python=3.10.18 -y
 conda activate tf_project
-pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
-pip install numpy pandas psutil transformers accelerate pillow pyarrow matplotlib scikit-learn
+pip install torch==2.5.0 torchvision==0.20.0 --index-url https://download.pytorch.org/whl/cu121
+pip install numpy pandas psutil transformers accelerate pillow pyarrow matplotlib scikit-learn datasets trl
 pip install -U bitsandbytes
+pip install "unsloth[cu121-torch250] @ git+https://github.com/unslothai/unsloth.git"
+pip uninstall -y torchao
 pip install flash-attn --no-build-isolation
 ```
 
@@ -31,7 +33,9 @@ python -m venv tf_project
 source tf_project/bin/activate
 python -m pip install --upgrade pip wheel setuptools
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
-pip install numpy pandas psutil transformers accelerate pillow pyarrow
+pip install numpy pandas psutil transformers accelerate pillow pyarrow datasets trl
+pip install "unsloth[cu121-torch250] @ git+https://github.com/unslothai/unsloth.git"
+pip uninstall -y torchao
 pip install -U bitsandbytes
 ```
 
