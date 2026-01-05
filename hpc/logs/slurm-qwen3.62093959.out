@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/gpfs/helios/home/garzonuria/transformers-course/tf_project/hpc/../src/evaluate_fine_tuned_model.py", line 4, in <module>
+    import torch
+  File "/gpfs/helios/home/garzonuria/transformers-course/transformers-venv-3/lib/python3.10/site-packages/torch/__init__.py", line 368, in <module>
+    from torch._C import *  # noqa: F403
+ImportError: /gpfs/helios/home/garzonuria/transformers-course/transformers-venv-3/lib/python3.10/site-packages/torch/lib/../../nvidia/cusparse/lib/libcusparse.so.12: undefined symbol: __nvJitLinkComplete_12_4, version libnvJitLink.so.12

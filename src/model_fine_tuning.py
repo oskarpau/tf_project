@@ -10,7 +10,7 @@ This separation is important for clean experimental methodology.
 Update: Adds dataset loading mirroring `run_model_on_dataset.py` and a CLI
 entrypoint to launch training from the selected dataset(s).
 """
-
+from unsloth.trainer import UnslothVisionDataCollator
 import os
 import re
 import argparse
@@ -19,7 +19,6 @@ import torch
 from datasets import Dataset
 from unsloth import FastVisionModel
 from trl import SFTTrainer, SFTConfig
-from unsloth.trainer import UnslothVisionDataCollator
 
 ############################################
 # 1. MODEL CONFIGURATION
@@ -49,8 +48,8 @@ model = FastVisionModel.get_peft_model(
     finetune_language_layers=True,
     finetune_attention_modules=True,
     finetune_mlp_modules=True,
-    r=16,
-    lora_alpha=16,
+    r=64,
+    lora_alpha=128,
     lora_dropout=0.0,
     bias="none",
     random_state=3407,
@@ -223,7 +222,7 @@ def get_training_dataframe(dataset_keys: list[str] | None = None) -> pd.DataFram
     """
     all_ds = load_processed_datasets()
     if not dataset_keys:
-        dataset_keys = ["gsm8k_train"]
+        dataset_keys = sorted(all_ds.keys())
 
     missing = [k for k in dataset_keys if k not in all_ds]
     if missing:
@@ -321,11 +320,11 @@ def build_training_dataset(df) -> Dataset:
 
 training_args = SFTConfig(
     output_dir=OUTPUT_DIR,
-    per_device_train_batch_size=4,
+    per_device_train_batch_size=8,
     gradient_accumulation_steps=4,
-    learning_rate=5e-6,
-    weight_decay=0.0,
-    num_train_epochs=1.0,
+    learning_rate=2e-5,
+    weight_decay=0.01,
+    num_train_epochs=3.0,
     logging_steps=10,
     save_steps=500,
     save_total_limit=2,
@@ -375,21 +374,16 @@ def main():
     parser.add_argument(
         "--datasets",
         nargs="*",
-        default=[
-            "maqa_single_commonsense_reasoning",
-            "maqa_single_math_reasoning",
-            "maqa_single_world_knowledge_nq",
-        ],
+        default=None,
         help=(
-            "One or more dataset keys to train on. If omitted, defaults to the three single-answer datasets "
-            "(StrategyQA single, GSM8K single, NQ single). "
-            "Available keys are discovered from datasets/ similar to run_model_on_dataset.py."
+            "One or more dataset keys to train on. If omitted, trains on ALL available datasets "
+            "discovered under datasets/ (mirrors run_model_on_dataset.py)."
         ),
     )
     args = parser.parse_args()
 
-    print(f"Loading datasets: {args.datasets}")
-    df_train = get_training_dataframe(args.datasets).head(16) # Demo: limit to 16 samples
+    print(f"Loading datasets: {args.datasets or 'ALL (default)'}")
+    df_train = get_training_dataframe(args.datasets)
     print(f"Training samples: {len(df_train)}")
 
     result = run_fine_tuning(df_train)

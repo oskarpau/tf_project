@@ -17,7 +17,7 @@ import model_fine_tuning  # To load cleaned datasets
 # --- CONFIGURATION ---
 RESULTS_PATH = "finetuned_results.csv"
 CSV_SEP = ";"
-FINETUNED_MODEL_DIR = "qwen3_vl_lora_finetuned"  # Output from your training script
+FINETUNED_MODEL_DIR = "../hpc/qwen3_vl_lora_finetuned"  # Output from your training script
 BASE_MODEL_NAME = "unsloth/Qwen3-VL-4B-Instruct-unsloth-bnb-4bit" # Base model
 
 class UnslothEvalModel(Model):
@@ -49,6 +49,7 @@ class UnslothEvalModel(Model):
         # Native Unsloth inference optimization
         FastVisionModel.for_inference(model)
         self.model = model
+        print("Model loaded successfully")
 
         # 2. PROCESSOR LOADING (Transformers)
         # 'confidence_methods.py' needs access to self.processor.tokenizer.decode.
@@ -90,12 +91,18 @@ def _get_last_written_index(path: str, sep: str = CSV_SEP) -> int:
         return -1
 
 def run_evaluation():
+    
+    # Reset results file if it exists so we always start fresh
+    if os.path.exists(RESULTS_PATH):
+        print(f"Resetting results file: {RESULTS_PATH}")
+        os.remove(RESULTS_PATH)
+
     # 1. Load Datasets (using clean logic from model_fine_tuning)
     print("Loading and processing datasets...")
     all_datasets = model_fine_tuning.load_processed_datasets()
 
     # Optional: limit rows per dataset for faster test runs #######################FORTESTING
-    TEST_ROWS = 10  # Set to None to disable
+    TEST_ROWS = 1  # Set to None to disable
     print(f"Test mode: limiting to head({TEST_ROWS}) rows per dataset")
     all_datasets = {name: df.head(TEST_ROWS) for name, df in all_datasets.items()}
 

@@ -1,3 +1,5 @@
 __pycache__/
 *.pyc
 unsloth_compiled_cache/
+hpc/qwen3_vl_lora_finetuned/
+hpc/unsloth_compiled_cache/

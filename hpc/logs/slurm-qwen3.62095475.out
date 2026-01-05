@@ -1,0 +1,70 @@
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+==((====))==  Unsloth 2025.12.10: Fast Qwen3_Vl patching. Transformers: 4.57.3.
+   \\   /|    NVIDIA A100-PCIE-40GB. Num GPUs = 1. Max memory: 39.494 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.5.0+cu124. CUDA: 8.0. CUDA Toolkit: 12.4. Triton: 3.1.0
+\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.28.post2. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Resetting results file: finetuned_results.csv
+Loading and processing datasets...
+Test mode: limiting to head(1) rows per dataset
+Adding response type metadata...
+[Init] Loading Unsloth LoRA model from: ../hpc/qwen3_vl_lora_finetuned
+==((====))==  Unsloth 2025.12.10: Fast Qwen3_Vl patching. Transformers: 4.57.3.
+   \\   /|    NVIDIA A100-PCIE-40GB. Num GPUs = 1. Max memory: 39.494 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.5.0+cu124. CUDA: 8.0. CUDA Toolkit: 12.4. Triton: 3.1.0
+\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.28.post2. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Model loaded successfully
+[Init] Loading AutoProcessor for tokenization compatibility...
+[Init] Model loaded in 17.98 seconds
+Starting new file: finetuned_results.csv
+
+---> Dataset: strategyqa_dev (1 rows)
+[1/11] T: 15.30s | ETA: 0:02:33 | Dataset: strategyqa_dev
+
+---> Dataset: strategyqa_train (1 rows)
+[2/11] T: 4.88s | ETA: 0:01:30 | Dataset: strategyqa_train
+
+---> Dataset: gsm8k_test (1 rows)
+[3/11] T: 28.03s | ETA: 0:02:08 | Dataset: gsm8k_test
+
+---> Dataset: gsm8k_train (1 rows)
+[4/11] T: 5.50s | ETA: 0:01:33 | Dataset: gsm8k_train
+
+---> Dataset: maqa_commonsense_reasoning (1 rows)
+[5/11] T: 4.83s | ETA: 0:01:10 | Dataset: maqa_commonsense_reasoning
+
+---> Dataset: maqa_mathematical_reasoning (1 rows)
+[6/11] T: 8.49s | ETA: 0:00:55 | Dataset: maqa_mathematical_reasoning
+
+---> Dataset: maqa_world_knowledge_hls (1 rows)
+[verbal_confidence] Could not extract confidence. Returning NaN.
+[verbal_confidence] Raw text: '||Hindi, English, Bengali, Telugu, Tamil, Marathi, Kannada, Gujarati, Malayalam, Odia, Punjabi, Sanskrit, Urdu, Konkani, Nepali, Bodo, Meitei, Dogri, Sindhi, Kashmiri, Marwari, Hindi, Urdu, Bengali, Telugu, Tamil, Marathi, Kannada, Gujarati, Malayalam, Odia, Punjabi, Sanskrit, Urdu, Konkani, Meitei, Dogri, Sindhi, Kashmiri, Marwari, Hindi, Urdu, Bengali, Tel'
+[verbal_confidence] Reasons:
+  - keyword 'confidence' failed: no numeric tokens found; segment='||Hindi, English, Bengali, Telugu, Tamil, Marathi, Kannada, Gujarati, Malayalam, Odia, Punjabi, Sanskrit, Urdu, Konkani, Nepali, Bodo, Meitei, Dogri, Sindhi, Kashmiri, Marwari, Hindi, Urdu, Bengali, Telugu, Tamil, Marathi, Kannada, Gujarati, Malayalam, Odia, Punjabi, Sanskrit, Urdu, Konkani, Meitei, Dogri, Sindhi, Kashmiri, Marwari, Hindi, Urdu, Bengali, Tel'
+  - after last comma failed: no numeric tokens found; segment='Tel'
+  - full text failed: no numeric tokens found; segment='||Hindi, English, Bengali, Telugu, Tamil, Marathi, Kannada, Gujarati, Malayalam, Odia, Punjabi, Sanskrit, Urdu, Konkani, Nepali, Bodo, Meitei, Dogri, Sindhi, Kashmiri, Marwari, Hindi, Urdu, Bengali, Telugu, Tamil, Marathi, Kannada, Gujarati, Malayalam, Odia, Punjabi, Sanskrit, Urdu, Konkani, Meitei, Dogri, Sindhi, Kashmiri, Marwari, Hindi, Urdu, Bengali, Tel'
+[verbal_confidence] Could not extract confidence. Returning NaN.
+[verbal_confidence] Raw text: '||hindi, english, bengali, telugu, tamil, kannada, marathi, gujarati, punjabi, malayalam, odia, urdu, assamese, kashmiri, konkani, nepali, bodo, maithili, santali, dogri, hindi, bodo, konkani, nepali, bodo, konkani, nepali, bodo, konkani, nepali, bodo, konkani, nepali, bodo, konkani, nepali, bodo, konkani, nepali, bodo, konkani,'
+[verbal_confidence] Reasons:
+  - keyword 'confidence' failed: no numeric tokens found; segment='||hindi, english, bengali, telugu, tamil, kannada, marathi, gujarati, punjabi, malayalam, odia, urdu, assamese, kashmiri, konkani, nepali, bodo, maithili, santali, dogri, hindi, bodo, konkani, nepali, bodo, konkani, nepali, bodo, konkani, nepali, bodo, konkani, nepali, bodo, konkani, nepali, bodo, konkani, nepali, bodo, konkani,'
+  - after last comma failed: no numeric tokens found; segment=''
+  - full text failed: no numeric tokens found; segment='||hindi, english, bengali, telugu, tamil, kannada, marathi, gujarati, punjabi, malayalam, odia, urdu, assamese, kashmiri, konkani, nepali, bodo, maithili, santali, dogri, hindi, bodo, konkani, nepali, bodo, konkani, nepali, bodo, konkani, nepali, bodo, konkani, nepali, bodo, konkani, nepali, bodo, konkani, nepali, bodo, konkani,'
+[7/11] T: 79.31s | ETA: 0:01:23 | Dataset: maqa_world_knowledge_hls
+
+---> Dataset: maqa_world_knowledge_nq (1 rows)
+[8/11] T: 23.34s | ETA: 0:01:03 | Dataset: maqa_world_knowledge_nq
+
+---> Dataset: maqa_single_commonsense_reasoning (1 rows)
+[9/11] T: 1.93s | ETA: 0:00:38 | Dataset: maqa_single_commonsense_reasoning
+
+---> Dataset: maqa_single_math_reasoning (1 rows)
+[10/11] T: 25.33s | ETA: 0:00:19 | Dataset: maqa_single_math_reasoning
+
+---> Dataset: maqa_single_world_knowledge_nq (1 rows)
+[11/11] T: 36.92s | ETA: 0:00:00 | Dataset: maqa_single_world_knowledge_nq
+
+Evaluation completed. Results saved to finetuned_results.csv

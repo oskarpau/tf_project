@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/gpfs/helios/home/garzonuria/transformers-course/tf_project/hpc/../src/model_fine_tuning.py", line 13, in <module>
+    from unsloth.trainer import UnslothVisionDataCollator
+  File "/gpfs/helios/home/garzonuria/transformers-course/transformers-venv-3/lib/python3.10/site-packages/unsloth/__init__.py", line 95, in <module>
+    import unsloth_zoo
+  File "/gpfs/helios/home/garzonuria/transformers-course/transformers-venv-3/lib/python3.10/site-packages/unsloth_zoo/__init__.py", line 146, in <module>
+    from .device_type import (
+  File "/gpfs/helios/home/garzonuria/transformers-course/transformers-venv-3/lib/python3.10/site-packages/unsloth_zoo/device_type.py", line 25, in <module>
+    import torch
+  File "/gpfs/helios/home/garzonuria/transformers-course/transformers-venv-3/lib/python3.10/site-packages/torch/__init__.py", line 368, in <module>
+    from torch._C import *  # noqa: F403
+ImportError: /gpfs/helios/home/garzonuria/transformers-course/transformers-venv-3/lib/python3.10/site-packages/torch/lib/../../nvidia/cusparse/lib/libcusparse.so.12: undefined symbol: __nvJitLinkComplete_12_4, version libnvJitLink.so.12
