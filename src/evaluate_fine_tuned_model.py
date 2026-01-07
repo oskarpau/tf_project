@@ -102,9 +102,9 @@ def run_evaluation():
     all_datasets = model_fine_tuning.load_processed_datasets()
 
     # Optional: limit rows per dataset for faster test runs #######################FORTESTING
-    TEST_ROWS = 1  # Set to None to disable
-    print(f"Test mode: limiting to head({TEST_ROWS}) rows per dataset")
-    all_datasets = {name: df.head(TEST_ROWS) for name, df in all_datasets.items()}
+    #TEST_ROWS = 10  # Set to None to disable
+    #print(f"Test mode: limiting to head({TEST_ROWS}) rows per dataset")
+    #all_datasets = {name: df.head(TEST_ROWS) for name, df in all_datasets.items()}
 
     # 2. Add 'answer_type' column 
     # (Needed for model.py to know which prompt to use: True/False vs Multi)

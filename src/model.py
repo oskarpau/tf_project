@@ -320,7 +320,7 @@ class Model:
         # Run inference with token scores
         output = self.model.generate(
             **inputs,
-            max_new_tokens=128,
+            max_new_tokens=64,
             return_dict_in_generate=True,
             output_scores=True,
             output_logits=True
