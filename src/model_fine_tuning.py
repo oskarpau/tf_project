@@ -315,38 +315,62 @@ def build_training_dataset(df) -> Dataset:
 
 
 ############################################
-# 6. TRAINING CONFIGURATION
-############################################
-
-training_args = SFTConfig(
-    output_dir=OUTPUT_DIR,
-    per_device_train_batch_size=8,
-    gradient_accumulation_steps=4,
-    learning_rate=2e-5,
-    weight_decay=0.01,
-    num_train_epochs=3.0,
-    logging_steps=10,
-    save_steps=500,
-    save_total_limit=2,
-    seed=3407,
-    bf16=True,
-    report_to="none",
-    remove_unused_columns=False,
-    dataset_text_field="",
-    dataset_kwargs={"skip_prepare_dataset": True},
-)
-
-
-############################################
-# 7. TRAIN FUNCTION
+# 6. TRAIN FUNCTION WITH DYNAMIC ARGS
 ############################################
 
 def run_fine_tuning(df_train):
     """
     df_train: pandas DataFrame with QA pairs
     """
-
+    
+    # Parámetros de batch
+    PER_DEVICE_BATCH_SIZE = 8
+    GRADIENT_ACCUMULATION = 4
+    
     train_dataset = build_training_dataset(df_train)
+    
+    # --- CÁLCULO PARA GUARDAR CADA 5 EPOCHS ---
+    # Calculamos cuántos pasos (steps) hay en una epoch
+    num_samples = len(train_dataset)
+    effective_batch_size = PER_DEVICE_BATCH_SIZE * GRADIENT_ACCUMULATION
+    
+    # Steps por epoch = Total datos / (Batch por dispositivo * Acumulación)
+    steps_per_epoch = num_samples // effective_batch_size
+    
+    # Aseguramos que sea al menos 1 paso si el dataset es muy pequeño
+    if steps_per_epoch < 1:
+        steps_per_epoch = 1
+        
+    # Queremos guardar cada 5 epochs
+    save_steps_interval = steps_per_epoch * 5
+    
+    print(f"Dataset size: {num_samples}")
+    print(f"Steps per epoch: {steps_per_epoch}")
+    print(f"Saving checkpoint every {save_steps_interval} steps (approx every 5 epochs).")
+    
+    # Definimos los argumentos aquí para usar la variable 'save_steps_interval'
+    training_args = SFTConfig(
+        output_dir=OUTPUT_DIR,
+        per_device_train_batch_size=PER_DEVICE_BATCH_SIZE,
+        gradient_accumulation_steps=GRADIENT_ACCUMULATION,
+        learning_rate=2e-5,
+        weight_decay=0.01,
+        num_train_epochs=50.0,
+        logging_steps=10,
+        
+        # --- CAMBIOS REALIZADOS ---
+        save_strategy="steps",        # Estrategia por pasos para poder calcular "cada 5 epochs"
+        save_steps=save_steps_interval,
+        save_total_limit=None,        # None = Guardar TODOS los checkpoints (no borrar antiguos)
+        # --------------------------
+        
+        seed=3407,
+        bf16=True,
+        report_to="none",
+        remove_unused_columns=False,
+        dataset_text_field="",
+        dataset_kwargs={"skip_prepare_dataset": True},
+    )
 
     trainer = SFTTrainer(
         model=model,
@@ -358,7 +382,7 @@ def run_fine_tuning(df_train):
 
     train_result = trainer.train()
 
-    # Save LoRA adapters
+    # Save LoRA adapters final
     model.save_pretrained(OUTPUT_DIR)
     tokenizer.save_pretrained(OUTPUT_DIR)
 
@@ -366,7 +390,7 @@ def run_fine_tuning(df_train):
 
 
 ############################################
-# 8. CLI ENTRY POINT
+# 7. CLI ENTRY POINT
 ############################################
 
 def main():
