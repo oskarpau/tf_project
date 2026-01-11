@@ -1,0 +1,292 @@
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+==((====))==  Unsloth 2025.12.10: Fast Qwen3_Vl patching. Transformers: 4.57.3.
+   \\   /|    NVIDIA A100-PCIE-40GB. Num GPUs = 1. Max memory: 39.494 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.5.0+cu124. CUDA: 8.0. CUDA Toolkit: 12.4. Triton: 3.1.0
+\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.28.post2. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Resetting results file: finetuned_results.csv
+Loading and processing datasets...
+Test mode: limiting to head(10) rows per dataset
+Adding response type metadata...
+[Init] Loading Unsloth LoRA model from: ../hpc/qwen3_vl_lora_finetuned
+==((====))==  Unsloth 2025.12.10: Fast Qwen3_Vl patching. Transformers: 4.57.3.
+   \\   /|    NVIDIA A100-PCIE-40GB. Num GPUs = 1. Max memory: 39.494 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.5.0+cu124. CUDA: 8.0. CUDA Toolkit: 12.4. Triton: 3.1.0
+\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.28.post2. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Model loaded successfully
+[Init] Loading AutoProcessor for tokenization compatibility...
+[Init] Model loaded in 17.96 seconds
+Starting new file: finetuned_results.csv
+
+---> Dataset: strategyqa_dev (10 rows)
+[1/110] T: 15.91s | ETA: 0:28:54 | Dataset: strategyqa_dev
+[2/110] T: 4.89s | ETA: 0:18:43 | Dataset: strategyqa_dev
+[3/110] T: 4.89s | ETA: 0:15:16 | Dataset: strategyqa_dev
+[4/110] T: 4.45s | ETA: 0:13:18 | Dataset: strategyqa_dev
+[5/110] T: 4.87s | ETA: 0:12:15 | Dataset: strategyqa_dev
+[6/110] T: 4.85s | ETA: 0:11:30 | Dataset: strategyqa_dev
+[7/110] T: 4.42s | ETA: 0:10:51 | Dataset: strategyqa_dev
+[8/110] T: 6.64s | ETA: 0:10:49 | Dataset: strategyqa_dev
+[9/110] T: 6.87s | ETA: 0:10:48 | Dataset: strategyqa_dev
+[10/110] T: 1.95s | ETA: 0:09:57 | Dataset: strategyqa_dev
+
+---> Dataset: strategyqa_train (10 rows)
+[11/110] T: 4.85s | ETA: 0:09:41 | Dataset: strategyqa_train
+[12/110] T: 1.94s | ETA: 0:09:03 | Dataset: strategyqa_train
+[13/110] T: 1.94s | ETA: 0:08:30 | Dataset: strategyqa_train
+[14/110] T: 1.94s | ETA: 0:08:02 | Dataset: strategyqa_train
+[15/110] T: 4.85s | ETA: 0:07:56 | Dataset: strategyqa_train
+[16/110] T: 1.80s | ETA: 0:07:32 | Dataset: strategyqa_train
+[17/110] T: 1.94s | ETA: 0:07:12 | Dataset: strategyqa_train
+[18/110] T: 9.11s | ETA: 0:07:30 | Dataset: strategyqa_train
+[19/110] T: 1.94s | ETA: 0:07:11 | Dataset: strategyqa_train
+[20/110] T: 4.42s | ETA: 0:07:05 | Dataset: strategyqa_train
+
+---> Dataset: gsm8k_test (10 rows)
+[21/110] T: 10.97s | ETA: 0:07:26 | Dataset: gsm8k_test
+[22/110] T: 3.39s | ETA: 0:07:15 | Dataset: gsm8k_test
+[23/110] T: 15.61s | ETA: 0:07:50 | Dataset: gsm8k_test
+[24/110] T: 5.36s | ETA: 0:07:45 | Dataset: gsm8k_test
+[25/110] T: 10.70s | ETA: 0:07:57 | Dataset: gsm8k_test
+[26/110] T: 11.92s | ETA: 0:08:12 | Dataset: gsm8k_test
+[27/110] T: 12.57s | ETA: 0:08:27 | Dataset: gsm8k_test
+[28/110] T: 13.98s | ETA: 0:08:44 | Dataset: gsm8k_test
+[29/110] T: 15.37s | ETA: 0:09:02 | Dataset: gsm8k_test
+[30/110] T: 6.50s | ETA: 0:08:55 | Dataset: gsm8k_test
+
+---> Dataset: gsm8k_train (10 rows)
+[31/110] T: 3.68s | ETA: 0:08:41 | Dataset: gsm8k_train
+[32/110] T: 7.22s | ETA: 0:08:36 | Dataset: gsm8k_train
+[33/110] T: 3.67s | ETA: 0:08:22 | Dataset: gsm8k_train
+[34/110] T: 10.74s | ETA: 0:08:25 | Dataset: gsm8k_train
+[35/110] T: 15.38s | ETA: 0:08:37 | Dataset: gsm8k_train
+[36/110] T: 9.43s | ETA: 0:08:35 | Dataset: gsm8k_train
+[37/110] T: 2.37s | ETA: 0:08:19 | Dataset: gsm8k_train
+[38/110] T: 8.62s | ETA: 0:08:16 | Dataset: gsm8k_train
+[39/110] T: 22.95s | ETA: 0:08:38 | Dataset: gsm8k_train
+[40/110] T: 18.99s | ETA: 0:08:51 | Dataset: gsm8k_train
+
+---> Dataset: maqa_commonsense_reasoning (10 rows)
+[41/110] T: 3.39s | ETA: 0:08:37 | Dataset: maqa_commonsense_reasoning
+[42/110] T: 1.94s | ETA: 0:08:20 | Dataset: maqa_commonsense_reasoning
+[43/110] T: 1.94s | ETA: 0:08:04 | Dataset: maqa_commonsense_reasoning
+[44/110] T: 3.18s | ETA: 0:07:51 | Dataset: maqa_commonsense_reasoning
+[45/110] T: 1.94s | ETA: 0:07:36 | Dataset: maqa_commonsense_reasoning
+[46/110] T: 1.94s | ETA: 0:07:22 | Dataset: maqa_commonsense_reasoning
+[47/110] T: 1.94s | ETA: 0:07:09 | Dataset: maqa_commonsense_reasoning
+[48/110] T: 1.94s | ETA: 0:06:56 | Dataset: maqa_commonsense_reasoning
+[49/110] T: 4.16s | ETA: 0:06:46 | Dataset: maqa_commonsense_reasoning
+[50/110] T: 4.16s | ETA: 0:06:36 | Dataset: maqa_commonsense_reasoning
+
+---> Dataset: maqa_mathematical_reasoning (10 rows)
+[51/110] T: 5.84s | ETA: 0:06:29 | Dataset: maqa_mathematical_reasoning
+[52/110] T: 14.36s | ETA: 0:06:31 | Dataset: maqa_mathematical_reasoning
+[53/110] T: 5.63s | ETA: 0:06:23 | Dataset: maqa_mathematical_reasoning
+[54/110] T: 6.49s | ETA: 0:06:16 | Dataset: maqa_mathematical_reasoning
+[55/110] T: 9.36s | ETA: 0:06:12 | Dataset: maqa_mathematical_reasoning
+[56/110] T: 14.34s | ETA: 0:06:12 | Dataset: maqa_mathematical_reasoning
+[57/110] T: 4.68s | ETA: 0:06:03 | Dataset: maqa_mathematical_reasoning
+[verbal_confidence] Could not extract confidence. Returning NaN.
+[verbal_confidence] Raw text: '||719, 727, 733, 739, 743, 751, 757, 761, 769, 773, 787, 797, 809'
+[verbal_confidence] Reasons:
+  - keyword 'confidence' failed: numeric candidates found [719.0, 727.0, 733.0, 739.0, 743.0, 751.0, 757.0, 761.0, 769.0, 773.0, 787.0, 797.0, 809.0] but none in [0, 100] (or all-in-[0,1] prob form); segment='||719, 727, 733, 739, 743, 751, 757, 761, 769, 773, 787, 797, 809'
+  - after last comma failed: numeric candidates found [809.0] but none in [0, 100] (or all-in-[0,1] prob form); segment='809'
+  - full text failed: numeric candidates found [719.0, 727.0, 733.0, 739.0, 743.0, 751.0, 757.0, 761.0, 769.0, 773.0, 787.0, 797.0, 809.0] but none in [0, 100] (or all-in-[0,1] prob form); segment='||719, 727, 733, 739, 743, 751, 757, 761, 769, 773, 787, 797, 809'
+[verbal_confidence] Could not extract confidence. Returning NaN.
+[verbal_confidence] Raw text: '||1013, 1019, 1021, 1031, 1033, 1039, 1049, 1051, 1061, 1063, 106'
+[verbal_confidence] Reasons:
+  - keyword 'confidence' failed: numeric candidates found [1013.0, 1019.0, 1021.0, 1031.0, 1033.0, 1039.0, 1049.0, 1051.0, 1061.0, 1063.0, 106.0] but none in [0, 100] (or all-in-[0,1] prob form); segment='||1013, 1019, 1021, 1031, 1033, 1039, 1049, 1051, 1061, 1063, 106'
+  - after last comma failed: numeric candidates found [106.0] but none in [0, 100] (or all-in-[0,1] prob form); segment='106'
+  - full text failed: numeric candidates found [1013.0, 1019.0, 1021.0, 1031.0, 1033.0, 1039.0, 1049.0, 1051.0, 1061.0, 1063.0, 106.0] but none in [0, 100] (or all-in-[0,1] prob form); segment='||1013, 1019, 1021, 1031, 1033, 1039, 1049, 1051, 1061, 1063, 106'
+[58/110] T: 40.01s | ETA: 0:06:26 | Dataset: maqa_mathematical_reasoning
+[verbal_confidence] Could not extract confidence. Returning NaN.
+[verbal_confidence] Raw text: '||331, 337, 347, 349, 353, 359, 367, 373, 379, 383, 389, 397, 401'
+[verbal_confidence] Reasons:
+  - keyword 'confidence' failed: numeric candidates found [331.0, 337.0, 347.0, 349.0, 353.0, 359.0, 367.0, 373.0, 379.0, 383.0, 389.0, 397.0, 401.0] but none in [0, 100] (or all-in-[0,1] prob form); segment='||331, 337, 347, 349, 353, 359, 367, 373, 379, 383, 389, 397, 401'
+  - after last comma failed: numeric candidates found [401.0] but none in [0, 100] (or all-in-[0,1] prob form); segment='401'
+  - full text failed: numeric candidates found [331.0, 337.0, 347.0, 349.0, 353.0, 359.0, 367.0, 373.0, 379.0, 383.0, 389.0, 397.0, 401.0] but none in [0, 100] (or all-in-[0,1] prob form); segment='||331, 337, 347, 349, 353, 359, 367, 373, 379, 383, 389, 397, 401'
+[59/110] T: 41.45s | ETA: 0:06:48 | Dataset: maqa_mathematical_reasoning
+[60/110] T: 7.20s | ETA: 0:06:39 | Dataset: maqa_mathematical_reasoning
+
+---> Dataset: maqa_world_knowledge_hls (10 rows)
+[verbal_confidence] Could not extract confidence. Returning NaN.
+[verbal_confidence] Raw text: '||English, Hindi, Bengali, Tamil, Telugu, Marathi, Kannada, Gujarati, Odia, Punjabi, Malayalam, Assamese, Kashmiri, Nepali, Santali, Konkani, Sindhi, Bodo, Meitei, Manipuri, Hindi, Dog'
+[verbal_confidence] Reasons:
+  - keyword 'confidence' failed: no numeric tokens found; segment='||English, Hindi, Bengali, Tamil, Telugu, Marathi, Kannada, Gujarati, Odia, Punjabi, Malayalam, Assamese, Kashmiri, Nepali, Santali, Konkani, Sindhi, Bodo, Meitei, Manipuri, Hindi, Dog'
+  - after last comma failed: no numeric tokens found; segment='Dog'
+  - full text failed: no numeric tokens found; segment='||English, Hindi, Bengali, Tamil, Telugu, Marathi, Kannada, Gujarati, Odia, Punjabi, Malayalam, Assamese, Kashmiri, Nepali, Santali, Konkani, Sindhi, Bodo, Meitei, Manipuri, Hindi, Dog'
+[verbal_confidence] Could not extract confidence. Returning NaN.
+[verbal_confidence] Raw text: '||english, hindi, bengali, tamil, telugu, kannada, malayalam, marathi, odia, punjabi, gujarati, assamese, kashmiri, konkani, manipuri, nepali, santali, bodo, dogri, maithili'
+[verbal_confidence] Reasons:
+  - keyword 'confidence' failed: no numeric tokens found; segment='||english, hindi, bengali, tamil, telugu, kannada, malayalam, marathi, odia, punjabi, gujarati, assamese, kashmiri, konkani, manipuri, nepali, santali, bodo, dogri, maithili'
+  - after last comma failed: no numeric tokens found; segment='maithili'
+  - full text failed: no numeric tokens found; segment='||english, hindi, bengali, tamil, telugu, kannada, malayalam, marathi, odia, punjabi, gujarati, assamese, kashmiri, konkani, manipuri, nepali, santali, bodo, dogri, maithili'
+[61/110] T: 38.76s | ETA: 0:06:56 | Dataset: maqa_world_knowledge_hls
+[verbal_confidence] Could not extract confidence. Returning NaN.
+[verbal_confidence] Raw text: '||Scandium, Titanium, Vanadium, Chromium, Manganese, Iron, Cobalt, Nickel, Copper, Zinc, Yttrium, Zirconium, Niobium, Molybdenum, Technetium, Ruthenium, Rhodium, Palladium, Silver, Cadmium,'
+[verbal_confidence] Reasons:
+  - keyword 'confidence' failed: no numeric tokens found; segment='||Scandium, Titanium, Vanadium, Chromium, Manganese, Iron, Cobalt, Nickel, Copper, Zinc, Yttrium, Zirconium, Niobium, Molybdenum, Technetium, Ruthenium, Rhodium, Palladium, Silver, Cadmium,'
+  - after last comma failed: no numeric tokens found; segment=''
+  - full text failed: no numeric tokens found; segment='||Scandium, Titanium, Vanadium, Chromium, Manganese, Iron, Cobalt, Nickel, Copper, Zinc, Yttrium, Zirconium, Niobium, Molybdenum, Technetium, Ruthenium, Rhodium, Palladium, Silver, Cadmium,'
+[verbal_confidence] Could not extract confidence. Returning NaN.
+[verbal_confidence] Raw text: '||scandium, titanium, vanadium, chromium, manganese, iron, cobalt, nickel, copper, zinc, cadmium, mercury, thallium, lead, palladium, silver, gold, copper, zinc, cadmium, mercury, thallium, lead, palladium, silver,||'
+[verbal_confidence] Reasons:
+  - keyword 'confidence' failed: no numeric tokens found; segment='||scandium, titanium, vanadium, chromium, manganese, iron, cobalt, nickel, copper, zinc, cadmium, mercury, thallium, lead, palladium, silver, gold, copper, zinc, cadmium, mercury, thallium, lead, palladium, silver,||'
+  - after '||...||' failed: no numeric tokens found; segment=''
+  - after last comma failed: no numeric tokens found; segment='||'
+  - full text failed: no numeric tokens found; segment='||scandium, titanium, vanadium, chromium, manganese, iron, cobalt, nickel, copper, zinc, cadmium, mercury, thallium, lead, palladium, silver, gold, copper, zinc, cadmium, mercury, thallium, lead, palladium, silver,||'
+[62/110] T: 41.37s | ETA: 0:07:13 | Dataset: maqa_world_knowledge_hls
+[63/110] T: 18.04s | ETA: 0:07:11 | Dataset: maqa_world_knowledge_hls
+[verbal_confidence] Could not extract confidence. Returning NaN.
+[verbal_confidence] Raw text: '||China, India, Indonesia, Japan, South Africa, Brazil, Russia, Germany, France, United Kingdom, Italy, Canada, Mexico, Saudi Arabia, Argentina, Nigeria, Turkey, South Korea, Iran, Pakistan, Australia, United States of America, Italy, Germany, France, United Kingdom, Canada, Mexico'
+[verbal_confidence] Reasons:
+  - keyword 'confidence' failed: no numeric tokens found; segment='||China, India, Indonesia, Japan, South Africa, Brazil, Russia, Germany, France, United Kingdom, Italy, Canada, Mexico, Saudi Arabia, Argentina, Nigeria, Turkey, South Korea, Iran, Pakistan, Australia, United States of America, Italy, Germany, France, United Kingdom, Canada, Mexico'
+  - after last comma failed: no numeric tokens found; segment='Mexico'
+  - full text failed: no numeric tokens found; segment='||China, India, Indonesia, Japan, South Africa, Brazil, Russia, Germany, France, United Kingdom, Italy, Canada, Mexico, Saudi Arabia, Argentina, Nigeria, Turkey, South Korea, Iran, Pakistan, Australia, United States of America, Italy, Germany, France, United Kingdom, Canada, Mexico'
+[verbal_confidence] Could not extract confidence. Returning NaN.
+[verbal_confidence] Raw text: '||brazil, china, france, germany, india, indonesia, italy, japan, russia, south africa, saudi arabia, south korea, united states of america, united kingdom, canada, mexico, nigeria, turkey, australia, argentina, saudi arabia, pakistan, egypt'
+[verbal_confidence] Reasons:
+  - keyword 'confidence' failed: no numeric tokens found; segment='||brazil, china, france, germany, india, indonesia, italy, japan, russia, south africa, saudi arabia, south korea, united states of america, united kingdom, canada, mexico, nigeria, turkey, australia, argentina, saudi arabia, pakistan, egypt'
+  - after last comma failed: no numeric tokens found; segment='egypt'
+  - full text failed: no numeric tokens found; segment='||brazil, china, france, germany, india, indonesia, italy, japan, russia, south africa, saudi arabia, south korea, united states of america, united kingdom, canada, mexico, nigeria, turkey, australia, argentina, saudi arabia, pakistan, egypt'
+[64/110] T: 38.58s | ETA: 0:07:23 | Dataset: maqa_world_knowledge_hls
+[verbal_confidence] Could not extract confidence. Returning NaN.
+[verbal_confidence] Raw text: '||arthropoda, chordata, cnidaria, echinodermata, annelida, mollusca, platyhelminthes, ctenophora, cnidaria, porifera, cnidaria, ctenophora, cnidaria, ctenophora||,'
+[verbal_confidence] Reasons:
+  - keyword 'confidence' failed: no numeric tokens found; segment='||arthropoda, chordata, cnidaria, echinodermata, annelida, mollusca, platyhelminthes, ctenophora, cnidaria, porifera, cnidaria, ctenophora, cnidaria, ctenophora||,'
+  - after '||...||' failed: no numeric tokens found; segment=','
+  - after last comma failed: no numeric tokens found; segment=''
+  - full text failed: no numeric tokens found; segment='||arthropoda, chordata, cnidaria, echinodermata, annelida, mollusca, platyhelminthes, ctenophora, cnidaria, porifera, cnidaria, ctenophora, cnidaria, ctenophora||,'
+[65/110] T: 34.64s | ETA: 0:07:30 | Dataset: maqa_world_knowledge_hls
+[66/110] T: 29.63s | ETA: 0:07:33 | Dataset: maqa_world_knowledge_hls
+[verbal_confidence] Could not extract confidence. Returning NaN.
+[verbal_confidence] Raw text: '||connecticut, delaware, georgia, kentucky, maryland, massachusetts, new hampshire, new jersey, new york, north carolina, south carolina, virginia, virginia, new york, new jersey, north carolina, south carolina, virginia, new york'
+[verbal_confidence] Reasons:
+  - keyword 'confidence' failed: no numeric tokens found; segment='||connecticut, delaware, georgia, kentucky, maryland, massachusetts, new hampshire, new jersey, new york, north carolina, south carolina, virginia, virginia, new york, new jersey, north carolina, south carolina, virginia, new york'
+  - after last comma failed: no numeric tokens found; segment='new york'
+  - full text failed: no numeric tokens found; segment='||connecticut, delaware, georgia, kentucky, maryland, massachusetts, new hampshire, new jersey, new york, north carolina, south carolina, virginia, virginia, new york, new jersey, north carolina, south carolina, virginia, new york'
+[67/110] T: 34.89s | ETA: 0:07:39 | Dataset: maqa_world_knowledge_hls
+[verbal_confidence] Could not extract confidence. Returning NaN.
+[verbal_confidence] Raw text: '||Java, Python, C++, JavaScript, Ruby, C#, Objective-C, Scala, Kotlin, C#, Dart, Rust, Swift, Go, Kotlin, Dart, Rust, Swift, Go, Kotlin, Dart, Rust, Swift, Go, Kotlin, Dart, Rust, Swift, Go, Kotlin, Dart,'
+[verbal_confidence] Reasons:
+  - keyword 'confidence' failed: no numeric tokens found; segment='||Java, Python, C++, JavaScript, Ruby, C#, Objective-C, Scala, Kotlin, C#, Dart, Rust, Swift, Go, Kotlin, Dart, Rust, Swift, Go, Kotlin, Dart, Rust, Swift, Go, Kotlin, Dart, Rust, Swift, Go, Kotlin, Dart,'
+  - after last comma failed: no numeric tokens found; segment=''
+  - full text failed: no numeric tokens found; segment='||Java, Python, C++, JavaScript, Ruby, C#, Objective-C, Scala, Kotlin, C#, Dart, Rust, Swift, Go, Kotlin, Dart, Rust, Swift, Go, Kotlin, Dart, Rust, Swift, Go, Kotlin, Dart, Rust, Swift, Go, Kotlin, Dart,'
+[verbal_confidence] Could not extract confidence. Returning NaN.
+[verbal_confidence] Raw text: '||c++, java, python, c#, ruby, objective-c, javascript, c++, ruby, scala, rust, swift, kotlin, go, dart, haskell, f#, typescript, r, racket, elixir, julia, nim, lua, perl, ruby, julia, nim'
+[verbal_confidence] Reasons:
+  - keyword 'confidence' failed: no numeric tokens found; segment='||c++, java, python, c#, ruby, objective-c, javascript, c++, ruby, scala, rust, swift, kotlin, go, dart, haskell, f#, typescript, r, racket, elixir, julia, nim, lua, perl, ruby, julia, nim'
+  - after last comma failed: no numeric tokens found; segment='nim'
+  - full text failed: no numeric tokens found; segment='||c++, java, python, c#, ruby, objective-c, javascript, c++, ruby, scala, rust, swift, kotlin, go, dart, haskell, f#, typescript, r, racket, elixir, julia, nim, lua, perl, ruby, julia, nim'
+[68/110] T: 36.55s | ETA: 0:07:44 | Dataset: maqa_world_knowledge_hls
+[verbal_confidence] Could not extract confidence. Returning NaN.
+[verbal_confidence] Raw text: '||tundra, desert, grassland, taiga, deciduous forest, rainforest, mediterranean, coniferous forest, mixed forest, savanna, tundra, arctic tundra, tropical rainforest, desert, savanna, grassland, deciduous forest, taiga, mediterranean'
+[verbal_confidence] Reasons:
+  - keyword 'confidence' failed: no numeric tokens found; segment='||tundra, desert, grassland, taiga, deciduous forest, rainforest, mediterranean, coniferous forest, mixed forest, savanna, tundra, arctic tundra, tropical rainforest, desert, savanna, grassland, deciduous forest, taiga, mediterranean'
+  - after last comma failed: no numeric tokens found; segment='mediterranean'
+  - full text failed: no numeric tokens found; segment='||tundra, desert, grassland, taiga, deciduous forest, rainforest, mediterranean, coniferous forest, mixed forest, savanna, tundra, arctic tundra, tropical rainforest, desert, savanna, grassland, deciduous forest, taiga, mediterranean'
+[69/110] T: 39.67s | ETA: 0:07:50 | Dataset: maqa_world_knowledge_hls
+[verbal_confidence] Could not extract confidence. Returning NaN.
+[verbal_confidence] Raw text: '||Skull, Ribs, Sternum, Spine, Humerus, Radius, Ulna, Carpals, Metacarpals, Phalanges, Femur, Tibia, Fibula, Tarsals, Metatarsals, Phalanges, Clavicle, Scapula,'
+[verbal_confidence] Reasons:
+  - keyword 'confidence' failed: no numeric tokens found; segment='||Skull, Ribs, Sternum, Spine, Humerus, Radius, Ulna, Carpals, Metacarpals, Phalanges, Femur, Tibia, Fibula, Tarsals, Metatarsals, Phalanges, Clavicle, Scapula,'
+  - after last comma failed: no numeric tokens found; segment=''
+  - full text failed: no numeric tokens found; segment='||Skull, Ribs, Sternum, Spine, Humerus, Radius, Ulna, Carpals, Metacarpals, Phalanges, Femur, Tibia, Fibula, Tarsals, Metatarsals, Phalanges, Clavicle, Scapula,'
+[70/110] T: 18.30s | ETA: 0:07:43 | Dataset: maqa_world_knowledge_hls
+
+---> Dataset: maqa_world_knowledge_nq (10 rows)
+[71/110] T: 6.12s | ETA: 0:07:28 | Dataset: maqa_world_knowledge_nq
+[72/110] T: 12.53s | ETA: 0:07:17 | Dataset: maqa_world_knowledge_nq
+[73/110] T: 16.38s | ETA: 0:07:08 | Dataset: maqa_world_knowledge_nq
+[74/110] T: 10.36s | ETA: 0:06:56 | Dataset: maqa_world_knowledge_nq
+[verbal_confidence] Could not extract confidence. Returning NaN.
+[verbal_confidence] Raw text: '||Muddy Waters, Willie Dixon, Robert Johnson, Muddy Waters, Willie Dixon, Robert Johnson, Muddy Waters, Willie Dixon, Robert Johnson, Muddy Waters, Willie Dixon, Robert Johnson, Muddy Waters, Willie Dixon, Robert Johnson, Muddy Waters, Willie Dixon, Robert Johnson, Muddy Waters'
+[verbal_confidence] Reasons:
+  - keyword 'confidence' failed: no numeric tokens found; segment='||Muddy Waters, Willie Dixon, Robert Johnson, Muddy Waters, Willie Dixon, Robert Johnson, Muddy Waters, Willie Dixon, Robert Johnson, Muddy Waters, Willie Dixon, Robert Johnson, Muddy Waters, Willie Dixon, Robert Johnson, Muddy Waters, Willie Dixon, Robert Johnson, Muddy Waters'
+  - after last comma failed: no numeric tokens found; segment='Muddy Waters'
+  - full text failed: no numeric tokens found; segment='||Muddy Waters, Willie Dixon, Robert Johnson, Muddy Waters, Willie Dixon, Robert Johnson, Muddy Waters, Willie Dixon, Robert Johnson, Muddy Waters, Willie Dixon, Robert Johnson, Muddy Waters, Willie Dixon, Robert Johnson, Muddy Waters, Willie Dixon, Robert Johnson, Muddy Waters'
+[75/110] T: 17.85s | ETA: 0:06:47 | Dataset: maqa_world_knowledge_nq
+[76/110] T: 9.84s | ETA: 0:06:35 | Dataset: maqa_world_knowledge_nq
+[77/110] T: 10.17s | ETA: 0:06:22 | Dataset: maqa_world_knowledge_nq
+[78/110] T: 15.78s | ETA: 0:06:13 | Dataset: maqa_world_knowledge_nq
+[79/110] T: 7.31s | ETA: 0:05:59 | Dataset: maqa_world_knowledge_nq
+[80/110] T: 11.77s | ETA: 0:05:48 | Dataset: maqa_world_knowledge_nq
+
+---> Dataset: maqa_single_commonsense_reasoning (10 rows)
+[81/110] T: 1.89s | ETA: 0:05:33 | Dataset: maqa_single_commonsense_reasoning
+[82/110] T: 1.89s | ETA: 0:05:18 | Dataset: maqa_single_commonsense_reasoning
+[83/110] T: 1.90s | ETA: 0:05:03 | Dataset: maqa_single_commonsense_reasoning
+[84/110] T: 1.89s | ETA: 0:04:49 | Dataset: maqa_single_commonsense_reasoning
+[85/110] T: 1.90s | ETA: 0:04:35 | Dataset: maqa_single_commonsense_reasoning
+[86/110] T: 1.89s | ETA: 0:04:22 | Dataset: maqa_single_commonsense_reasoning
+[87/110] T: 1.90s | ETA: 0:04:08 | Dataset: maqa_single_commonsense_reasoning
+[88/110] T: 1.90s | ETA: 0:03:55 | Dataset: maqa_single_commonsense_reasoning
+[89/110] T: 4.06s | ETA: 0:03:43 | Dataset: maqa_single_commonsense_reasoning
+[90/110] T: 1.90s | ETA: 0:03:31 | Dataset: maqa_single_commonsense_reasoning
+
+---> Dataset: maqa_single_math_reasoning (10 rows)
+[91/110] T: 7.34s | ETA: 0:03:19 | Dataset: maqa_single_math_reasoning
+[92/110] T: 1.89s | ETA: 0:03:07 | Dataset: maqa_single_math_reasoning
+[93/110] T: 15.07s | ETA: 0:02:58 | Dataset: maqa_single_math_reasoning
+[94/110] T: 2.60s | ETA: 0:02:46 | Dataset: maqa_single_math_reasoning
+[95/110] T: 6.26s | ETA: 0:02:35 | Dataset: maqa_single_math_reasoning
+[96/110] T: 8.00s | ETA: 0:02:24 | Dataset: maqa_single_math_reasoning
+[97/110] T: 10.98s | ETA: 0:02:14 | Dataset: maqa_single_math_reasoning
+[98/110] T: 5.27s | ETA: 0:02:03 | Dataset: maqa_single_math_reasoning
+Error in row 98: list index out of range
+[99/110] T: 3.60s | ETA: 0:01:52 | Dataset: maqa_single_math_reasoning
+[100/110] T: 2.46s | ETA: 0:01:41 | Dataset: maqa_single_math_reasoning
+
+---> Dataset: maqa_single_world_knowledge_nq (10 rows)
+[verbal_confidence] Could not extract confidence. Returning NaN.
+[verbal_confidence] Raw text: '||2017, 2014, 2009, 2004, 1980, 1978, 1976, 1974, 1972, 1970, 196'
+[verbal_confidence] Reasons:
+  - keyword 'confidence' failed: numeric candidates found [2017.0, 2014.0, 2009.0, 2004.0, 1980.0, 1978.0, 1976.0, 1974.0, 1972.0, 1970.0, 196.0] but none in [0, 100] (or all-in-[0,1] prob form); segment='||2017, 2014, 2009, 2004, 1980, 1978, 1976, 1974, 1972, 1970, 196'
+  - after last comma failed: numeric candidates found [196.0] but none in [0, 100] (or all-in-[0,1] prob form); segment='196'
+  - full text failed: numeric candidates found [2017.0, 2014.0, 2009.0, 2004.0, 1980.0, 1978.0, 1976.0, 1974.0, 1972.0, 1970.0, 196.0] but none in [0, 100] (or all-in-[0,1] prob form); segment='||2017, 2014, 2009, 2004, 1980, 1978, 1976, 1974, 1972, 1970, 196'
+[101/110] T: 11.87s | ETA: 0:01:31 | Dataset: maqa_single_world_knowledge_nq
+[102/110] T: 9.79s | ETA: 0:01:21 | Dataset: maqa_single_world_knowledge_nq
+[verbal_confidence] Could not extract confidence. Returning NaN.
+[verbal_confidence] Raw text: '||James I of England, James VI and I of Scotland, James I of Great Britain, James I of England and Scotland, James I of Great Britain and Ireland, James I of England and Scotland and Ireland, James I of Great Britain and Ireland and Scotland, James I of Great Britain and Ireland and Scotland and England'
+[verbal_confidence] Reasons:
+  - keyword 'confidence' failed: no numeric tokens found; segment='||James I of England, James VI and I of Scotland, James I of Great Britain, James I of England and Scotland, James I of Great Britain and Ireland, James I of England and Scotland and Ireland, James I of Great Britain and Ireland and Scotland, James I of Great Britain and Ireland and Scotland and England'
+  - after last comma failed: no numeric tokens found; segment='James I of Great Britain and Ireland and Scotland and England'
+  - full text failed: no numeric tokens found; segment='||James I of England, James VI and I of Scotland, James I of Great Britain, James I of England and Scotland, James I of Great Britain and Ireland, James I of England and Scotland and Ireland, James I of Great Britain and Ireland and Scotland, James I of Great Britain and Ireland and Scotland and England'
+[103/110] T: 22.50s | ETA: 0:01:11 | Dataset: maqa_single_world_knowledge_nq
+[104/110] T: 8.88s | ETA: 0:01:01 | Dataset: maqa_single_world_knowledge_nq
+[verbal_confidence] Could not extract confidence. Returning NaN.
+[verbal_confidence] Raw text: '||Suzanne Vega, The Carpenters, The Carpenters, The Carpenters, The Carpenters, The Carpenters, The Carpenters, The Carpenters, The Carpenters, The Carpenters, The Carpenters, The Carpenters, The Carpent'
+[verbal_confidence] Reasons:
+  - keyword 'confidence' failed: no numeric tokens found; segment='||Suzanne Vega, The Carpenters, The Carpenters, The Carpenters, The Carpenters, The Carpenters, The Carpenters, The Carpenters, The Carpenters, The Carpenters, The Carpenters, The Carpenters, The Carpent'
+  - after last comma failed: no numeric tokens found; segment='The Carpent'
+  - full text failed: no numeric tokens found; segment='||Suzanne Vega, The Carpenters, The Carpenters, The Carpenters, The Carpenters, The Carpenters, The Carpenters, The Carpenters, The Carpenters, The Carpenters, The Carpenters, The Carpenters, The Carpent'
+[105/110] T: 16.59s | ETA: 0:00:51 | Dataset: maqa_single_world_knowledge_nq
+[verbal_confidence] Could not extract confidence. Returning NaN.
+[verbal_confidence] Raw text: '||Scotland, Ireland, England, Wales, United States of America, Canada, Australia, New Zealand, South Africa, Brazil, Argentina, Chile, Colombia, Peru, Ecuador, Mexico, Cuba, Dominican Republic, Haiti, Jamaica, Puerto Rico, Dominican Republic, Cuba, Dominican Republic, Haiti, Jamaica, Puerto Rico'
+[verbal_confidence] Reasons:
+  - keyword 'confidence' failed: no numeric tokens found; segment='||Scotland, Ireland, England, Wales, United States of America, Canada, Australia, New Zealand, South Africa, Brazil, Argentina, Chile, Colombia, Peru, Ecuador, Mexico, Cuba, Dominican Republic, Haiti, Jamaica, Puerto Rico, Dominican Republic, Cuba, Dominican Republic, Haiti, Jamaica, Puerto Rico'
+  - after last comma failed: no numeric tokens found; segment='Puerto Rico'
+  - full text failed: no numeric tokens found; segment='||Scotland, Ireland, England, Wales, United States of America, Canada, Australia, New Zealand, South Africa, Brazil, Argentina, Chile, Colombia, Peru, Ecuador, Mexico, Cuba, Dominican Republic, Haiti, Jamaica, Puerto Rico, Dominican Republic, Cuba, Dominican Republic, Haiti, Jamaica, Puerto Rico'
+[106/110] T: 18.04s | ETA: 0:00:41 | Dataset: maqa_single_world_knowledge_nq
+[verbal_confidence] Could not extract confidence. Returning NaN.
+[verbal_confidence] Raw text: '||Peter Gallagher, Michael C. Hall, Peter Gallagher, Michael C. Hall, Peter Gallagher, Michael C. Hall, Peter Gallagher, Michael C. Hall, Peter Gallagher, Michael C. Hall, Peter Gallagher, Michael C. Hall, Peter Gallagher, Michael C. Hall, Peter Gallagher, Michael C. Hall'
+[verbal_confidence] Reasons:
+  - keyword 'confidence' failed: no numeric tokens found; segment='||Peter Gallagher, Michael C. Hall, Peter Gallagher, Michael C. Hall, Peter Gallagher, Michael C. Hall, Peter Gallagher, Michael C. Hall, Peter Gallagher, Michael C. Hall, Peter Gallagher, Michael C. Hall, Peter Gallagher, Michael C. Hall, Peter Gallagher, Michael C. Hall'
+  - after last comma failed: no numeric tokens found; segment='Michael C. Hall'
+  - full text failed: no numeric tokens found; segment='||Peter Gallagher, Michael C. Hall, Peter Gallagher, Michael C. Hall, Peter Gallagher, Michael C. Hall, Peter Gallagher, Michael C. Hall, Peter Gallagher, Michael C. Hall, Peter Gallagher, Michael C. Hall, Peter Gallagher, Michael C. Hall, Peter Gallagher, Michael C. Hall'
+[107/110] T: 23.72s | ETA: 0:00:31 | Dataset: maqa_single_world_knowledge_nq
+[108/110] T: 12.32s | ETA: 0:00:21 | Dataset: maqa_single_world_knowledge_nq
+[verbal_confidence] Could not extract confidence. Returning NaN.
+[verbal_confidence] Raw text: '||Anakin Skywalker, Luke Skywalker, Darth Vader, Anakin Skywalker, Luke Skywalker, Darth Vader, Anakin Skywalker, Luke Skywalker, Darth Vader, Anakin Skywalker, Luke Skywalker, Darth Vader, Anakin Skywalker, Luke Skywalker, Darth Vader, Anakin Skywalker, Luke Skywalker, Darth Vader, Anakin Skywalker'
+[verbal_confidence] Reasons:
+  - keyword 'confidence' failed: no numeric tokens found; segment='||Anakin Skywalker, Luke Skywalker, Darth Vader, Anakin Skywalker, Luke Skywalker, Darth Vader, Anakin Skywalker, Luke Skywalker, Darth Vader, Anakin Skywalker, Luke Skywalker, Darth Vader, Anakin Skywalker, Luke Skywalker, Darth Vader, Anakin Skywalker, Luke Skywalker, Darth Vader, Anakin Skywalker'
+  - after last comma failed: no numeric tokens found; segment='Anakin Skywalker'
+  - full text failed: no numeric tokens found; segment='||Anakin Skywalker, Luke Skywalker, Darth Vader, Anakin Skywalker, Luke Skywalker, Darth Vader, Anakin Skywalker, Luke Skywalker, Darth Vader, Anakin Skywalker, Luke Skywalker, Darth Vader, Anakin Skywalker, Luke Skywalker, Darth Vader, Anakin Skywalker, Luke Skywalker, Darth Vader, Anakin Skywalker'
+[109/110] T: 18.24s | ETA: 0:00:10 | Dataset: maqa_single_world_knowledge_nq
+[110/110] T: 11.64s | ETA: 0:00:00 | Dataset: maqa_single_world_knowledge_nq
+
+Evaluation completed. Results saved to finetuned_results.csv

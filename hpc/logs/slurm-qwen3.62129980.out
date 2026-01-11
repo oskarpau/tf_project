@@ -1,0 +1,36 @@
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+==((====))==  Unsloth 2025.12.10: Fast Qwen3_Vl patching. Transformers: 4.57.3.
+   \\   /|    NVIDIA A100-PCIE-40GB. Num GPUs = 1. Max memory: 39.494 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.5.0+cu124. CUDA: 8.0. CUDA Toolkit: 12.4. Triton: 3.1.0
+\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.28.post2. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Loading datasets: ALL (default)
+Training samples: 10
+Dataset size: 10
+Steps per epoch: 1
+Saving checkpoint every 5 steps (approx every 5 epochs).
+Traceback (most recent call last):
+  File "/gpfs/helios/home/garzonuria/transformers-course/tf_project/hpc/../src/model_fine_tuning.py", line 419, in <module>
+    main()
+  File "/gpfs/helios/home/garzonuria/transformers-course/tf_project/hpc/../src/model_fine_tuning.py", line 413, in main
+    result = run_fine_tuning(df_train)
+  File "/gpfs/helios/home/garzonuria/transformers-course/tf_project/hpc/../src/model_fine_tuning.py", line 352, in run_fine_tuning
+    training_args = SFTConfig(
+  File "/gpfs/helios/home/garzonuria/transformers-course/tf_project/hpc/unsloth_compiled_cache/UnslothSFTTrainer.py", line 466, in __init__
+    super().__init__(
+  File "<string>", line 152, in __init__
+  File "/gpfs/helios/home/garzonuria/transformers-course/transformers-venv-3/lib/python3.10/site-packages/trl/trainer/sft_config.py", line 262, in __post_init__
+    super().__post_init__()
+  File "/gpfs/helios/home/garzonuria/transformers-course/transformers-venv-3/lib/python3.10/site-packages/transformers/training_args.py", line 1645, in __post_init__
+    self.save_strategy = SaveStrategy(self.save_strategy)
+  File "/gpfs/space/software/cluster_software/spack/linux-rhel9-x86_64/gcc-9.2.0/python-3.10.10-pzjedozdxximmamxk4v7ug4pksgtb5ax/lib/python3.10/enum.py", line 385, in __call__
+    return cls.__new__(cls, value)
+  File "/gpfs/space/software/cluster_software/spack/linux-rhel9-x86_64/gcc-9.2.0/python-3.10.10-pzjedozdxximmamxk4v7ug4pksgtb5ax/lib/python3.10/enum.py", line 718, in __new__
+    raise exc
+  File "/gpfs/space/software/cluster_software/spack/linux-rhel9-x86_64/gcc-9.2.0/python-3.10.10-pzjedozdxximmamxk4v7ug4pksgtb5ax/lib/python3.10/enum.py", line 700, in __new__
+    result = cls._missing_(value)
+  File "/gpfs/helios/home/garzonuria/transformers-course/transformers-venv-3/lib/python3.10/site-packages/transformers/utils/generic.py", line 480, in _missing_
+    raise ValueError(
+ValueError: epochs is not a valid SaveStrategy, please select one of ['no', 'steps', 'epoch', 'best']

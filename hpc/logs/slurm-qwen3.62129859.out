@@ -1,0 +1,30 @@
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+==((====))==  Unsloth 2025.12.10: Fast Qwen3_Vl patching. Transformers: 4.57.3.
+   \\   /|    NVIDIA A100-PCIE-40GB. Num GPUs = 1. Max memory: 39.494 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.5.0+cu124. CUDA: 8.0. CUDA Toolkit: 12.4. Triton: 3.1.0
+\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.28.post2. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+The model is already on multiple devices. Skipping the move to device specified in `args`.
+==((====))==  Unsloth - 2x faster free finetuning | Num GPUs used = 1
+   \\   /|    Num examples = 20 | Num Epochs = 50 | Total steps = 50
+O^O/ \_/ \    Batch size per device = 8 | Gradient accumulation steps = 4
+\        /    Data Parallel GPUs = 1 | Total batch size (8 x 4 x 1) = 32
+ "-____-"     Trainable parameters = 132,120,576 of 4,569,936,384 (2.89% trained)
+Loading datasets: ALL
+Total training samples: 20
+Dataset size: 20
+Effective Batch Size: 32
+Real Steps per epoch: 1
+Saving checkpoint every 5 steps (EXACTLY every 5 epochs).
+Unsloth: Model does not have a default image size - using 512
+  0%|          | 0/50 [00:00<?, ?it/s]  2%|▏         | 1/50 [00:34<27:49, 34.07s/it]  4%|▍         | 2/50 [00:40<14:08, 17.68s/it]  6%|▌         | 3/50 [00:44<09:03, 11.56s/it]  8%|▊         | 4/50 [00:46<05:56,  7.75s/it] 10%|█         | 5/50 [00:48<04:13,  5.64s/it] 12%|█▏        | 6/50 [00:53<04:06,  5.61s/it] 14%|█▍        | 7/50 [00:58<03:42,  5.17s/it] 16%|█▌        | 8/50 [01:02<03:25,  4.89s/it] 18%|█▊        | 9/50 [01:08<03:37,  5.30s/it] 20%|██        | 10/50 [01:10<02:50,  4.25s/it]                                                20%|██        | 10/50 [01:10<02:50,  4.25s/it] 22%|██▏       | 11/50 [01:13<02:35,  3.99s/it] 24%|██▍       | 12/50 [01:15<02:07,  3.36s/it] 26%|██▌       | 13/50 [01:19<02:12,  3.57s/it] 28%|██▊       | 14/50 [01:21<01:50,  3.07s/it] 30%|███       | 15/50 [01:26<01:59,  3.43s/it] 32%|███▏      | 16/50 [01:31<02:20,  4.12s/it] 34%|███▍      | 17/50 [01:33<01:54,  3.46s/it] 36%|███▌      | 18/50 [01:35<01:35,  2.99s/it] 38%|███▊      | 19/50 [01:37<01:22,  2.67s/it] 40%|████      | 20/50 [01:39<01:13,  2.44s/it]                                                40%|████      | 20/50 [01:39<01:13,  2.44s/it] 42%|████▏     | 21/50 [01:45<01:39,  3.42s/it] 44%|████▍     | 22/50 [01:47<01:23,  2.97s/it] 46%|████▌     | 23/50 [01:51<01:28,  3.29s/it] 48%|████▊     | 24/50 [01:53<01:14,  2.88s/it] 50%|█████     | 25/50 [01:54<01:04,  2.59s/it] 52%|█████▏    | 26/50 [01:58<01:07,  2.83s/it] 54%|█████▍    | 27/50 [02:00<00:58,  2.55s/it] 56%|█████▌    | 28/50 [02:02<00:51,  2.36s/it] 58%|█████▊    | 29/50 [02:06<01:01,  2.93s/it] 60%|██████    | 30/50 [02:08<00:52,  2.62s/it]                                                60%|██████    | 30/50 [02:08<00:52,  2.62s/it] 62%|██████▏   | 31/50 [02:11<00:54,  2.85s/it] 64%|██████▍   | 32/50 [02:13<00:46,  2.56s/it] 66%|██████▌   | 33/50 [02:15<00:40,  2.37s/it] 68%|██████▊   | 34/50 [02:17<00:35,  2.22s/it] 70%|███████   | 35/50 [02:19<00:31,  2.13s/it] 72%|███████▏  | 36/50 [02:22<00:35,  2.50s/it] 74%|███████▍  | 37/50 [02:24<00:30,  2.33s/it] 76%|███████▌  | 38/50 [02:26<00:26,  2.20s/it] 78%|███████▊  | 39/50 [02:28<00:23,  2.11s/it] 80%|████████  | 40/50 [02:30<00:20,  2.05s/it]                                                80%|████████  | 40/50 [02:30<00:20,  2.05s/it] 82%|████████▏ | 41/50 [02:33<00:21,  2.44s/it] 84%|████████▍ | 42/50 [02:35<00:18,  2.28s/it] 86%|████████▌ | 43/50 [02:37<00:15,  2.17s/it] 88%|████████▊ | 44/50 [02:39<00:12,  2.09s/it] 90%|█████████ | 45/50 [02:41<00:10,  2.03s/it] 92%|█████████▏| 46/50 [02:44<00:09,  2.43s/it] 94%|█████████▍| 47/50 [02:46<00:06,  2.28s/it] 96%|█████████▌| 48/50 [02:48<00:04,  2.16s/it] 98%|█████████▊| 49/50 [02:50<00:02,  2.09s/it]100%|██████████| 50/50 [02:52<00:00,  2.04s/it]                                               100%|██████████| 50/50 [02:52<00:00,  2.04s/it]                                               100%|██████████| 50/50 [02:53<00:00,  2.04s/it]100%|██████████| 50/50 [02:53<00:00,  3.48s/it]
+Unsloth: Will smartly offload gradients to save VRAM!
+{'loss': 2.9187, 'grad_norm': 3.555389642715454, 'learning_rate': 1.8222222222222224e-05, 'epoch': 10.0}
+{'loss': 1.5503, 'grad_norm': 3.4883015155792236, 'learning_rate': 1.377777777777778e-05, 'epoch': 20.0}
+{'loss': 1.045, 'grad_norm': 0.7051575183868408, 'learning_rate': 9.333333333333334e-06, 'epoch': 30.0}
+{'loss': 0.8496, 'grad_norm': 0.8018656969070435, 'learning_rate': 4.888888888888889e-06, 'epoch': 40.0}
+{'loss': 0.7059, 'grad_norm': 0.8686618804931641, 'learning_rate': 4.444444444444445e-07, 'epoch': 50.0}
+{'train_runtime': 173.7973, 'train_samples_per_second': 5.754, 'train_steps_per_second': 0.288, 'train_loss': 1.413926362991333, 'epoch': 50.0}
+Training completed.

@@ -1,0 +1,118 @@
+[unsloth_zoo.log|WARNING]Device does not support bfloat16. Will change to float16.
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+==((====))==  Unsloth 2025.12.10: Fast Qwen3_Vl patching. Transformers: 4.57.3.
+   \\   /|    Tesla V100-PCIE-32GB. Num GPUs = 1. Max memory: 31.733 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.5.0+cu124. CUDA: 7.0. CUDA Toolkit: 12.4. Triton: 3.1.0
+\        /    Bfloat16 = FALSE. FA [Xformers = 0.0.28.post2. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Unsloth: Making `model.base_model.model.model` require gradients
+Resetting results file: finetuned_results.csv
+Loading and processing datasets...
+Test mode: limiting to head(6) rows per dataset
+Subsampling: Keeping random 50% of each dataset...
+  -> strategyqa_dev: Reduced from 6 to 3 rows
+  -> strategyqa_train: Reduced from 6 to 3 rows
+  -> gsm8k_test: Reduced from 6 to 3 rows
+  -> gsm8k_train: Reduced from 6 to 3 rows
+  -> maqa_commonsense_reasoning: Reduced from 6 to 3 rows
+  -> maqa_mathematical_reasoning: Reduced from 6 to 3 rows
+  -> maqa_world_knowledge_hls: Reduced from 6 to 3 rows
+  -> maqa_world_knowledge_nq: Reduced from 6 to 3 rows
+  -> maqa_single_commonsense_reasoning: Reduced from 6 to 3 rows
+  -> maqa_single_math_reasoning: Reduced from 6 to 3 rows
+  -> maqa_single_world_knowledge_nq: Reduced from 6 to 3 rows
+Adding response type metadata...
+[Init] Loading Unsloth LoRA model from: ../hpc/qwen3_vl_lora_finetuned
+==((====))==  Unsloth 2025.12.10: Fast Qwen3_Vl patching. Transformers: 4.57.3.
+   \\   /|    Tesla V100-PCIE-32GB. Num GPUs = 1. Max memory: 31.733 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.5.0+cu124. CUDA: 7.0. CUDA Toolkit: 12.4. Triton: 3.1.0
+\        /    Bfloat16 = FALSE. FA [Xformers = 0.0.28.post2. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Model loaded successfully
+[Init] Loading AutoProcessor for tokenization compatibility...
+[Init] Model loaded in 18.77 seconds
+Starting new file: finetuned_results.csv
+
+---> Dataset: strategyqa_dev (3 rows)
+[1/33] T: 38.71s | ETA: 0:20:38 | Dataset: strategyqa_dev
+[2/33] T: 2.69s | ETA: 0:10:41 | Dataset: strategyqa_dev
+[3/33] T: 4.55s | ETA: 0:07:39 | Dataset: strategyqa_dev
+
+---> Dataset: strategyqa_train (3 rows)
+[4/33] T: 2.69s | ETA: 0:05:52 | Dataset: strategyqa_train
+[5/33] T: 2.69s | ETA: 0:04:47 | Dataset: strategyqa_train
+[6/33] T: 2.68s | ETA: 0:04:03 | Dataset: strategyqa_train
+
+---> Dataset: gsm8k_test (3 rows)
+[7/33] T: 4.75s | ETA: 0:03:38 | Dataset: gsm8k_test
+[8/33] T: 2.89s | ETA: 0:03:12 | Dataset: gsm8k_test
+[9/33] T: 3.12s | ETA: 0:02:52 | Dataset: gsm8k_test
+
+---> Dataset: gsm8k_train (3 rows)
+[10/33] T: 3.11s | ETA: 0:02:36 | Dataset: gsm8k_train
+[11/33] T: 3.10s | ETA: 0:02:21 | Dataset: gsm8k_train
+[12/33] T: 7.63s | ETA: 0:02:17 | Dataset: gsm8k_train
+
+---> Dataset: maqa_commonsense_reasoning (3 rows)
+[13/33] T: 2.69s | ETA: 0:02:05 | Dataset: maqa_commonsense_reasoning
+[14/33] T: 2.68s | ETA: 0:01:53 | Dataset: maqa_commonsense_reasoning
+[15/33] T: 2.68s | ETA: 0:01:43 | Dataset: maqa_commonsense_reasoning
+
+---> Dataset: maqa_mathematical_reasoning (3 rows)
+[16/33] T: 6.41s | ETA: 0:01:38 | Dataset: maqa_mathematical_reasoning
+[17/33] T: 12.38s | ETA: 0:01:39 | Dataset: maqa_mathematical_reasoning
+[18/33] T: 5.21s | ETA: 0:01:32 | Dataset: maqa_mathematical_reasoning
+
+---> Dataset: maqa_world_knowledge_hls (3 rows)
+[verbal_confidence] Could not extract confidence. Returning NaN.
+[verbal_confidence] Raw text: '||Assamese, Bengali, Cebuano, Gujarati, Hindi, Kannada, Kashmiri, Kumari-pahadu, Malayalam, Maharashtra Creole, Marathi, Nepal Bhasa, Odia, Punjabi, Sanskrit, Sikh, Tamil, Telugu, Urdu,'
+[verbal_confidence] Reasons:
+  - keyword 'confidence' failed: no numeric tokens found; segment='||Assamese, Bengali, Cebuano, Gujarati, Hindi, Kannada, Kashmiri, Kumari-pahadu, Malayalam, Maharashtra Creole, Marathi, Nepal Bhasa, Odia, Punjabi, Sanskrit, Sikh, Tamil, Telugu, Urdu,'
+  - after last comma failed: no numeric tokens found; segment=''
+  - full text failed: no numeric tokens found; segment='||Assamese, Bengali, Cebuano, Gujarati, Hindi, Kannada, Kashmiri, Kumari-pahadu, Malayalam, Maharashtra Creole, Marathi, Nepal Bhasa, Odia, Punjabi, Sanskrit, Sikh, Tamil, Telugu, Urdu,'
+[verbal_confidence] Could not extract confidence. Returning NaN.
+[verbal_confidence] Raw text: '||assamese, bengali, bodo, dogri, english, gujarati, hindi, kannada, kashmiri, konkani, maithili, malayalam, manipuri, marathi, nepali, odia, punjabi, sanskrit, santali, sind'
+[verbal_confidence] Reasons:
+  - keyword 'confidence' failed: no numeric tokens found; segment='||assamese, bengali, bodo, dogri, english, gujarati, hindi, kannada, kashmiri, konkani, maithili, malayalam, manipuri, marathi, nepali, odia, punjabi, sanskrit, santali, sind'
+  - after last comma failed: no numeric tokens found; segment='sind'
+  - full text failed: no numeric tokens found; segment='||assamese, bengali, bodo, dogri, english, gujarati, hindi, kannada, kashmiri, konkani, maithili, malayalam, manipuri, marathi, nepali, odia, punjabi, sanskrit, santali, sind'
+[19/33] T: 44.45s | ETA: 0:01:54 | Dataset: maqa_world_knowledge_hls
+[verbal_confidence] Could not extract confidence. Returning NaN.
+[verbal_confidence] Raw text: '||Scandium, Titanium, Vanadium, Chromium, Manganese, Iron, Cobalt, Nickel, Copper, Zinc, Yttrium, Zirconium, Niobium, Molybdenum, Technetium, Ruthenium, Rhodium, Palladium, Silver, Gold, Platinum'
+[verbal_confidence] Reasons:
+  - keyword 'confidence' failed: no numeric tokens found; segment='||Scandium, Titanium, Vanadium, Chromium, Manganese, Iron, Cobalt, Nickel, Copper, Zinc, Yttrium, Zirconium, Niobium, Molybdenum, Technetium, Ruthenium, Rhodium, Palladium, Silver, Gold, Platinum'
+  - after last comma failed: no numeric tokens found; segment='Platinum'
+  - full text failed: no numeric tokens found; segment='||Scandium, Titanium, Vanadium, Chromium, Manganese, Iron, Cobalt, Nickel, Copper, Zinc, Yttrium, Zirconium, Niobium, Molybdenum, Technetium, Ruthenium, Rhodium, Palladium, Silver, Gold, Platinum'
+[20/33] T: 45.81s | ETA: 0:02:10 | Dataset: maqa_world_knowledge_hls
+[21/33] T: 41.28s | ETA: 0:02:18 | Dataset: maqa_world_knowledge_hls
+
+---> Dataset: maqa_world_knowledge_nq (3 rows)
+[22/33] T: 8.74s | ETA: 0:02:05 | Dataset: maqa_world_knowledge_nq
+[23/33] T: 17.70s | ETA: 0:01:56 | Dataset: maqa_world_knowledge_nq
+[24/33] T: 13.16s | ETA: 0:01:45 | Dataset: maqa_world_knowledge_nq
+
+---> Dataset: maqa_single_commonsense_reasoning (3 rows)
+[25/33] T: 2.59s | ETA: 0:01:31 | Dataset: maqa_single_commonsense_reasoning
+[26/33] T: 2.59s | ETA: 0:01:17 | Dataset: maqa_single_commonsense_reasoning
+[27/33] T: 2.59s | ETA: 0:01:04 | Dataset: maqa_single_commonsense_reasoning
+
+---> Dataset: maqa_single_math_reasoning (3 rows)
+[28/33] T: 4.57s | ETA: 0:00:52 | Dataset: maqa_single_math_reasoning
+[29/33] T: 2.79s | ETA: 0:00:40 | Dataset: maqa_single_math_reasoning
+[30/33] T: 2.98s | ETA: 0:00:29 | Dataset: maqa_single_math_reasoning
+
+---> Dataset: maqa_single_world_knowledge_nq (3 rows)
+[31/33] T: 3.78s | ETA: 0:00:19 | Dataset: maqa_single_world_knowledge_nq
+[verbal_confidence] Could not extract confidence. Returning NaN.
+[verbal_confidence] Raw text: '||ANSWERS||， CONFIDENCE'
+[verbal_confidence] Reasons:
+  - keyword 'confidence' failed: no numeric tokens found; segment='||ANSWERS||， CONFIDENCE'
+  - after '||...||' failed: no numeric tokens found; segment='， CONFIDENCE'
+  - full text failed: no numeric tokens found; segment='||ANSWERS||， CONFIDENCE'
+[32/33] T: 5.76s | ETA: 0:00:09 | Dataset: maqa_single_world_knowledge_nq
+[33/33] T: 9.95s | ETA: 0:00:00 | Dataset: maqa_single_world_knowledge_nq
+
+Evaluation completed. Results saved to finetuned_results.csv
