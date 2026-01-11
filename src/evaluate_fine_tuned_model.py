@@ -102,9 +102,18 @@ def run_evaluation():
     all_datasets = model_fine_tuning.load_processed_datasets()
 
     # Optional: limit rows per dataset for faster test runs #######################FORTESTING
-    #TEST_ROWS = 10  # Set to None to disable
+    #TEST_ROWS = 6  # Set to None to disable
     #print(f"Test mode: limiting to head({TEST_ROWS}) rows per dataset")
     #all_datasets = {name: df.head(TEST_ROWS) for name, df in all_datasets.items()}
+
+    print("Subsampling: Keeping random 50% of each dataset...")
+    for name, df in all_datasets.items():
+        original_count = len(df)
+        # frac=0.5 selecciona el 50%. 
+        # random_state=42 asegura que siempre elija las mismas filas si reinicias el script.
+        sampled_df = df.sample(frac=0.5, random_state=42)
+        all_datasets[name] = sampled_df
+        print(f"  -> {name}: Reduced from {original_count} to {len(sampled_df)} rows")
 
     # 2. Add 'answer_type' column 
     # (Needed for model.py to know which prompt to use: True/False vs Multi)
