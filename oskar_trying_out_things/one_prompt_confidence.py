@@ -312,24 +312,52 @@ prompts = [
     #     "Now, please answer this question."
     #     "Question: What is equal to 2+2? (A) 2 + 2 (B) 4 (C) 3"
     # ),
+    # (
+    #     "Instruction : Given a question that has only one correct answer as True or False,"
+    #     "answer the question and then provide the confidence in this"
+    #     "answer, which indicates how likely you think your answer"
+    #     "is true, following the instructions below:"
+    #     "1. Keep your response as brief as possible without"
+    #     "any explanation, and then provide your answer and"
+    #     "confidence."
+    #     "2. When providing an answer, use the format ||ANSWER||"
+    #     "where ANSWER is the answer to the given question."
+    #     "3. Answer only with ||True||, CONFIDENCE or ||False||, CONFIDENCE."
+    #     "4. The confidence should be a numerical number in the"
+    #     "range of 0-100."
+    #     "Use the following format for the final answer and"
+    #     "confidence:"
+    #     "||ANSWER||, CONFIDENCE"
+    #     "Now, please answer this question."
+    #     "Question: Is 2+2 equal to 4?"
+    # ),
+
     (
-        "Instruction : Given a question that has only one correct answer as True or False,"
-        "answer the question and then provide the confidence in this"
-        "answer, which indicates how likely you think your answer"
-        "is true, following the instructions below:"
-        "1. Keep your response as brief as possible without"
-        "any explanation, and then provide your answer and"
-        "confidence."
-        "2. When providing an answer, use the format ||ANSWER||"
-        "where ANSWER is the answer to the given question."
-        "3. Answer only with ||True||, CONFIDENCE or ||False||, CONFIDENCE."
-        "4. The confidence should be a numerical number in the"
-        "range of 0-100."
-        "Use the following format for the final answer and"
-        "confidence:"
-        "||ANSWER||, CONFIDENCE"
-        "Now, please answer this question."
-        "Question: Is 2+2 equal to 4?"
+        "You need to give instructions to an another LLM that is controlling the bodfy of a humanoid robot and you should also answer warmly and friendly the person asking you. The LLM that you are controlling is running at frequency of 10Hz and has little memory, so first make a plan that you could follow for giving the model low-level commands, like walk forward, look right, lift up a cover and etc. After you have made a plan, give the first step as the command for the LLM.",
+        "Put the command to the LLM for controlling the body of the robot between << and >> and the answer to the person between || and ||.",
+        "If either or both the command to the LLM and the answer to the person is not neccesary, you can omit those. If the command to the robot is bad, it could cause harm and make the robot unstable.",
+        "The person said: Two thirds of Jana's puppies are Pomeranians. One third of the Pomeranians are girls. If there are 6 Pomeranian girls, how many puppies does Jana have? Keep your answer concised."
+    ),
+        (
+        "You need to give instructions to an another LLM that is controlling the bodfy of a humanoid robot and you should also answer warmly and friendly the person asking you. The LLM that you are controlling is running at frequency of 10Hz and has little memory, so first make a plan that you could follow for giving the model low-level commands, like walk forward, look right, lift up a cover and etc. After you have made a plan, give the first step as the command for the LLM.",
+        "Put the command to the LLM for controlling the body of the robot between << and >> and the answer to the person between || and ||.",
+        "If either or both the command to the LLM and the answer to the person is not neccesary, you can omit those. If the command to the robot is bad, it could cause harm and make the robot unstable.",
+        "Sometimes the person says nothing and you should just continue your path of planned actions for the robot."
+        "The person said: Pick up a ball from the ground."
+    ),
+            (
+        "You need to give instructions to an another LLM that is controlling the bodfy of a humanoid robot and you should also answer warmly and friendly the person asking you. The LLM that you are controlling is running at frequency of 10Hz and has little memory, so first make a plan that you could follow for giving the model low-level commands, like walk forward, look right, lift up a cover and etc. After you have made a plan, give the first step as the command for the LLM.",
+        "Put the command to the LLM for controlling the body of the robot between << and >> and the answer to the person between || and ||.",
+        "If either or both the command to the LLM and the answer to the person is not neccesary, you can omit those. If the command to the robot is bad, it could cause harm and make the robot unstable.",
+        "Sometimes the person says nothing and you should just continue your path of planned actions for the robot and don't need to always say anything to the person has you are prompted every second, regardless if person asked you or not."
+        "The person didn't say anything."
+    ),
+    (
+            "You need to give instructions to an another LLM that is controlling the bodfy of a humanoid robot and you should also answer warmly and friendly the person asking you. The LLM that you are controlling is running at frequency of 10Hz and has little memory, so first make a plan that you could follow for giving the model low-level commands, like walk forward, look right, lift up a cover and etc. After you have made a plan, give the first step as the command for the LLM.",
+        "Put the command to the LLM for controlling the body of the robot between << and >> and the answer to the person between || and ||.",
+        "If either or both the command to the LLM and the answer to the person is not neccesary, you can omit those. If the command to the robot is bad, it could cause harm and make the robot unstable.",
+        "Sometimes the person says nothing and you should just continue your path of planned actions for the robot and don't need to always say anything to the person has you are prompted every second, regardless if person asked you or not."
+        "The person said: dance"
     ),
     # (
     #     "I need you to answer to a question with the right answer's letter"
@@ -386,7 +414,7 @@ input_lengths = [int(length) for length in inputs.attention_mask.sum(dim=1).toli
 # Run inference with token scores
 output = model.generate(
     **inputs,
-    max_new_tokens=128,
+    max_new_tokens=2048,
     return_dict_in_generate=True,
     output_scores=True,
     output_logits=True

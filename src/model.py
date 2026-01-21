@@ -105,7 +105,7 @@ class Model:
                 if not use_verbal_confidence:
                     if question_type == "multi_str":
                         prompt_start = ( 
-                        "Instruction : Given a question that has multiple answers,"
+                        "Instruction : Given a question that may have multiple answers,"
                         "answer the question, "
                         "following the instructions below:"
                         "1. Keep your response as brief as possible without"
@@ -138,7 +138,7 @@ class Model:
                 else:
                     if question_type == "multi_str":
                         prompt_start = ( 
-                        "Instruction : Given a question that has multiple answers,"
+                        "Instruction : Given a question that may have multiple answers,"
                         "answer the question and then provide the confidence in this"
                         "answer, which indicates how likely you think your answer"
                         "is true, following the instructions below:"
@@ -182,7 +182,7 @@ class Model:
                 if not use_verbal_confidence:
                     if question_type == "multi_str":
                         prompt_start = ( 
-                        "Instruction : Given a question that has multiple answers,"
+                        "Instruction : Given a question that may have multiple answers,"
                         "answer the question, "
                         "following the instructions below:"
                         "1. Keep your response as brief as possible without"
@@ -222,7 +222,7 @@ class Model:
                 else:
                     if question_type == "multi_str":
                         prompt_start = ( 
-                        "Instruction : Given a question that has multiple answers,"
+                        "Instruction : Given a question that may have multiple answers,"
                         "answer the question and then provide the confidence in this"
                         "answer, which indicates how likely you think your answer"
                         "is true, following the instructions below:"
