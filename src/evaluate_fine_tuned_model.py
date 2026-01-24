@@ -15,7 +15,7 @@ from config import COLUMN_SCHEMA
 import model_fine_tuning  # To load cleaned datasets
 
 # --- CONFIGURATION ---
-RESULTS_PATH = "finetuned_results.csv"
+RESULTS_PATH = "finetuned_results_50epochs_holedataset.csv"
 CSV_SEP = ";"
 FINETUNED_MODEL_DIR = "../hpc/qwen3_vl_lora_finetuned"  # Output from your training script
 BASE_MODEL_NAME = "unsloth/Qwen3-VL-4B-Instruct-unsloth-bnb-4bit" # Base model
@@ -101,11 +101,12 @@ def run_evaluation():
     print("Loading and processing datasets...")
     all_datasets = model_fine_tuning.load_processed_datasets()
 
-    # Optional: limit rows per dataset for faster test runs #######################FORTESTING
-    #TEST_ROWS = 6  # Set to None to disable
-    #print(f"Test mode: limiting to head({TEST_ROWS}) rows per dataset")
-    #all_datasets = {name: df.head(TEST_ROWS) for name, df in all_datasets.items()}
-
+    '''# Optional: limit rows per dataset for faster test runs #######################FORTESTING
+    TEST_ROWS = 6  # Set to None to disable
+    print(f"Test mode: limiting to head({TEST_ROWS}) rows per dataset")
+    all_datasets = {name: df.head(TEST_ROWS) for name, df in all_datasets.items()}
+    '''
+    ''' # Optional: Subsample datasets for quicker evaluation
     print("Subsampling: Keeping random 50% of each dataset...")
     for name, df in all_datasets.items():
         original_count = len(df)
@@ -114,6 +115,7 @@ def run_evaluation():
         sampled_df = df.sample(frac=0.5, random_state=42)
         all_datasets[name] = sampled_df
         print(f"  -> {name}: Reduced from {original_count} to {len(sampled_df)} rows")
+    '''
 
     # 2. Add 'answer_type' column 
     # (Needed for model.py to know which prompt to use: True/False vs Multi)

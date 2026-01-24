@@ -8,7 +8,7 @@
 # The job requires 1 task per node
 #SBATCH --ntasks-per-node=1
 # The maximum walltime of the job is 24 minutes
-#SBATCH -t 30:00:00
+#SBATCH -t 64:00:00
 #SBATCH --mem=32G
 # If you keep the next two lines, you will get an e-mail notification
 # whenever something happens to your job (it starts running, completes or fails)

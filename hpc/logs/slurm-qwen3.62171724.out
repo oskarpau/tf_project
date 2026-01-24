@@ -1,0 +1,139 @@
+[unsloth_zoo.log|WARNING]Device does not support bfloat16. Will change to float16.
+🦥 Unsloth: Will patch your computer to enable 2x faster free finetuning.
+🦥 Unsloth Zoo will now patch everything to make training faster!
+==((====))==  Unsloth 2025.12.10: Fast Qwen3_Vl patching. Transformers: 4.57.3.
+   \\   /|    Tesla V100-PCIE-32GB. Num GPUs = 1. Max memory: 31.733 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.5.0+cu124. CUDA: 7.0. CUDA Toolkit: 12.4. Triton: 3.1.0
+\        /    Bfloat16 = FALSE. FA [Xformers = 0.0.28.post2. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Unsloth: Making `model.base_model.model.model` require gradients
+Loading and processing datasets...
+Test mode: limiting to head(6) rows per dataset
+Adding response type metadata...
+[Init] Loading Unsloth LoRA model from: ../hpc/qwen3_vl_lora_finetuned
+==((====))==  Unsloth 2025.12.10: Fast Qwen3_Vl patching. Transformers: 4.57.3.
+   \\   /|    Tesla V100-PCIE-32GB. Num GPUs = 1. Max memory: 31.733 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.5.0+cu124. CUDA: 7.0. CUDA Toolkit: 12.4. Triton: 3.1.0
+\        /    Bfloat16 = FALSE. FA [Xformers = 0.0.28.post2. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Model loaded successfully
+[Init] Loading AutoProcessor for tokenization compatibility...
+[Init] Model loaded in 18.76 seconds
+Starting new file: finetuned_results.csv
+
+---> Dataset: strategyqa_dev (6 rows)
+[1/66] T: 38.92s | ETA: 0:42:09 | Dataset: strategyqa_dev
+[2/66] T: 2.71s | ETA: 0:22:12 | Dataset: strategyqa_dev
+[3/66] T: 2.69s | ETA: 0:15:30 | Dataset: strategyqa_dev
+[4/66] T: 2.70s | ETA: 0:12:08 | Dataset: strategyqa_dev
+[5/66] T: 2.69s | ETA: 0:10:06 | Dataset: strategyqa_dev
+[6/66] T: 4.56s | ETA: 0:09:02 | Dataset: strategyqa_dev
+
+---> Dataset: strategyqa_train (6 rows)
+[7/66] T: 2.70s | ETA: 0:08:00 | Dataset: strategyqa_train
+[8/66] T: 2.69s | ETA: 0:07:12 | Dataset: strategyqa_train
+[9/66] T: 2.69s | ETA: 0:06:34 | Dataset: strategyqa_train
+[10/66] T: 2.69s | ETA: 0:06:04 | Dataset: strategyqa_train
+[11/66] T: 2.70s | ETA: 0:05:38 | Dataset: strategyqa_train
+[12/66] T: 2.70s | ETA: 0:05:16 | Dataset: strategyqa_train
+
+---> Dataset: gsm8k_test (6 rows)
+[13/66] T: 4.75s | ETA: 0:05:06 | Dataset: gsm8k_test
+[14/66] T: 2.90s | ETA: 0:04:50 | Dataset: gsm8k_test
+[15/66] T: 12.01s | ETA: 0:05:06 | Dataset: gsm8k_test
+[16/66] T: 3.74s | ETA: 0:04:53 | Dataset: gsm8k_test
+[17/66] T: 4.98s | ETA: 0:04:44 | Dataset: gsm8k_test
+[18/66] T: 3.29s | ETA: 0:04:32 | Dataset: gsm8k_test
+
+---> Dataset: gsm8k_train (6 rows)
+[19/66] T: 3.09s | ETA: 0:04:20 | Dataset: gsm8k_train
+[20/66] T: 3.09s | ETA: 0:04:09 | Dataset: gsm8k_train
+[21/66] T: 7.64s | ETA: 0:04:08 | Dataset: gsm8k_train
+Error in row 21: list index out of range
+[22/66] T: 3.31s | ETA: 0:03:58 | Dataset: gsm8k_train
+[23/66] T: 3.52s | ETA: 0:03:49 | Dataset: gsm8k_train
+[24/66] T: 8.06s | ETA: 0:03:48 | Dataset: gsm8k_train
+
+---> Dataset: maqa_commonsense_reasoning (6 rows)
+[25/66] T: 2.69s | ETA: 0:03:38 | Dataset: maqa_commonsense_reasoning
+[26/66] T: 2.69s | ETA: 0:03:29 | Dataset: maqa_commonsense_reasoning
+[27/66] T: 2.70s | ETA: 0:03:20 | Dataset: maqa_commonsense_reasoning
+[28/66] T: 2.69s | ETA: 0:03:12 | Dataset: maqa_commonsense_reasoning
+[29/66] T: 2.69s | ETA: 0:03:04 | Dataset: maqa_commonsense_reasoning
+[30/66] T: 2.69s | ETA: 0:02:56 | Dataset: maqa_commonsense_reasoning
+
+---> Dataset: maqa_mathematical_reasoning (6 rows)
+[31/66] T: 6.43s | ETA: 0:02:53 | Dataset: maqa_mathematical_reasoning
+[32/66] T: 12.44s | ETA: 0:02:56 | Dataset: maqa_mathematical_reasoning
+[33/66] T: 4.59s | ETA: 0:02:50 | Dataset: maqa_mathematical_reasoning
+[34/66] T: 5.37s | ETA: 0:02:45 | Dataset: maqa_mathematical_reasoning
+[35/66] T: 6.03s | ETA: 0:02:41 | Dataset: maqa_mathematical_reasoning
+[36/66] T: 5.19s | ETA: 0:02:35 | Dataset: maqa_mathematical_reasoning
+
+---> Dataset: maqa_world_knowledge_hls (6 rows)
+[verbal_confidence] Could not extract confidence. Returning NaN.
+[verbal_confidence] Raw text: "||Assamese, Bengali, Cebuano, Canon Epistolary, English, Gujarati, Hindi, Kannada, Kashmiri, Korean, Malayalam, Marathi, Nepali, Odia, Punjabi, Sanskrit, Scarboro'y Scary, Sinhala, Tamil, Tel"
+[verbal_confidence] Reasons:
+  - keyword 'confidence' failed: no numeric tokens found; segment="||Assamese, Bengali, Cebuano, Canon Epistolary, English, Gujarati, Hindi, Kannada, Kashmiri, Korean, Malayalam, Marathi, Nepali, Odia, Punjabi, Sanskrit, Scarboro'y Scary, Sinhala, Tamil, Tel"
+  - after last comma failed: no numeric tokens found; segment='Tel'
+  - full text failed: no numeric tokens found; segment="||Assamese, Bengali, Cebuano, Canon Epistolary, English, Gujarati, Hindi, Kannada, Kashmiri, Korean, Malayalam, Marathi, Nepali, Odia, Punjabi, Sanskrit, Scarboro'y Scary, Sinhala, Tamil, Tel"
+[verbal_confidence] Could not extract confidence. Returning NaN.
+[verbal_confidence] Raw text: '||assamese, bengali, bodo, dogri, english, gujarati, hindi, kannada, kashmiri, konkani, maithili, malayalam, manipuri, marathi, nepali, odia, punjabi, sanskrit, santali, sind'
+[verbal_confidence] Reasons:
+  - keyword 'confidence' failed: no numeric tokens found; segment='||assamese, bengali, bodo, dogri, english, gujarati, hindi, kannada, kashmiri, konkani, maithili, malayalam, manipuri, marathi, nepali, odia, punjabi, sanskrit, santali, sind'
+  - after last comma failed: no numeric tokens found; segment='sind'
+  - full text failed: no numeric tokens found; segment='||assamese, bengali, bodo, dogri, english, gujarati, hindi, kannada, kashmiri, konkani, maithili, malayalam, manipuri, marathi, nepali, odia, punjabi, sanskrit, santali, sind'
+[37/66] T: 44.51s | ETA: 0:03:01 | Dataset: maqa_world_knowledge_hls
+[verbal_confidence] Could not extract confidence. Returning NaN.
+[verbal_confidence] Raw text: '||Scandium, Titanium, Vanadium, Chromium, Manganese, Iron, Cobalt, Nickel, Copper, Zinc, Yttrium, Zirconium, Niobium, Molybdenum, Technetium, Ruthenium, Rhodium, Palladium, Silver, Cadmium,'
+[verbal_confidence] Reasons:
+  - keyword 'confidence' failed: no numeric tokens found; segment='||Scandium, Titanium, Vanadium, Chromium, Manganese, Iron, Cobalt, Nickel, Copper, Zinc, Yttrium, Zirconium, Niobium, Molybdenum, Technetium, Ruthenium, Rhodium, Palladium, Silver, Cadmium,'
+  - after last comma failed: no numeric tokens found; segment=''
+  - full text failed: no numeric tokens found; segment='||Scandium, Titanium, Vanadium, Chromium, Manganese, Iron, Cobalt, Nickel, Copper, Zinc, Yttrium, Zirconium, Niobium, Molybdenum, Technetium, Ruthenium, Rhodium, Palladium, Silver, Cadmium,'
+[38/66] T: 42.90s | ETA: 0:03:22 | Dataset: maqa_world_knowledge_hls
+[39/66] T: 51.35s | ETA: 0:03:45 | Dataset: maqa_world_knowledge_hls
+[40/66] T: 21.32s | ETA: 0:03:45 | Dataset: maqa_world_knowledge_hls
+[41/66] T: 19.02s | ETA: 0:03:43 | Dataset: maqa_world_knowledge_hls
+[42/66] T: 19.32s | ETA: 0:03:40 | Dataset: maqa_world_knowledge_hls
+
+---> Dataset: maqa_world_knowledge_nq (6 rows)
+[43/66] T: 8.89s | ETA: 0:03:30 | Dataset: maqa_world_knowledge_nq
+[44/66] T: 18.43s | ETA: 0:03:26 | Dataset: maqa_world_knowledge_nq
+[45/66] T: 6.61s | ETA: 0:03:15 | Dataset: maqa_world_knowledge_nq
+[46/66] T: 15.50s | ETA: 0:03:09 | Dataset: maqa_world_knowledge_nq
+[47/66] T: 7.44s | ETA: 0:02:58 | Dataset: maqa_world_knowledge_nq
+[48/66] T: 6.58s | ETA: 0:02:48 | Dataset: maqa_world_knowledge_nq
+
+---> Dataset: maqa_single_commonsense_reasoning (6 rows)
+[49/66] T: 2.68s | ETA: 0:02:36 | Dataset: maqa_single_commonsense_reasoning
+[50/66] T: 2.69s | ETA: 0:02:25 | Dataset: maqa_single_commonsense_reasoning
+[51/66] T: 2.70s | ETA: 0:02:14 | Dataset: maqa_single_commonsense_reasoning
+[52/66] T: 2.69s | ETA: 0:02:03 | Dataset: maqa_single_commonsense_reasoning
+[53/66] T: 2.69s | ETA: 0:01:53 | Dataset: maqa_single_commonsense_reasoning
+[54/66] T: 2.69s | ETA: 0:01:43 | Dataset: maqa_single_commonsense_reasoning
+
+---> Dataset: maqa_single_math_reasoning (6 rows)
+[55/66] T: 4.74s | ETA: 0:01:33 | Dataset: maqa_single_math_reasoning
+[56/66] T: 2.88s | ETA: 0:01:24 | Dataset: maqa_single_math_reasoning
+[57/66] T: 15.45s | ETA: 0:01:17 | Dataset: maqa_single_math_reasoning
+[58/66] T: 3.71s | ETA: 0:01:07 | Dataset: maqa_single_math_reasoning
+[59/66] T: 4.93s | ETA: 0:00:58 | Dataset: maqa_single_math_reasoning
+[60/66] T: 3.09s | ETA: 0:00:49 | Dataset: maqa_single_math_reasoning
+
+---> Dataset: maqa_single_world_knowledge_nq (6 rows)
+[61/66] T: 3.91s | ETA: 0:00:41 | Dataset: maqa_single_world_knowledge_nq
+[verbal_confidence] Could not extract confidence. Returning NaN.
+[verbal_confidence] Raw text: '||ANSWERS||，CONFIDENCE'
+[verbal_confidence] Reasons:
+  - keyword 'confidence' failed: no numeric tokens found; segment='||ANSWERS||，CONFIDENCE'
+  - after '||...||' failed: no numeric tokens found; segment='，CONFIDENCE'
+  - full text failed: no numeric tokens found; segment='||ANSWERS||，CONFIDENCE'
+[62/66] T: 5.96s | ETA: 0:00:32 | Dataset: maqa_single_world_knowledge_nq
+[63/66] T: 3.51s | ETA: 0:00:24 | Dataset: maqa_single_world_knowledge_nq
+[64/66] T: 10.12s | ETA: 0:00:16 | Dataset: maqa_single_world_knowledge_nq
+[65/66] T: 14.24s | ETA: 0:00:08 | Dataset: maqa_single_world_knowledge_nq
+[66/66] T: 9.31s | ETA: 0:00:00 | Dataset: maqa_single_world_knowledge_nq
+
+Evaluation completed. Results saved to finetuned_results.csv
