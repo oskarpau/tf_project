@@ -1,9 +1,26 @@
-# Confidence Estimation of Qwen VL 4B Instruct 
-TODO
+# Confidence Estimation of Qwen3 VL 4B Instruct 
 
-## Development notes (to be cleared after release)
-- When installing new packages, change `Creating the environment accordingly`
-- `Markdown cheat sheet:`https://images.ctfassets.net/wp1lcwdav1p1/4Kz1Ao27PejcyFuWZ93hDy/a1b82cf0db13252cd76763ac529a6285/Screenshot_2024-12-17_at_18.51.54.png
+***Evaluating original model across the whole dataset***
+
+`src\run_model_on_dataset.py`
+
+***Fine-tuning***
+
+`src\model_fine_tuning.py`
+
+***Evaluating fine-tuned model across the whole dataset***
+
+`src\evaluate_fine_tuned_model.py`
+
+***Analysis of the original and the model fine-tuned for 3 epochs***
+
+`src\analysis_finetuned_3_vs_50_epochs.ipynb`
+
+***Analysis of the model fine-tuned for 3 epochs and for 50 epochs***
+
+`src\analysis_finetuned_3_vs_50_epochs.ipynb`
+
+
 
 ## Install
 ### Creating the environment
@@ -40,7 +57,38 @@ pip install -U bitsandbytes
 ```
 
 ## Used Resources
-TODO
 
-## Columns
-Index dataset categorie subcategorie question right_answer  first_try_max_prob  first_try_entropy   first_try_margin    first_try_verbal    first_try_correct    second_try_max_prob  second_try_entropy   second_try_margin    second_try_verbal      second_try_correct
+[1] Yongjin Yang, Haneul Yoo, and Hwaran Lee. MAQA: Evaluating Uncertainty Quantification in
+LLMs Regarding Data Uncertainty, March 2025. arXiv:2408.06816 [cs].
+
+[2] Qwen/Qwen3-VL-4B-Instruct · Hugging Face, December 2025. URL https://huggingface.
+co/Qwen/Qwen3-VL-4B-Instruct.
+
+[3] Karl Cobbe, Vineet Kosaraju, Mohammad Bavarian, Mark Chen, Heewoo Jun, Lukasz Kaiser,
+Matthias Plappert, Jerry Tworek, Jacob Hilton, Reiichiro Nakano, Christopher Hesse, and John
+Schulman. Training Verifiers to Solve Math Word Problems, November 2021. arXiv:2110.14168
+[cs].
+
+[4] Mor Geva, Daniel Khashabi, Elad Segal, Tushar Khot, Dan Roth, and Jonathan Berant. Did
+Aristotle Use a Laptop? A Question Answering Benchmark with Implicit Reasoning Strategies,
+January 2021. arXiv:2101.02235 [cs].
+
+[5] Zhiqiu Xia, Jinxuan Xu, Yuqian Zhang, and Hang Liu. A Survey of Uncertainty Estimation
+Methods on Large Language Models, May 2025. arXiv:2503.00172 [cs].
+
+[6] Abhishek Kumar, Robert Morabito, Sanzhar Umbet, Jad Kabbara, and Ali Emami. Confidence
+Under the Hood: An Investigation into the Confidence-Probability Alignment in Large Language
+Models, June 2024. arXiv:2405.16282 [cs].
+
+[7] Marina Fomicheva, Shuo Sun, Lisa Yankovskaya, Frédéric Blain, Francisco Guzmán, Mark
+Fishel, Nikolaos Aletras, Vishrav Chaudhary, and Lucia Specia. Unsupervised Quality Estimation for Neural Machine Translation, July 2020. arXiv:2005.10608 [cs].
+
+[8] Tal Schuster, Adam Fisch, Jai Gupta, Mostafa Dehghani, Dara Bahri, Vinh Q. Tran, Yi Tay, and
+Donald Metzler. Confident Adaptive Language Modeling, October 2022. arXiv:2207.07061
+[cs].
+
+[9] Unsloth AI - Open Source Fine-tuning & RL for LLMs. URL https://unsloth.ai/.
+
+[10] Edward J. Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang,
+Lu Wang, and Weizhu Chen. LoRA: Low-Rank Adaptation of Large Language Models, October
+2021. URL http://arxiv.org/abs/2106.09685. arXiv:2106.09685 [cs].
